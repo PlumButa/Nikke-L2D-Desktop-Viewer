@@ -1,0 +1,124 @@
+{
+  "id": "330801",
+  "resourceId": 308,
+  "name": "iDoll太陽",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c308_00.skel",
+  "atlas": "c308_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "我是iDoll太陽。\n提問就免了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_02.mp3",
+      "text": "你不打算行動嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_03.mp3",
+      "text": "真是個好地方，讓人不自覺想做些什麼。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "初次見面",
+      "audio": "voices/voice_04.mp3",
+      "text": "多多關照了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_05",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_05.mp3",
+      "text": "確認提升功率。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_06",
+      "category": "編隊",
+      "audio": "voices/voice_06.mp3",
+      "text": "準備完畢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_07",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_07.mp3",
+      "text": "下令吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_08",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_08.mp3",
+      "text": "出發。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_09",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_09.mp3",
+      "text": "開戰。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_10",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_10.mp3",
+      "text": "好，我該做什麼？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_11",
+      "category": "換彈I",
+      "audio": "voices/voice_11.mp3",
+      "text": "裝彈！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_12",
+      "category": "爆裂技能",
+      "audio": "voices/voice_12.mp3",
+      "text": "趁現在！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_13.mp3",
+      "text": "抓住了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "被擊I",
+      "audio": "voices/voice_14.mp3",
+      "text": "咳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_15.mp3",
+      "text": "該死……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_16.mp3",
+      "text": "清除完畢。",
+      "animation": "idle"
+    }
+  ]
+}
