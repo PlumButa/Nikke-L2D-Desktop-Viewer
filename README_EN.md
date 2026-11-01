@@ -59,7 +59,7 @@ Switch seamlessly between Standing, Cover, and Aim postures for each character. 
 You **do NOT need to manually install Node.js** or run any terminal commands!
 
 ### Option A: Download Full Portable ZIP (Recommended)
-1. Go to the **Releases** section on the right side of this page and download **`NikkeDesktopViewer_v1.0.zip`**.
+1. Go to the **Releases** section on the right side of this page and download **`NikkeDesktopViewer_v1.0.rar`** (including all split parts).
 2. Extract the ZIP to any folder on your PC.
 3. Double-click **`啟動檢視器.bat`** to launch immediately!
 
