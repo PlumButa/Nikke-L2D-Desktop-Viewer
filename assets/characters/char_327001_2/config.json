@@ -1,0 +1,1188 @@
+{
+  "id": "327001",
+  "resourceId": 270,
+  "name": "布蘭兒",
+  "skin": "白兔",
+  "spineVersion": "4.0",
+  "skel": "c270_01_00.skel",
+  "atlas": "c270_01_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "祝大家好～運連連哦！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "店長！\n這身衣服怎麼樣？適合我嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_03.mp3",
+      "text": "我把勝利的幸運分給您！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_04.mp3",
+      "text": "歡迎搭乘滿載幸運的AZX！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_05.mp3",
+      "text": "接下來是雙子兔的同台演出！\n敬請期待哦！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_06.mp3",
+      "text": "我要和諾亞爾姐姐一起泡溫泉～！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_07.mp3",
+      "text": "這是為棒球比賽加油的特別制服。\n我穿起來好看嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_08.mp3",
+      "text": "我是今天的一日乘務員，布蘭兒～！\n請多多指教！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_09.mp3",
+      "text": "我和姐姐很不一樣嗎？\n所以說，我們同時登場的時候才更完美啊！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_10.mp3",
+      "text": "新的衣服……新的髮型……我很喜歡！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_11.mp3",
+      "text": "姐姐？姐姐當然也跟我一起來了。\n雙子兔絕不允許少了其中一個。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_12.mp3",
+      "text": "姊姊也在這班列車上喔！\n試著找找看她在哪裡吧～",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_13.mp3",
+      "text": "如果是店長的話，我可以接受您介入我和姐姐之間喔。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_14.mp3",
+      "text": "想和店長永遠待在雪溫場。\n當然諾亞爾姐姐也要一起！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_15.mp3",
+      "text": "我看起來怎麼樣？\n和平常不一樣，是不是感覺很新奇？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_16.mp3",
+      "text": "這還是我第一次穿這種制服呢。\n怎麼樣？適合我嗎～？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_17",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_17.mp3",
+      "text": "您明白我們的心意對吧，店長？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_18.mp3",
+      "text": "能跟店長一起過聖誕節，真是太棒了！\n今年的聖誕節肯定是幸運的聖誕節！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_19.mp3",
+      "text": "店長，下次我們去棒球場約會。\n當然了，也要帶姊姊一起去。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_20.mp3",
+      "text": "像這樣和店長一起搭乘AZX，\n感覺就好像是去旅行一樣，好興奮喔！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_21.mp3",
+      "text": "您說想摸摸我的尾巴嗎？\n嗯……要、要我靠過去給您摸嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_22.mp3",
+      "text": "店長，回頭我給您做按摩吧？\n我跟艾瑪學的！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_23",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_23.mp3",
+      "text": "您知道接吻時間嗎？\n登上球場大螢幕的情侶就要接吻唷。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_24",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_24.mp3",
+      "text": "我會為店長您提供特別的服務～！\n但是要對其他人保密喔。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_25",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_25.mp3",
+      "text": "運氣可不是隨時都有的！\n快去開始新的遊戲吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_26",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_26.mp3",
+      "text": "店長什麼時候來啊？\n我去找諾亞爾姐姐了喔～？！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_27",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_27.mp3",
+      "text": "那我練一下揮棒吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_28",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_28.mp3",
+      "text": "路上小心～\n我會在這留意看看，\n有沒有需要幫忙的乘客。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_29",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_29.mp3",
+      "text": "那個，其實只要和店長在一起，什麼都不做我也很開心。\n怎麼看都看不夠。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_30",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_30.mp3",
+      "text": "店長～您快來！\n我們和諾亞爾姐姐一起泡溫泉吧！",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_31",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_31.mp3",
+      "text": "店長～！您在哪裡～！\n這樣下去，幸運會跑光光的喔～",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_32",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_32.mp3",
+      "text": "店長～列車快要出發啦～\n趕快回來啊～！",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_33",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_33.mp3",
+      "text": "請問您有看到諾亞爾姐姐嗎？\n我們現在已經分開十分鐘了！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_34",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_34.mp3",
+      "text": "我打算和姐姐一起去雪溫場，店長也一起去吧？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_35",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_35.mp3",
+      "text": "您覺得在前哨基地建一個棒球場\n會不會太不切實際？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_36",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_36.mp3",
+      "text": "總有一天，前哨基地的火車站也會通車吧？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_37",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_37.mp3",
+      "text": "我也不是一直都這副打扮的。\n因為面對的是店長，所以要發揮專業精神。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_38",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_38.mp3",
+      "text": "又想去雪溫場了～\n什麼時候能去呢？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_39",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_39.mp3",
+      "text": "每次都會感覺，前哨基地真的很寬敞呢。\n感覺在這打棒球也不會有問題。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_40",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_40.mp3",
+      "text": "前哨基地的火車站，有一種小巧又精緻的感覺，真可愛。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_41",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_41.mp3",
+      "text": "我休息的時候偶爾還會去劇院演出。\n您下次也來看看吧？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_42",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_42.mp3",
+      "text": "人們總是看著我！\n可能是因為沒穿兔女郎裝，所以感到不可思議吧～",
+      "animation": "action"
+    },
+    {
+      "id": "voice_43",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_43.mp3",
+      "text": "店長，您要不要認真考慮設立棒球打擊場？\n感覺會很受歡迎。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_44",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_44.mp3",
+      "text": "雖然這是我第一次當乘務員，不過似乎很適合我呢。\n下次如果還有機會，我想再嘗試一次。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_45",
+      "category": "初次見面",
+      "audio": "voices/voice_45.mp3",
+      "text": "我是金幣之戰的兔女郎——布蘭兒！我會為您帶來滿滿的幸運！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "初次見面",
+      "audio": "voices/voice_46.mp3",
+      "text": "我是幸運白兔布蘭兒！\n要和我一起泡進幸運溫泉裡嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "初次見面",
+      "audio": "voices/voice_47.mp3",
+      "text": "帶來勝利好運的白色兔子來了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "初次見面",
+      "audio": "voices/voice_48.mp3",
+      "text": "我要把滿滿的幸運分送給每位乘客～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_49.mp3",
+      "text": "再端十杯飲料都沒問題。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_50.mp3",
+      "text": "也許是因為穿了新的衣服，\n感覺充滿了幸運！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_51.mp3",
+      "text": "打擊率要變得更高了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_52.mp3",
+      "text": "感覺整個人輕盈了不少呢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_53.mp3",
+      "text": "我會回報您一場精彩的演出！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_54.mp3",
+      "text": "我要把雪溫場變成一個充滿幸運的地方！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_55.mp3",
+      "text": "感覺幸運的加持越來越強了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_56",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_56.mp3",
+      "text": "現在無論發生什麼事，我都能冷靜應對了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_57",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_57.mp3",
+      "text": "這下我就能讓更多的人感到幸福了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_58",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_58.mp3",
+      "text": "幸運充電完畢！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_59",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_59.mp3",
+      "text": "喝～！幸運充電！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_60",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_60.mp3",
+      "text": "感覺我現在可以服務更多乘客了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_61",
+      "category": "禮物I",
+      "audio": "voices/voice_61.mp3",
+      "text": "哇，我太高興了！\n不過，這個東西要怎麼和姐姐平分呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_62",
+      "category": "禮物I",
+      "audio": "voices/voice_62.mp3",
+      "text": "是聖誕禮物嗎？！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_63",
+      "category": "禮物I",
+      "audio": "voices/voice_63.mp3",
+      "text": "希望每天都有這種好運降臨。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_64",
+      "category": "禮物I",
+      "audio": "voices/voice_64.mp3",
+      "text": "哇～太感謝了！\n我想姊姊也會喜歡的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "禮物II",
+      "audio": "voices/voice_65.mp3",
+      "text": "看來今天是我的幸運日啊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "禮物II",
+      "audio": "voices/voice_66.mp3",
+      "text": "……哇啊！謝謝您，店長！\n我會在雪溫場裡每天隨身攜帶的！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "禮物II",
+      "audio": "voices/voice_67.mp3",
+      "text": "啊……這個禮物正好進了我的好球帶呢。\n我真的很喜歡！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "禮物II",
+      "audio": "voices/voice_68.mp3",
+      "text": "還以為是車票呢，沒想到竟然是禮物。\n真是太貼心了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "禮物III",
+      "audio": "voices/voice_69.mp3",
+      "text": "……您也送了諾亞爾姐姐一樣的東西吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "禮物III",
+      "audio": "voices/voice_70.mp3",
+      "text": "哇啊啊……真的要給我嗎？\n回到金幣之戰之後，我一定會報答您！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "禮物III",
+      "audio": "voices/voice_71.mp3",
+      "text": "傳球！\n開玩笑的啦！我才不可能亂丟店長送的禮物。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "禮物III",
+      "audio": "voices/voice_72.mp3",
+      "text": "多虧了店長，今天的旅程變得更特別了呢！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "好感度提升I",
+      "audio": "voices/voice_73.mp3",
+      "text": "如果是店長您的話，可以把我的幸運全都拿走。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_74",
+      "category": "好感度提升I",
+      "audio": "voices/voice_74.mp3",
+      "text": "喜歡雪溫場的理由……\n應該是因為和店長在一起吧？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_75",
+      "category": "好感度提升I",
+      "audio": "voices/voice_75.mp3",
+      "text": "您一直在丟直球呢。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_76",
+      "category": "好感度提升I",
+      "audio": "voices/voice_76.mp3",
+      "text": "明明在工作，卻總是不自覺地看向店長，真糟糕。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_77",
+      "category": "好感度提升II",
+      "audio": "voices/voice_77.mp3",
+      "text": "我的身心都只屬於店長。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_78",
+      "category": "好感度提升II",
+      "audio": "voices/voice_78.mp3",
+      "text": "我想喜歡店長的這份心意，一輩子都不會改變。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_79",
+      "category": "好感度提升II",
+      "audio": "voices/voice_79.mp3",
+      "text": "……已經三出局了啊。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_80",
+      "category": "好感度提升II",
+      "audio": "voices/voice_80.mp3",
+      "text": "您知道嗎？\n店長在我心中早就是VIP乘客了。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_81",
+      "category": "好感度提升III",
+      "audio": "voices/voice_81.mp3",
+      "text": "既然我喜歡店長，姐姐肯定也是一樣的。\n我們三個什麼時候一起約會呢？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_82",
+      "category": "好感度提升III",
+      "audio": "voices/voice_82.mp3",
+      "text": "又多了一個珍貴的人。\n諾亞爾姐姐……還有店長。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_83",
+      "category": "好感度提升III",
+      "audio": "voices/voice_83.mp3",
+      "text": "這樣不行。我馬上叫姐姐來。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_84",
+      "category": "好感度提升III",
+      "audio": "voices/voice_84.mp3",
+      "text": "您會一路陪我到終點站吧？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_85",
+      "category": "編隊",
+      "audio": "voices/voice_85.mp3",
+      "text": "要賭一把嗎？那就和我一起吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_86",
+      "category": "編隊",
+      "audio": "voices/voice_86.mp3",
+      "text": "交給我吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_87",
+      "category": "編隊",
+      "audio": "voices/voice_87.mp3",
+      "text": "很好，我已經暖身完畢了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_88",
+      "category": "編隊",
+      "audio": "voices/voice_88.mp3",
+      "text": "上車了嗎？列車即將出發！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_89",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_89.mp3",
+      "text": "站在陽光下的店長，看起來更帥了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_90",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_90.mp3",
+      "text": "要分享幸運給您嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_91",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_91.mp3",
+      "text": "哦，那個手勢……是那邊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_92",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_92.mp3",
+      "text": "安全帶都繫好了吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_93",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_93.mp3",
+      "text": "啊，那邊有中獎的氣息……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_94",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_94.mp3",
+      "text": "呃呃……\n可能是因為沒穿兔女郎裝，行動起來有點不方便！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_95",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_95.mp3",
+      "text": "跑者，開始衝刺囉～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_96",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_96.mp3",
+      "text": "轟隆轟隆～列車要全速前進啦！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_97",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_97.mp3",
+      "text": "遊戲開始吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_98",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_98.mp3",
+      "text": "不幸降臨了……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_99",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_99.mp3",
+      "text": "我站上打擊區了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_100",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_100.mp3",
+      "text": "列車準備出發囉！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_101",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_101.mp3",
+      "text": "我把我的幸運分給您！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_102",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_102.mp3",
+      "text": "店長，請您不要受傷！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_103",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_103.mp3",
+      "text": "開始比賽！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_104",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_104.mp3",
+      "text": "列車可能會有點顛簸，請務必抓好扶手坐穩！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_105",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_105.mp3",
+      "text": "有我在，這把絕對不會輸！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_106",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_106.mp3",
+      "text": "我來守護您！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_107",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_107.mp3",
+      "text": "來場公平競賽吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_108",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_108.mp3",
+      "text": "出發前往新的目的地！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_109",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_109.mp3",
+      "text": "和姐姐在一起，我就不怕。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_110",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_110.mp3",
+      "text": "快點結束，然後回到雪溫場吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_111",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_111.mp3",
+      "text": "打者就位！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_112",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_112.mp3",
+      "text": "AZX，開始衝刺囉！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_113",
+      "category": "換彈I",
+      "audio": "voices/voice_113.mp3",
+      "text": "我在做準備。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_114",
+      "category": "換彈I",
+      "audio": "voices/voice_114.mp3",
+      "text": "換彈！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_115",
+      "category": "換彈I",
+      "audio": "voices/voice_115.mp3",
+      "text": "暫停！暫停！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_116",
+      "category": "換彈I",
+      "audio": "voices/voice_116.mp3",
+      "text": "立刻為您準備飲料！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_117",
+      "category": "換彈II",
+      "audio": "voices/voice_117.mp3",
+      "text": "姐姐由我來守護。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_118",
+      "category": "換彈II",
+      "audio": "voices/voice_118.mp3",
+      "text": "呃啊……衣服太礙手礙腳了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_119",
+      "category": "換彈II",
+      "audio": "voices/voice_119.mp3",
+      "text": "正在熱身中！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_120",
+      "category": "換彈II",
+      "audio": "voices/voice_120.mp3",
+      "text": "感謝您的耐心等候！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_121",
+      "category": "換彈III",
+      "audio": "voices/voice_121.mp3",
+      "text": "兔女郎絕對不會輸。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_122",
+      "category": "換彈III",
+      "audio": "voices/voice_122.mp3",
+      "text": "我會加快速度的！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_123",
+      "category": "換彈III",
+      "audio": "voices/voice_123.mp3",
+      "text": "我整理一下打擊區！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_124",
+      "category": "換彈III",
+      "audio": "voices/voice_124.mp3",
+      "text": "我將提供最好的服務。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_125",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_125.mp3",
+      "text": "時間到了，店長！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_126",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_126.mp3",
+      "text": "店長，就是現在！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_127",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_127.mp3",
+      "text": "兩出局滿壘！決勝負的時候到了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_128",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_128.mp3",
+      "text": "店長，就是現在！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_129",
+      "category": "爆裂技能",
+      "audio": "voices/voice_129.mp3",
+      "text": "接下來是布蘭兒和諾亞爾的演出時間！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_130",
+      "category": "爆裂技能",
+      "audio": "voices/voice_130.mp3",
+      "text": "幸運總是站在我們這邊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_131",
+      "category": "爆裂技能",
+      "audio": "voices/voice_131.mp3",
+      "text": "我會揮出滿壘全壘打！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_132",
+      "category": "爆裂技能",
+      "audio": "voices/voice_132.mp3",
+      "text": "我會盡全力讓這成為一趟幸福的旅程！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_133",
+      "category": "全爆裂",
+      "audio": "voices/voice_133.mp3",
+      "text": "就是現在！請大家都相信運氣，放手一搏吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_134",
+      "category": "全爆裂",
+      "audio": "voices/voice_134.mp3",
+      "text": "幸運會降臨在準備好的人身上！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_135",
+      "category": "全爆裂",
+      "audio": "voices/voice_135.mp3",
+      "text": "板凳清空大亂鬥！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_136",
+      "category": "全爆裂",
+      "audio": "voices/voice_136.mp3",
+      "text": "幸運滿滿！幸福滿滿！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_137",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_137.mp3",
+      "text": "運氣真好！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_138",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_138.mp3",
+      "text": "逮到了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_139",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_139.mp3",
+      "text": "出局！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_140",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_140.mp3",
+      "text": "好！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_141",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_141.mp3",
+      "text": "真幸運！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_142",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_142.mp3",
+      "text": "簡單！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_143",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_143.mp3",
+      "text": "中大獎！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_144",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_144.mp3",
+      "text": "已清除障礙物！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_145",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_145.mp3",
+      "text": "今天的運氣滿好的呢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_146",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_146.mp3",
+      "text": "做得好！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_147",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_147.mp3",
+      "text": "贏了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_148",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_148.mp3",
+      "text": "繼續前進吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_149",
+      "category": "被擊I",
+      "audio": "voices/voice_149.mp3",
+      "text": "呀！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_150",
+      "category": "被擊I",
+      "audio": "voices/voice_150.mp3",
+      "text": "呃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_151",
+      "category": "被擊I",
+      "audio": "voices/voice_151.mp3",
+      "text": "啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_152",
+      "category": "被擊I",
+      "audio": "voices/voice_152.mp3",
+      "text": "呀！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_153",
+      "category": "被擊II",
+      "audio": "voices/voice_153.mp3",
+      "text": "姐姐……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_154",
+      "category": "被擊II",
+      "audio": "voices/voice_154.mp3",
+      "text": "嗚。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_155",
+      "category": "被擊II",
+      "audio": "voices/voice_155.mp3",
+      "text": "啊……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_156",
+      "category": "被擊II",
+      "audio": "voices/voice_156.mp3",
+      "text": "呃啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_157",
+      "category": "被擊III",
+      "audio": "voices/voice_157.mp3",
+      "text": "哼。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_158",
+      "category": "被擊III",
+      "audio": "voices/voice_158.mp3",
+      "text": "呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_159",
+      "category": "被擊III",
+      "audio": "voices/voice_159.mp3",
+      "text": "呃啊……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_160",
+      "category": "被擊III",
+      "audio": "voices/voice_160.mp3",
+      "text": "好痛！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_161",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_161.mp3",
+      "text": "姐姐……對不起，我先走了……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_162",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_162.mp3",
+      "text": "……店長，\n我要跟姐姐一起回金幣之戰……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_163",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_163.mp3",
+      "text": "對不起，我回去坐板凳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_164",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_164.mp3",
+      "text": "很抱歉……沒能讓大家平安抵達目的地。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_165",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_165.mp3",
+      "text": "兔女郎無論在何時何地都是無敵的！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_166",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_166.mp3",
+      "text": "好了，接下來去享受溫泉吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_167",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_167.mp3",
+      "text": "比賽提前結束了呢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_168",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_168.mp3",
+      "text": "這次旅行真的是超～級開心！\n店長覺得怎麼樣呢？",
+      "animation": "idle"
+    }
+  ]
+}
