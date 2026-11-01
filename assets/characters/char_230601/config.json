@@ -1,0 +1,124 @@
+{
+  "id": "230601",
+  "resourceId": 306,
+  "name": "士兵O.W.",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c306_00.skel",
+  "atlas": "c306_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "士兵O.W.報到，日子還算過得去。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_02.mp3",
+      "text": "嗯～沒有什麼事情可以讓我做嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_03.mp3",
+      "text": "這裡有睡午覺的地方嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "初次見面",
+      "audio": "voices/voice_04.mp3",
+      "text": "士兵O.W.，加入隊伍。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_05",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_05.mp3",
+      "text": "哦～沒想到你為我做了這麼多啊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_06",
+      "category": "編隊",
+      "audio": "voices/voice_06.mp3",
+      "text": "出擊嗎？走吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_07",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_07.mp3",
+      "text": "是叫我了嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_08",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_08.mp3",
+      "text": "好的～來了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_09",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_09.mp3",
+      "text": "要開始戰鬥囉～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_10",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_10.mp3",
+      "text": "啊～有點緊張啊～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_11",
+      "category": "換彈I",
+      "audio": "voices/voice_11.mp3",
+      "text": "裝彈！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_12",
+      "category": "爆裂技能",
+      "audio": "voices/voice_12.mp3",
+      "text": "很好！就是現在！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_13.mp3",
+      "text": "搞定！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "被擊I",
+      "audio": "voices/voice_14.mp3",
+      "text": "呃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_15.mp3",
+      "text": "呃，對不起啊……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_16.mp3",
+      "text": "怎麼樣？滿意嗎？",
+      "animation": "idle"
+    }
+  ]
+}

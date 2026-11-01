@@ -1,0 +1,124 @@
+{
+  "id": "230001",
+  "resourceId": 300,
+  "name": "士兵E.G.",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c300_00.skel",
+  "atlas": "c300_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "極樂淨土的士兵E.G.報到。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_02.mp3",
+      "text": "我會一邊待命，一邊在四周巡邏。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_03.mp3",
+      "text": "執勤中，一切正常。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "初次見面",
+      "audio": "voices/voice_04.mp3",
+      "text": "士兵E.G.，參戰。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_05",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_05.mp3",
+      "text": "確認提升功率。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_06",
+      "category": "編隊",
+      "audio": "voices/voice_06.mp3",
+      "text": "我會服從命令。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_07",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_07.mp3",
+      "text": "是。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_08",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_08.mp3",
+      "text": "開始行動。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_09",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_09.mp3",
+      "text": "投入戰鬥。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_10",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_10.mp3",
+      "text": "發現敵人。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_11",
+      "category": "換彈I",
+      "audio": "voices/voice_11.mp3",
+      "text": "裝彈！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_12",
+      "category": "爆裂技能",
+      "audio": "voices/voice_12.mp3",
+      "text": "出發！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_13.mp3",
+      "text": "擊落！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "被擊I",
+      "audio": "voices/voice_14.mp3",
+      "text": "咳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_15.mp3",
+      "text": "我要撤退了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_16.mp3",
+      "text": "完成任務。",
+      "animation": "idle"
+    }
+  ]
+}
