@@ -1,0 +1,124 @@
+{
+  "id": "130701",
+  "resourceId": 307,
+  "name": "產品23",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c307_00.skel",
+  "atlas": "c307_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "我是米西利斯的23號商品，\n直接叫我「23」就行。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_02.mp3",
+      "text": "總之，什麼時候想行動了請告訴我。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_03.mp3",
+      "text": "這裡沒有異常。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "初次見面",
+      "audio": "voices/voice_04.mp3",
+      "text": "放心交給我吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_05",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_05.mp3",
+      "text": "功率上升了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_06",
+      "category": "編隊",
+      "audio": "voices/voice_06.mp3",
+      "text": "不管結果如何，我都會全力以赴的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_07",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_07.mp3",
+      "text": "我在這裡。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_08",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_08.mp3",
+      "text": "準備出發。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_09",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_09.mp3",
+      "text": "投入戰鬥。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_10",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_10.mp3",
+      "text": "這裡交給我吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_11",
+      "category": "換彈I",
+      "audio": "voices/voice_11.mp3",
+      "text": "裝彈！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_12",
+      "category": "爆裂技能",
+      "audio": "voices/voice_12.mp3",
+      "text": "上！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_13.mp3",
+      "text": "抓到了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "被擊I",
+      "audio": "voices/voice_14.mp3",
+      "text": "呃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_15.mp3",
+      "text": "抱歉，沒幫上忙。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_16.mp3",
+      "text": "戰鬥結束。",
+      "animation": "idle"
+    }
+  ]
+}

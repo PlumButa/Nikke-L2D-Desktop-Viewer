@@ -1,0 +1,12 @@
+{
+  "name": "nikke-desktop-viewer",
+  "version": "1.0.0",
+  "description": "勝利女神：妮姬 L2D檢視器&桌面寵物",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^45.0.0"
+  }
+}

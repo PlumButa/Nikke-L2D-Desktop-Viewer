@@ -1,0 +1,279 @@
+* { box-sizing: border-box; user-select: none; margin: 0; padding: 0; }
+body {
+  font-family: "Microsoft JhengHei", "Segoe UI", sans-serif;
+  background: #141720;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e2e8f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: background-color 0.2s;
+}
+
+/* 桌寵透明模式 */
+body.pet-mode {
+  background: transparent !important;
+  background-image: none !important;
+}
+body.pet-mode .titlebar,
+body.pet-mode .left-panel,
+body.pet-mode .right-panel,
+body.pet-mode .canvas-toolbar,
+body.pet-mode .pose-switcher { display: none !important; }
+body.pet-mode #pet-Floating-Bar { display: flex !important; }
+
+/* 頂部標題列 */
+.titlebar {
+  height: 42px;
+  background: #0c0e14;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  -webkit-app-region: drag;
+  border-bottom: 1px solid #262b38;
+}
+.titlebar h1 { font-size: 15px; font-weight: 700; letter-spacing: 0.5px; }
+.win-btns { display: flex; gap: 8px; -webkit-app-region: no-drag; }
+.win-btn {
+  background: transparent; border: none; color: #94a3b8;
+  font-size: 14px; cursor: pointer; padding: 4px 8px; border-radius: 4px;
+}
+.win-btn:hover { background: #262b38; color: #fff; }
+.win-btn.close:hover { background: #ef4444; color: #fff; }
+
+/* 主內容區 */
+.main-container { flex: 1; display: flex; position: relative; overflow: hidden; }
+
+/* 左側控制台 */
+.left-panel {
+  width: 270px; background: #1c202b; padding: 12px 14px;
+  display: flex; flex-direction: column; gap: 10px;
+  border-right: 1px solid #2a3040; overflow-y: auto; z-index: 10;
+}
+.section-title {
+  font-size: 12px; color: #818cf8; font-weight: 700;
+  border-bottom: 1px solid #2e3546; padding-bottom: 4px; margin-top: 2px;
+}
+.control-group { display: flex; flex-direction: column; gap: 4px; }
+.control-group label { font-size: 12px; color: #94a3b8; font-weight: 600; display: flex; justify-content: space-between; }
+select, input[type="text"] {
+  background: #282e3d; border: 1px solid #3b4254; color: #fff;
+  padding: 6px 10px; border-radius: 6px; font-size: 13px; outline: none;
+}
+input[type="range"] { accent-color: #6366f1; cursor: pointer; }
+.btn-row { display: flex; gap: 6px; }
+.btn {
+  flex: 1; padding: 7px 10px; border: 1px solid transparent; border-radius: 6px;
+  background: #333b4d; color: #fff; font-size: 12px; font-weight: 600;
+  cursor: pointer; transition: 0.15s;
+}
+.btn:hover { background: #434d63; }
+.btn.active {
+  background: #4f46e5;
+  border-color: #818cf8;
+}
+.btn-primary { background: #5b21b6; }
+.btn-primary:hover { background: #6d28d9; }
+.btn-pet {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  margin-top: auto; padding: 11px; font-size: 14px;
+}
+.btn-pet:hover { opacity: 0.92; }
+
+/* 中央畫布區 */
+.center-stage {
+  flex: 1; position: relative; display: flex;
+  align-items: center; justify-content: center; overflow: hidden;
+}
+#spine-canvas { width: 100%; height: 100%; display: block; cursor: grab; }
+#spine-canvas:active { cursor: grabbing; }
+.canvas-toolbar {
+  position: absolute; top: 12px; left: 12px;
+  display: flex; gap: 8px; z-index: 20;
+}
+.tool-icon {
+  width: 34px; height: 34px; border-radius: 6px;
+  background: rgba(28, 32, 43, 0.85); border: 1px solid #3b4254;
+  color: #e2e8f0; cursor: pointer; font-size: 16px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s;
+}
+.tool-icon:hover {
+  background: #30374a; border-color: #6366f1; color: #fff;
+}
+.tool-icon.active {
+  background: #4f46e5; border-color: #818cf8; color: #fff;
+}
+
+/* 對話氣泡（動態錨點定位於角色頭頂） */
+#speech-bubble {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -100%);
+  max-width: 360px;
+  min-width: 180px;
+  background: rgba(15, 18, 28, 0.92);
+  border: 1.5px solid #fb923c;
+  border-radius: 14px;
+  padding: 10px 16px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 30;
+  text-align: center;
+}
+#speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px 8px 0;
+  border-style: solid;
+  border-color: #fb923c transparent transparent;
+}
+#speech-bubble.show { opacity: 1; }
+#speech-bubble .char-tag {
+  font-size: 11px; color: #fb923c; font-weight: 700; margin-bottom: 4px;
+}
+
+/* 右側角色清單與頂部分頁 */
+.right-panel {
+  width: 260px; background: #1c202b; padding: 14px;
+  display: flex; flex-direction: column; gap: 10px;
+  border-left: 1px solid #2a3040; z-index: 10;
+}
+.tab-bar {
+  display: flex; gap: 6px;
+}
+.tab-btn {
+  flex: 1; padding: 7px 8px; border-radius: 6px;
+  background: #262b3a; border: 1px solid #3b4254;
+  color: #94a3b8; font-size: 12px; font-weight: 700;
+  cursor: pointer; transition: 0.15s;
+}
+.tab-btn:hover { background: #30374a; color: #fff; }
+.tab-btn.active {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #fff; border-color: #818cf8;
+}
+
+.char-list { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; }
+.char-card {
+  display: flex; align-items: center; gap: 12px; padding: 8px 10px;
+  background: #262b3a; border-radius: 8px; cursor: pointer;
+  border: 1px solid transparent; transition: 0.15s; position: relative;
+}
+.char-card:hover, .char-card.active {
+  background: #30374a; border-color: #6366f1;
+}
+.char-card img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+.char-info { flex: 1; min-width: 0; }
+.char-info .name { font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.char-info .skin { font-size: 12px; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fav-badge { font-size: 13px; color: #fbbf24; }
+
+/* 桌寵模式懸浮控制條 */
+#pet-Floating-Bar {
+  display: none;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 18, 28, 0.9);
+  border: 1px solid #6366f1;
+  border-radius: 24px;
+  padding: 6px 14px;
+  gap: 10px;
+  align-items: center;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+#pet-Floating-Bar.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.pet-hint { font-size: 12px; color: #cbd5e1; }
+
+/* 右上角最愛與姿勢切換按鈕組 */
+.pose-switcher {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 20;
+}
+
+.fav-action-btn {
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: rgba(28, 32, 43, 0.88);
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+.fav-action-btn:hover {
+  background: #2e3548;
+  border-color: #fbbf24;
+  color: #fbbf24;
+}
+.fav-action-btn.favorited {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: #fbbf24;
+  color: #fde68a;
+  box-shadow: 0 0 12px rgba(251, 191, 36, 0.35);
+}
+
+.pose-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: rgba(28, 32, 43, 0.88);
+  border: 1px solid #3b4254;
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.pose-btn:hover:not(:disabled) {
+  background: #2e3548;
+  color: #ffffff;
+  border-color: #6366f1;
+  transform: translateX(-2px);
+}
+
+.pose-btn.active {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #ffffff;
+  border-color: #818cf8;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+}
+
+.pose-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}

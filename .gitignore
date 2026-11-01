@@ -1,0 +1,11 @@
+# 排除龐大的 Node.js 套件資料夾
+node_modules/
+dist/
+
+# 排除個人使用紀錄與本地路徑設定 (程式啟動時會自動生成預設檔)
+user_settings.json
+
+# 排除系統暫存檔
+.DS_Store
+Thumbs.db
+*.log
