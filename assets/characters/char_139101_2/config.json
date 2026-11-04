@@ -1,0 +1,600 @@
+{
+  "id": "139101",
+  "resourceId": 391,
+  "name": "愛因",
+  "skin": "手作慶典",
+  "spineVersion": "4.0",
+  "skel": "c391_01_00.skel",
+  "atlas": "c391_01_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "您叫我嗎？\n我忙著聽音樂，怎麼了？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "這件衣服怎麼樣？這可是我親手改良的喔。\n這樣我應該夠格向露舍提交申請了吧？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_03.mp3",
+      "text": "啊～真無聊。\n老師！有什麼有趣的事情嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "啊，我是不是買太多了？都沒有手可以拿了……\n老師，您能幫我拿一點嗎～？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_05.mp3",
+      "text": "說真的，老師身上穿的那件衣服\n有點土。尤其是顏色有點……\n要是再華麗一點，應該會更好看。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_06.mp3",
+      "text": "老師！來這邊～！\n這邊有好多有趣的東西！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_07.mp3",
+      "text": "老師平常都聽什麼歌？\n要不要和我分享歌單？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "這樣子跟老師在校外見面，心裡還真的有點緊張呢。\n……老師，您有這種感覺嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_09.mp3",
+      "text": "如果我將來成為露舍的專屬設計師，\n我會為老師做一套帥氣的衣服！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_10.mp3",
+      "text": "這樣一起閒逛，\n會不會讓別人覺得我跟老師是情侶呀？嘻嘻。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_11.mp3",
+      "text": "好想快點畢業，\n我也想稱呼老師為指揮官。\n那真是太棒了～！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_12.mp3",
+      "text": "等等我們一起合照吧！\n我要把它貼在宿舍裡～！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_13.mp3",
+      "text": "啊～好無聊～\n既然這樣，為什麼要叫我來啊，老師～！！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_14.mp3",
+      "text": "啊，老師您去哪裡了～！\n您再這樣的話，我要一個人去逛了喔！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_15.mp3",
+      "text": "老師，你把我一個人丟在這裡的話，\n等你回來就得陪我去KTV。不准拒絕。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_16.mp3",
+      "text": "妝補好了，髮型也弄好了～\n現在只要等老師回來就好了，嘻嘻。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_17",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_17.mp3",
+      "text": "這裡是不是太空了？\n可以多蓋點娛樂設施嘛，比如KTV之類的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_18.mp3",
+      "text": "慶典上有販售很多飾品耶。\n如果每天都辦慶典的話該有多好。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_19.mp3",
+      "text": "有大型購物中心確實不錯。\n去那裡是不是就能見到露菲姐姐呢～？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_20.mp3",
+      "text": "茨瓦伊前輩！您不覺得很興奮嗎？\n不管怎麼說，還是很可愛呢～",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_21.mp3",
+      "text": "呃，老師！有沒有見到學姐們？\n明明約好在這附近見面的……\n難道是我記錯了？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_22.mp3",
+      "text": "露菲姐姐沒有來慶典嗎……？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_23",
+      "category": "初次見面",
+      "audio": "voices/voice_23.mp3",
+      "text": "老師，好久不見！\n我真的好想念老師～！嘻嘻。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "初次見面",
+      "audio": "voices/voice_24.mp3",
+      "text": "老師～！新年快樂～！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_25.mp3",
+      "text": "噢耶～我可要向學姐們好好炫耀一番～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_26.mp3",
+      "text": "我要去打敗所有競爭對手啦～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_27.mp3",
+      "text": "這樣下去的話，\n我是不是能超過茨瓦伊學姐了？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_28.mp3",
+      "text": "這樣下去我要怎麼提前畢業啊？！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_29.mp3",
+      "text": "您對我太好了～謝謝！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_30.mp3",
+      "text": "老師，現在由我來保護您！\n……不覺得蠻帥的嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "禮物I",
+      "audio": "voices/voice_31.mp3",
+      "text": "噢耶！！老師最棒啦！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "禮物I",
+      "audio": "voices/voice_32.mp3",
+      "text": "啊！真是的！您不用給我這些！\n來慶典玩，我自己也有帶錢！啊～！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "禮物II",
+      "audio": "voices/voice_33.mp3",
+      "text": "哇，好喜歡這個禮物！謝謝老師！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "禮物II",
+      "audio": "voices/voice_34.mp3",
+      "text": "老師，您不用總是給我這麼好的東西～！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "禮物III",
+      "audio": "voices/voice_35.mp3",
+      "text": "下次要去露舍買禮物哦。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "禮物III",
+      "audio": "voices/voice_36.mp3",
+      "text": "哇！謝謝老師！我也要去買個適合老師的禮物。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "好感度提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "老師今天真的好帥哦。\n我是說真的～",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_38",
+      "category": "好感度提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "那您覺得我怎麼樣呢？快要到新年了，您不覺得我變成熟了嗎？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_39",
+      "category": "好感度提升II",
+      "audio": "voices/voice_39.mp3",
+      "text": "對了，老師能當我們班導嗎？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_40",
+      "category": "好感度提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "如果有人在慶典上跟您要電話，您就說自己沒有手機，記住了嗎？\n或者叫她去拿號碼牌排隊！",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_41",
+      "category": "好感度提升III",
+      "audio": "voices/voice_41.mp3",
+      "text": "老師，請耐心等我畢業哦，嘻嘻。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_42",
+      "category": "好感度提升III",
+      "audio": "voices/voice_42.mp3",
+      "text": "啊～我想天天都跟老師一起玩……",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_43",
+      "category": "編隊",
+      "audio": "voices/voice_43.mp3",
+      "text": "真的要帶我走嗎？真的？哇……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "編隊",
+      "audio": "voices/voice_44.mp3",
+      "text": "今天舉辦的是慶典嗎？不會是萊徹慶典吧？！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_45.mp3",
+      "text": "怎麼了？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_46.mp3",
+      "text": "好。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_47.mp3",
+      "text": "走吧走吧～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_48.mp3",
+      "text": "在路上～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_49.mp3",
+      "text": "既然做就要全力以赴。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_50.mp3",
+      "text": "就是你們毀了我的慶典！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_51.mp3",
+      "text": "等著爆頭吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_52.mp3",
+      "text": "速戰速決！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_53.mp3",
+      "text": "快解決掉吧～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_54.mp3",
+      "text": "都給我去死！可惡！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_55.mp3",
+      "text": "看我一展身手～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_56",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_56.mp3",
+      "text": "呃～！我受夠了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_57",
+      "category": "換彈I",
+      "audio": "voices/voice_57.mp3",
+      "text": "學以致用囉～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_58",
+      "category": "換彈I",
+      "audio": "voices/voice_58.mp3",
+      "text": "要學以致用～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_59",
+      "category": "換彈II",
+      "audio": "voices/voice_59.mp3",
+      "text": "換彈！帥不帥？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_60",
+      "category": "換彈II",
+      "audio": "voices/voice_60.mp3",
+      "text": "是這樣……嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_61",
+      "category": "換彈III",
+      "audio": "voices/voice_61.mp3",
+      "text": "等一下，老師！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_62",
+      "category": "換彈III",
+      "audio": "voices/voice_62.mp3",
+      "text": "正在裝彈～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_63",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_63.mp3",
+      "text": "怎麼這麼多！！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_64",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_64.mp3",
+      "text": "老師！選我！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "爆裂技能",
+      "audio": "voices/voice_65.mp3",
+      "text": "呼——看什麼看，滾吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "爆裂技能",
+      "audio": "voices/voice_66.mp3",
+      "text": "把我的慶典還給我！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "全爆裂",
+      "audio": "voices/voice_67.mp3",
+      "text": "都去死吧！！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "全爆裂",
+      "audio": "voices/voice_68.mp3",
+      "text": "一掃而空！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_69.mp3",
+      "text": "呼，被我解決了",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_70.mp3",
+      "text": "我還蠻厲害的嘛！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_71.mp3",
+      "text": "不堪一擊～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_72.mp3",
+      "text": "沒什麼大不了的～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_73.mp3",
+      "text": "解決一個！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_74.mp3",
+      "text": "別得寸進尺了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "被擊I",
+      "audio": "voices/voice_75.mp3",
+      "text": "哎呀！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "被擊I",
+      "audio": "voices/voice_76.mp3",
+      "text": "啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "被擊II",
+      "audio": "voices/voice_77.mp3",
+      "text": "好痛啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "被擊II",
+      "audio": "voices/voice_78.mp3",
+      "text": "喂！我的衣服～！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "被擊III",
+      "audio": "voices/voice_79.mp3",
+      "text": "呃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "被擊III",
+      "audio": "voices/voice_80.mp3",
+      "text": "嘶……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_81.mp3",
+      "text": "啊……啊，痛死了……\n老師，我要去保健室……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_82.mp3",
+      "text": "啊……老師……不要拋下我一個人去慶典……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_83.mp3",
+      "text": "老師看到了嗎？我是不是很厲害？！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_84.mp3",
+      "text": "我們現在可以去慶典了吧？！\n是正常的慶典！不是萊徹慶典！",
+      "animation": "idle"
+    }
+  ]
+}

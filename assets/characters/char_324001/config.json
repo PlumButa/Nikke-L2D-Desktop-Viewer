@@ -1,0 +1,306 @@
+{
+  "id": "324001",
+  "resourceId": 240,
+  "name": "魯瑪妮",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c240_00.skel",
+  "atlas": "c240_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "我得每天鍛鍊，\n否則肌肉量會下降。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_02.mp3",
+      "text": "您說您想鍛鍊？\n……應該不會是三分鐘熱度吧？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_03.mp3",
+      "text": "剛才做了身體檢測，\n不曉得有沒有變胖？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_04.mp3",
+      "text": "會員，我看您很有運動天分，\n要不要跟我一起當健身教練？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_05.mp3",
+      "text": "會員，您願意的話……\n今晚一起運動怎麼樣？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_06.mp3",
+      "text": "會員，您是第一個讓我覺得\n身體素質比我還好的人。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_07.mp3",
+      "text": "會員，我很忙的，您打算什麼時候來啊？\n遲到一次我就替您加一組重量喔。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "會員，我是因為想和您一起運動\n才來的，您在哪裡啊？\n您快來吧，您來之前我先做點重訓。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_09",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_09.mp3",
+      "text": "這裡沒有賣蛋白棒嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_10.mp3",
+      "text": "我經常待在體育館，\n有需要的話，可以隨時來體育館找我。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_11.mp3",
+      "text": "您有沒有看見富克旺和艾菲涅爾？\n我們約好今天要一起運動的，怎麼不見人影啊？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "初次見面",
+      "audio": "voices/voice_12.mp3",
+      "text": "我是魯瑪妮教練，今天由我負責帶您鍛鍊。\n您準備好跟我一起動起來了嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_13.mp3",
+      "text": "……哦，您的腹肌好像更明顯了一點。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_14.mp3",
+      "text": "您對我的身材還滿意嗎？\n不覺得我的身材曲線更完美了嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_15.mp3",
+      "text": "今天好像比較有力哦？\n不然趁這個機會來做全身鍛鍊好了……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "禮物I",
+      "audio": "voices/voice_16.mp3",
+      "text": "我也沒什麼準備……\n不然送您一張「Body x Body」健身中心的不限次數使用券好了？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_17",
+      "category": "禮物II",
+      "audio": "voices/voice_17.mp3",
+      "text": "這是送我的禮物嗎？謝謝您。\n……不過，您該不會是想逃避拍下每日飲食傳給我檢查的作業吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_18",
+      "category": "禮物III",
+      "audio": "voices/voice_18.mp3",
+      "text": "會員，只要您常來健身中心運動，\n對我來說，就是最好的禮物了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_19",
+      "category": "好感度提升I",
+      "audio": "voices/voice_19.mp3",
+      "text": "都怪您，我都沒辦法集中注意力運動了。\n我以前可從來不會這樣！",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_20",
+      "category": "好感度提升II",
+      "audio": "voices/voice_20.mp3",
+      "text": "……會員，您越來越符合我的理想型了，\n不管身材還是肌肉都是！",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_21",
+      "category": "好感度提升III",
+      "audio": "voices/voice_21.mp3",
+      "text": "會員，今天晚上要不要跟我一起吃飯？\n我們去吃點好吃的，不吃健身餐了。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_22",
+      "category": "編隊",
+      "audio": "voices/voice_22.mp3",
+      "text": "需要我帶您鍛鍊嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_23",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_23.mp3",
+      "text": "您在叫我嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_24.mp3",
+      "text": "會員，來弓箭步前進吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_25.mp3",
+      "text": "這次的戰鬥……要不要試試看深蹲姿勢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_26.mp3",
+      "text": "結束後就去運動吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_27.mp3",
+      "text": "萊徹的肌肉……不對不對。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_28.mp3",
+      "text": "哎呀，都沒時間運動了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "換彈I",
+      "audio": "voices/voice_29.mp3",
+      "text": "裝彈！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "換彈II",
+      "audio": "voices/voice_30.mp3",
+      "text": "我的手臂肌肉很厲害吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "換彈III",
+      "audio": "voices/voice_31.mp3",
+      "text": "正在裝彈。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_32.mp3",
+      "text": "會員，這樣就夠了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "爆裂技能",
+      "audio": "voices/voice_33.mp3",
+      "text": "今日運動量達標！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "全爆裂",
+      "audio": "voices/voice_34.mp3",
+      "text": "LIGHT WEIGHT BABY!",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_35.mp3",
+      "text": "上肢運動完成。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_36.mp3",
+      "text": "開始下肢運動。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_37.mp3",
+      "text": "再來一組！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "被擊I",
+      "audio": "voices/voice_38.mp3",
+      "text": "呃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "被擊II",
+      "audio": "voices/voice_39.mp3",
+      "text": "啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "被擊III",
+      "audio": "voices/voice_40.mp3",
+      "text": "呃啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_41.mp3",
+      "text": "我的肌肉量好像下降了……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_42.mp3",
+      "text": "呼，終於勝利了。\n啊，對了！會員，別忘了做伸展哦。",
+      "animation": "idle"
+    }
+  ]
+}

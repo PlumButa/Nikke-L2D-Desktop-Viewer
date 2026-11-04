@@ -1,0 +1,894 @@
+{
+  "id": "451101",
+  "resourceId": 511,
+  "name": "灰姑娘",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c511_00.skel",
+  "atlas": "c511_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "怎麼了？你有什麼話要說嗎？\n我現在很忙，要照鏡子了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "現在的我……太美了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_03.mp3",
+      "text": "你看看這裡的荷葉邊。\n輕飄飄的部分可是亮點。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "這裡的鏡子有點太少了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_05.mp3",
+      "text": "閃閃發光的水晶中，閃閃發光的我。\n……我很滿足。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_06.mp3",
+      "text": "雖然我是第一次穿女僕裝，\n但穿起來舒服又漂亮，我很喜歡。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_07.mp3",
+      "text": "今天也很美呢，我喜歡。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_08.mp3",
+      "text": "王子殿下，你願意為我穿上水晶鞋嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_09.mp3",
+      "text": "到底怎麼可以這麼美呢。\n我很喜歡。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_10.mp3",
+      "text": "王子殿下，無論如何都要保持現在的樣子。\n如果美麗不再的話，觀眾可是會流失的喔。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_11.mp3",
+      "text": "有王子殿下在身邊，\n我現在一定是最璀璨、最耀眼的那個人。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_12.mp3",
+      "text": "讓我來提供專屬於主人的特別服務。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_13.mp3",
+      "text": "謝謝你喚醒我，\n多虧了你，我們現在可以重新譜寫一段故事了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_14.mp3",
+      "text": "我的王子殿下，\n我一定要成為王子殿下眼中最耀眼的那個人。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_15.mp3",
+      "text": "王子……不對，主人？\n可不可以幫我綁一下後面的蝴蝶結？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_16.mp3",
+      "text": "王子殿下，請守護好我們重新譜寫的故事，\n它一定是很美很美的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_17",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_17.mp3",
+      "text": "我一定會變得更漂亮的。\n因為我要穿上水晶鞋，一直向前走。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_18.mp3",
+      "text": "主人，我聽說你喜歡女僕裝。\n怎麼樣，喜歡嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_19.mp3",
+      "text": "這樣棄我不顧，可就不美了喔，\n有什麼事就快說吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_20.mp3",
+      "text": "王子殿下，你能在12點前回來嗎？\n別讓我等太久。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_21.mp3",
+      "text": "主人不在的時候，女僕要做什麼呢？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_22.mp3",
+      "text": "王子殿下也很美呢，\n果然，美麗的東西就得待在同一個地方。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_23",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_23.mp3",
+      "text": "王子殿下，就算過了12點，我也會繼續發光的。\n因為我有王子殿下送的水晶鞋。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_24",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_24.mp3",
+      "text": "趁主人不在的這段時間，我先準備一份蛋包飯吧。\n畢竟不知道主人回來之後會不會肚子餓。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_25",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_25.mp3",
+      "text": "這裡很美，我很喜歡，\n如果能再多擺幾面鏡子就更好了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_26",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_26.mp3",
+      "text": "好想看看此刻的我究竟有多美麗。\n我該去哪裡照鏡子？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_27",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_27.mp3",
+      "text": "我也好想去那個叫做「女僕咖啡廳」的地方看看。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_28",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_28.mp3",
+      "text": "把這些建築都重建成鏡子，怎麼樣？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_29",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_29.mp3",
+      "text": "原來這裡便是王子殿下的宮殿。\n那麼，我應該住在哪裡？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_30",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_30.mp3",
+      "text": "主人，你能不能也教教我做飲料的方法？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_31",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_31.mp3",
+      "text": "走在這裡的我，實在是太美了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_32",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_32.mp3",
+      "text": "王子殿下。\n麻煩你護送我前往一個能配得上如今的我的地方。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_33",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_33.mp3",
+      "text": "我聽說女僕裝也有好幾種款式，\n讓我看看吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_34",
+      "category": "初次見面",
+      "audio": "voices/voice_34.mp3",
+      "text": "王子殿下，你覺得誰是這個世界上最美麗的人？\n你不用回答，我早就知道是誰了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "初次見面",
+      "audio": "voices/voice_35.mp3",
+      "text": "我的王子殿下。\n我要穿上璀璨閃耀的水晶鞋，去迎接王子殿下。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "初次見面",
+      "audio": "voices/voice_36.mp3",
+      "text": "今天就不叫王子殿下，改叫主人吧。\n你回來了，主人？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "好像變得更美了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "啊啊……變美麗了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_39.mp3",
+      "text": "原來也有這種食譜啊？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "水晶鞋變乾淨了，真美。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_41.mp3",
+      "text": "為了無比絢爛的我。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_42.mp3",
+      "text": "我現在更會做蛋包飯了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_43",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_43.mp3",
+      "text": "身體變輕了，我們現在就出去吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_44.mp3",
+      "text": "辛苦了，王子殿下。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_45.mp3",
+      "text": "怎麼樣？現在已經非常有女僕的樣子了吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "禮物I",
+      "audio": "voices/voice_46.mp3",
+      "text": "謝謝你，如果有鏡子就更好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "禮物I",
+      "audio": "voices/voice_47.mp3",
+      "text": "果然，對我而言，王子殿下的禮物就是最美的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "禮物I",
+      "audio": "voices/voice_48.mp3",
+      "text": "這個也是服務之一嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "禮物II",
+      "audio": "voices/voice_49.mp3",
+      "text": "你好厲害，找到了這麼適合我的東西。\n不過話說回來……也沒有什麼東西是不適合我的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "禮物II",
+      "audio": "voices/voice_50.mp3",
+      "text": "謝謝你，王子殿下。我覺得自己好像變得更美了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "禮物II",
+      "audio": "voices/voice_51.mp3",
+      "text": "收到主人送的禮物，感覺還真新鮮。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "禮物III",
+      "audio": "voices/voice_52.mp3",
+      "text": "這件禮物很美麗，我會好好珍惜的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "禮物III",
+      "audio": "voices/voice_53.mp3",
+      "text": "……無論何時去看，王子殿下的禮物都是如此璀璨而閃耀。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "禮物III",
+      "audio": "voices/voice_54.mp3",
+      "text": "這是我一直想要的東西……\n因為是主人送的感覺更高興了。謝謝。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "好感度提升I",
+      "audio": "voices/voice_55.mp3",
+      "text": "王子殿下越來越美麗了，\n你要不要來照照鏡子？看看自己到底有多美。",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_56",
+      "category": "好感度提升I",
+      "audio": "voices/voice_56.mp3",
+      "text": "彷彿中了邪惡的咒語……\n最近我心心念念的只有王子殿下一個人而已。",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_57",
+      "category": "好感度提升I",
+      "audio": "voices/voice_57.mp3",
+      "text": "我喜歡主人溫柔的一面。",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_58",
+      "category": "好感度提升II",
+      "audio": "voices/voice_58.mp3",
+      "text": "我們跟王子殿下之間的故事，一定也是很美的吧？",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_59",
+      "category": "好感度提升II",
+      "audio": "voices/voice_59.mp3",
+      "text": "希望我能成為王子殿下眼中最耀眼的那個人。",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_60",
+      "category": "好感度提升II",
+      "audio": "voices/voice_60.mp3",
+      "text": "最近滿腦子都是主人，這下可傷腦筋了。",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_61",
+      "category": "好感度提升III",
+      "audio": "voices/voice_61.mp3",
+      "text": "我好像有點懂了，\n耀眼的美……是什麼樣的感覺。",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_62",
+      "category": "好感度提升III",
+      "audio": "voices/voice_62.mp3",
+      "text": "奇怪……最近王子殿下看起來又更光彩奪目了。",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_63",
+      "category": "好感度提升III",
+      "audio": "voices/voice_63.mp3",
+      "text": "你到底打算讓我為你著迷到什麼地步？",
+      "animation": "smile"
+    },
+    {
+      "id": "voice_64",
+      "category": "編隊",
+      "audio": "voices/voice_64.mp3",
+      "text": "我跟你一起去。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "編隊",
+      "audio": "voices/voice_65.mp3",
+      "text": "如果是王子殿下的請求，我樂意陪伴你。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "編隊",
+      "audio": "voices/voice_66.mp3",
+      "text": "需要服務嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_67.mp3",
+      "text": "你剛剛是在叫我嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_68.mp3",
+      "text": "我在聽。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_69.mp3",
+      "text": "你叫我嗎，主人？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_70.mp3",
+      "text": "走得這麼匆忙就不美了，\n我要走慢一點。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_71.mp3",
+      "text": "美麗地前進吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_72.mp3",
+      "text": "我到你那邊去。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_73.mp3",
+      "text": "我們的敵人——人類的敵人，\n我一定會打敗你的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_74.mp3",
+      "text": "礙事之徒來了啊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_75.mp3",
+      "text": "別擔心，馬上就會結束了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_76.mp3",
+      "text": "以美麗之名，開始吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_77.mp3",
+      "text": "我絕不原諒你妨礙舞會的行為。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_78.mp3",
+      "text": "讓你見識一下女僕美麗又活躍的一面。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_79.mp3",
+      "text": "我的觀眾們，請拭目以待吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_80.mp3",
+      "text": "十二點到來之前，我會盡快準備好的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_81.mp3",
+      "text": "都交給我吧，主人。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_82.mp3",
+      "text": "我會俐落又美麗地完成任務的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_83.mp3",
+      "text": "不美麗的東西……太多了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_84.mp3",
+      "text": "我會在蛋包飯冷掉之前結束的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_85",
+      "category": "換彈I",
+      "audio": "voices/voice_85.mp3",
+      "text": "等一下，我先照照鏡子。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_86",
+      "category": "換彈I",
+      "audio": "voices/voice_86.mp3",
+      "text": "請稍等……我去擦一下水晶鞋。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_87",
+      "category": "換彈I",
+      "audio": "voices/voice_87.mp3",
+      "text": "裙子皺掉了，等一下。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_88",
+      "category": "換彈II",
+      "audio": "voices/voice_88.mp3",
+      "text": "臉上沾到泥土了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_89",
+      "category": "換彈II",
+      "audio": "voices/voice_89.mp3",
+      "text": "別擔心，美麗是不會被摧毀的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_90",
+      "category": "換彈II",
+      "audio": "voices/voice_90.mp3",
+      "text": "我，美嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_91",
+      "category": "換彈III",
+      "audio": "voices/voice_91.mp3",
+      "text": "準備中的我，也同樣美麗。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_92",
+      "category": "換彈III",
+      "audio": "voices/voice_92.mp3",
+      "text": "放心，王子殿下。我會守護你。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_93",
+      "category": "換彈III",
+      "audio": "voices/voice_93.mp3",
+      "text": "希望不會留下污漬。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_94",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_94.mp3",
+      "text": "王子殿下，就是現在。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_95",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_95.mp3",
+      "text": "王子殿下，我準備好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_96",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_96.mp3",
+      "text": "到了服務的時間了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_97",
+      "category": "爆裂技能",
+      "audio": "voices/voice_97.mp3",
+      "text": "水晶鞋．完全連接。來吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_98",
+      "category": "爆裂技能",
+      "audio": "voices/voice_98.mp3",
+      "text": "閃耀吧，為了我的燦爛與輝煌。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_99",
+      "category": "爆裂技能",
+      "audio": "voices/voice_99.mp3",
+      "text": "主人，你一直在盯著哪裡看呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_100",
+      "category": "全爆裂",
+      "audio": "voices/voice_100.mp3",
+      "text": "即將進入最美麗的時刻。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_101",
+      "category": "全爆裂",
+      "audio": "voices/voice_101.mp3",
+      "text": "用盡全力變得美麗吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_102",
+      "category": "全爆裂",
+      "audio": "voices/voice_102.mp3",
+      "text": "我會全力以赴，主人。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_103",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_103.mp3",
+      "text": "全都處理掉了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_104",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_104.mp3",
+      "text": "下一個。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_105",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_105.mp3",
+      "text": "別弄髒了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_106",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_106.mp3",
+      "text": "還有？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_107",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_107.mp3",
+      "text": "消失吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_108",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_108.mp3",
+      "text": "處理完畢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_109",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_109.mp3",
+      "text": "太過分了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_110",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_110.mp3",
+      "text": "你妨礙到我了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_111",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_111.mp3",
+      "text": "走開。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_112",
+      "category": "被擊I",
+      "audio": "voices/voice_112.mp3",
+      "text": "唔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_113",
+      "category": "被擊I",
+      "audio": "voices/voice_113.mp3",
+      "text": "唔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_114",
+      "category": "被擊I",
+      "audio": "voices/voice_114.mp3",
+      "text": "可惡……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_115",
+      "category": "被擊II",
+      "audio": "voices/voice_115.mp3",
+      "text": "煩死了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_116",
+      "category": "被擊II",
+      "audio": "voices/voice_116.mp3",
+      "text": "呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_117",
+      "category": "被擊II",
+      "audio": "voices/voice_117.mp3",
+      "text": "呼。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_118",
+      "category": "被擊III",
+      "audio": "voices/voice_118.mp3",
+      "text": "呃……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_119",
+      "category": "被擊III",
+      "audio": "voices/voice_119.mp3",
+      "text": "呼……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_120",
+      "category": "被擊III",
+      "audio": "voices/voice_120.mp3",
+      "text": "呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_121",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_121.mp3",
+      "text": "這樣的故事，一點都不美麗。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_122",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_122.mp3",
+      "text": "不行……不能就這樣讓故事結束……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_123",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_123.mp3",
+      "text": "看來我還需要更多的練習，對不起，主人。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_124",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_124.mp3",
+      "text": "這是個美麗的故事，我很滿意。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_125",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_125.mp3",
+      "text": "怎麼樣？王子殿下。現在的我美嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_126",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_126.mp3",
+      "text": "主人，你滿意嗎？\n我下次會做得更好的。",
+      "animation": "idle"
+    }
+  ]
+}

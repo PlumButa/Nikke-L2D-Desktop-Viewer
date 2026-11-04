@@ -1,0 +1,306 @@
+{
+  "id": "136101",
+  "resourceId": 361,
+  "name": "吉洛",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c361_00.skel",
+  "atlas": "c361_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "有什麼需要的請儘管說。\n我立刻去辦……！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_02.mp3",
+      "text": "嗯……這次要幫塔洛斯新增什麼功能呢？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_03.mp3",
+      "text": "什麼？想乘坐塔洛斯？\n可是……塔洛斯只有我能乘坐……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_04.mp3",
+      "text": "我和塔洛斯在一起很久了。\n我們是最要好的同伴……朋友才對！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_05.mp3",
+      "text": "你想知道我在裡面會不會不舒服？\n完全不會。我反而非常自在，因為這是我專屬的地方。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_06.mp3",
+      "text": "塔洛斯不僅善戰，\n還能輕鬆製作所需的東西。\n簡直是無所不能。\n真的！很酷對不對？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_07.mp3",
+      "text": "呃……我……是我太無趣了嗎……？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "你、你什麼時候會回來？\n我跟塔洛斯邊玩接龍邊等你吧……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_09.mp3",
+      "text": "作坊？軍火庫？要去哪裡維修塔洛斯呢？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_10.mp3",
+      "text": "借過，借過……！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_11.mp3",
+      "text": "違、違規停車？啊……對、對不起擋住路了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "初次見面",
+      "audio": "voices/voice_12.mp3",
+      "text": "我、我是隸屬於克重部隊的吉洛。\n「塔洛斯。已加入隊伍。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_13.mp3",
+      "text": "塔洛斯，維修完了喔。感覺怎麼樣？\n「狀態，最佳。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_14.mp3",
+      "text": "「吉洛，你變強了，真為你驕傲。」\n還差得遠呢。我要變得更強。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_15.mp3",
+      "text": "我、我會更努力，盡力幫到大家。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "禮物I",
+      "audio": "voices/voice_16.mp3",
+      "text": "呼……呼……冷靜，要冷靜。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_17",
+      "category": "禮物II",
+      "audio": "voices/voice_17.mp3",
+      "text": "謝、謝謝。我一定會好好珍惜的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_18",
+      "category": "禮物III",
+      "audio": "voices/voice_18.mp3",
+      "text": "「吉洛，那個禮物也要放在駕駛艙嗎？\n那裡已經堆滿了指揮官送的禮物，快沒地方放了……」\n等、等一下。塔洛斯，這種話就別說出來了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_19",
+      "category": "好感度提升I",
+      "audio": "voices/voice_19.mp3",
+      "text": "我不會忘記和指揮官在一起的每一分每一秒……！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "好感度提升II",
+      "audio": "voices/voice_20.mp3",
+      "text": "我在指揮官旁就會充滿力量。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "好感度提升III",
+      "audio": "voices/voice_21.mp3",
+      "text": "謝謝你一直相信我。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "編隊",
+      "audio": "voices/voice_22.mp3",
+      "text": "喚醒，塔洛斯。\n「重啟完畢。你好，吉洛！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_23",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_23.mp3",
+      "text": "我？你在說我嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_24.mp3",
+      "text": "「確認命令。正在確認路徑。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_25.mp3",
+      "text": "勝率呢？\n「非常高。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_26.mp3",
+      "text": "好。走吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_27.mp3",
+      "text": "請、請大家多多指教。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_28.mp3",
+      "text": "「戰鬥開始。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "換彈I",
+      "audio": "voices/voice_29.mp3",
+      "text": "塔洛斯，進行自我修復。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "換彈II",
+      "audio": "voices/voice_30.mp3",
+      "text": "要冷靜～冷靜～",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "換彈III",
+      "audio": "voices/voice_31.mp3",
+      "text": "「換彈。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_32.mp3",
+      "text": "「吉洛，準備完畢。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "爆裂技能",
+      "audio": "voices/voice_33.mp3",
+      "text": "塔洛斯，出發！\n「收到。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "全爆裂",
+      "audio": "voices/voice_34.mp3",
+      "text": "集中火力！發射！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_35.mp3",
+      "text": "成、成功了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_36.mp3",
+      "text": "原來這也沒什麼嘛。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_37.mp3",
+      "text": "「確認擊落。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "被擊I",
+      "audio": "voices/voice_38.mp3",
+      "text": "呃……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "被擊II",
+      "audio": "voices/voice_39.mp3",
+      "text": "塔洛斯，你沒事吧？！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "被擊III",
+      "audio": "voices/voice_40.mp3",
+      "text": "「外部裝甲受損。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_41.mp3",
+      "text": "「測試失敗。」\n抱、抱歉。我的表現不夠好……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_42.mp3",
+      "text": "「戰鬥結束。獲勝。」\n塔洛斯，辛苦了！",
+      "animation": "idle"
+    }
+  ]
+}

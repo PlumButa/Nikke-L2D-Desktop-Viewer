@@ -1,0 +1,600 @@
+{
+  "id": "258001",
+  "resourceId": 580,
+  "name": "潘托姆",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c580_00.skel",
+  "atlas": "c580_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "你叫我嗎？你別看我這樣，\n我可是個圖書管理員呢。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "就算成了審判怪盜，我也不打算因此疏忽原本的活動。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_03.mp3",
+      "text": "若是收到了我的預告信，\n便回想一下平時的所作所為吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "我打算撰寫一本\n自傳兼怪盜活動指南。\n你願意幫我嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_05.mp3",
+      "text": "我正在練習寫預告信。\n……你不覺得我這樣很帥嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_06.mp3",
+      "text": "這個嘛，這是一套以覺醒版本為概念設計的服裝。為了正義奮鬥一生，最後一刻再和夥伴們合力……\n……你有在聽嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_07.mp3",
+      "text": "真是的，原本是來奪走你的心，\n沒想到我的心反而被你奪走了……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "正義之路沒有盡頭。\n如果你願意陪我一起走下去，我會很高興。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_09.mp3",
+      "text": "我成為怪盜的初心，\n就是要把被搶走的東西物歸原主。\n從這一點來看，你不覺得\n我們之間有很多相似的地方嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_10.mp3",
+      "text": "不只我，看到你也以怪盜的身分有所成長，我感到很欣慰。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_11.mp3",
+      "text": "被美麗的東西所誘惑，\n這就是我身為怪盜的宿命。\n也因此，你才會如此耀眼吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_12.mp3",
+      "text": "你不用擔心我對你的心意會改變。\n雖然我成了審判怪盜，但我的本質並沒有變。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_13.mp3",
+      "text": "怪盜就在你眼前，你卻離開了……\n那等你發現什麼東西不見了，\n到時候可別怪我。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_14.mp3",
+      "text": "審判怪盜團……呵呵……\n連我自己都覺得，\n這名字取得真好……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_15.mp3",
+      "text": "你放心吧，除了你的心，\n這裡的東西我一樣都不會碰。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_16.mp3",
+      "text": "嗯。對正義和怪盜來說，休息時間都很重要。\n我會陪在你身邊，你就放心休息吧。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_17",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_17.mp3",
+      "text": "你來圖書館的話，\n我會推薦很多好書給你。\n比如……《怪盜的眼淚》之類的……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_18.mp3",
+      "text": "呵呵……大家的目光都離不開我呢。\n身為怪盜是有點可惜，但從正義的角度來看，這很值得。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_19.mp3",
+      "text": "你若是遇見了壞人，請告訴我。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_20.mp3",
+      "text": "前哨基地是個和平的地方。\n這一定都是你的功勞吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_21.mp3",
+      "text": "前哨基地建築物之間的距離很近，\n非常適合怪盜活動。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_22.mp3",
+      "text": "我想招募怪盜團的新成員。\n你覺得怎麼樣？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_23",
+      "category": "初次見面",
+      "audio": "voices/voice_23.mp3",
+      "text": "今晚，我要去取走你珍貴的心。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "初次見面",
+      "audio": "voices/voice_24.mp3",
+      "text": "神聖怪盜潘托姆，為了審判邪惡，就此登場！\n……順帶一提，不是比賽裁判的那種審判。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_25.mp3",
+      "text": "感覺身體更輕盈、更方便活動了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_26.mp3",
+      "text": "我變得更有正義感了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_27.mp3",
+      "text": "謝謝你。我會用這份力量為你效勞的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_28.mp3",
+      "text": "這是用來審判邪惡的神聖力量。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_29.mp3",
+      "text": "我今天正好有要去的地方，太好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_30.mp3",
+      "text": "這份力量，我一定會用在大義之上。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "禮物I",
+      "audio": "voices/voice_31.mp3",
+      "text": "你竟然送我這麼貴重的東西……謝謝。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "禮物I",
+      "audio": "voices/voice_32.mp3",
+      "text": "請期待我的回報吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "禮物II",
+      "audio": "voices/voice_33.mp3",
+      "text": "該不會是你偷來的吧？\n呵呵，我開玩笑的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "禮物II",
+      "audio": "voices/voice_34.mp3",
+      "text": "這東西就算是怪盜也很難取得呢。我會好好珍惜。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "禮物III",
+      "audio": "voices/voice_35.mp3",
+      "text": "我會好好保管，不會弄丟的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "禮物III",
+      "audio": "voices/voice_36.mp3",
+      "text": "謝謝你。我真的很高興。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "好感度提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "我想與你一同在夜空中穿梭。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_38",
+      "category": "好感度提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "我們之間的羈絆又加深了呢。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_39",
+      "category": "好感度提升II",
+      "audio": "voices/voice_39.mp3",
+      "text": "原來心被人偷走，是這種感覺啊。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_40",
+      "category": "好感度提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "你我的心已經合而為一了。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_41",
+      "category": "好感度提升III",
+      "audio": "voices/voice_41.mp3",
+      "text": "今天我就不寫預告信了，\n我要寫封情書給你。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_42",
+      "category": "好感度提升III",
+      "audio": "voices/voice_42.mp3",
+      "text": "我想繼續和你一起走下去。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_43",
+      "category": "編隊",
+      "audio": "voices/voice_43.mp3",
+      "text": "我將與你同在。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "編隊",
+      "audio": "voices/voice_44.mp3",
+      "text": "我準備好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_45.mp3",
+      "text": "你叫我嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_46.mp3",
+      "text": "我正在聽。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_47.mp3",
+      "text": "我這就前往那裡。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_48.mp3",
+      "text": "我知道了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_49.mp3",
+      "text": "看來這裡就是我預告信指的地點。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_50.mp3",
+      "text": "以正義之名，我絕不原諒他們！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_51.mp3",
+      "text": "我要懲罰邪惡之徒。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_52.mp3",
+      "text": "預告信已經送出去了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_53.mp3",
+      "text": "我會在太陽升起之前收拾乾淨的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_54.mp3",
+      "text": "向蔓延的邪惡降下審判！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_55.mp3",
+      "text": "看來要偷的東西很多啊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_56",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_56.mp3",
+      "text": "請期待我的帥氣表現吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_57",
+      "category": "換彈I",
+      "audio": "voices/voice_57.mp3",
+      "text": "我要換彈了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_58",
+      "category": "換彈I",
+      "audio": "voices/voice_58.mp3",
+      "text": "我要重新裝填了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_59",
+      "category": "換彈II",
+      "audio": "voices/voice_59.mp3",
+      "text": "還有很多要偷的東西啊，好！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_60",
+      "category": "換彈II",
+      "audio": "voices/voice_60.mp3",
+      "text": "還沒結束。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_61",
+      "category": "換彈III",
+      "audio": "voices/voice_61.mp3",
+      "text": "我在等待黑夜的降臨。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_62",
+      "category": "換彈III",
+      "audio": "voices/voice_62.mp3",
+      "text": "邪惡還真是沒完沒了啊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_63",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_63.mp3",
+      "text": "時間到了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_64",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_64.mp3",
+      "text": "時候到了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "爆裂技能",
+      "audio": "voices/voice_65.mp3",
+      "text": "怪盜潘托姆今晚會去找你的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "爆裂技能",
+      "audio": "voices/voice_66.mp3",
+      "text": "請允許我今天\n也以怪盜之名行俠仗義。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "全爆裂",
+      "audio": "voices/voice_67.mp3",
+      "text": "黑暗將掩護我們！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "全爆裂",
+      "audio": "voices/voice_68.mp3",
+      "text": "審判的時刻到了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_69.mp3",
+      "text": "這邊都被我偷光了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_70.mp3",
+      "text": "以正義之名！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_71.mp3",
+      "text": "接下來是哪裡？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_72.mp3",
+      "text": "接受審判吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_73.mp3",
+      "text": "沒其他值得拿的了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_74.mp3",
+      "text": "呵呵。剛才那一下還挺帥的嘛。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "被擊I",
+      "audio": "voices/voice_75.mp3",
+      "text": "咳……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "被擊I",
+      "audio": "voices/voice_76.mp3",
+      "text": "唔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "被擊II",
+      "audio": "voices/voice_77.mp3",
+      "text": "我錯了……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "被擊II",
+      "audio": "voices/voice_78.mp3",
+      "text": "想得美……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "被擊III",
+      "audio": "voices/voice_79.mp3",
+      "text": "呃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "被擊III",
+      "audio": "voices/voice_80.mp3",
+      "text": "呃……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_81.mp3",
+      "text": "對不起……明晚……我會再來的……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_82.mp3",
+      "text": "唔……正義是不會倒下的……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_83.mp3",
+      "text": "怪盜潘托姆，如約帶來了勝利。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_84.mp3",
+      "text": "呵呵。正義終究會勝利。",
+      "animation": "idle"
+    }
+  ]
+}

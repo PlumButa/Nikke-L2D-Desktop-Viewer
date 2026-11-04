@@ -1,0 +1,600 @@
+{
+  "id": "327201",
+  "resourceId": 272,
+  "name": "露姬",
+  "skin": "倒楣兔",
+  "spineVersion": "4.0",
+  "skel": "c272_01_00.skel",
+  "atlas": "c272_01_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "有句話說，運氣也是實力。\n親愛的玩家，您要不要試試看自己的運氣呢？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "……我沒關係。\n因為這是象徵幸運的……服裝。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_03.mp3",
+      "text": "擲硬幣，呃……算是一種習慣吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "雖然比不上布蘭兒和諾亞爾，\n但只要能為大家帶來\n多一點點幸運……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_05.mp3",
+      "text": "今天您想玩什麼遊戲？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_06.mp3",
+      "text": "無法專注於遊戲嗎？\n我、我不太明白您的意思……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_07.mp3",
+      "text": "硬幣正面朝上。\n是因為親愛的玩家跟我在一起嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "您這樣看著我……是很喜歡嗎？\n……呵呵，看來穿這身幸運的衣服\n還是很值得的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_09.mp3",
+      "text": "拜託，一定要正面……正面……正面……呼，真的是正面！\n哎呀，我是不是太沉迷了？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_10.mp3",
+      "text": "讓我成為親愛的玩家\n您專屬的幸運兔子吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_11.mp3",
+      "text": "現在就算硬幣擲到背面，我也不會像以前那麼害怕了。\n親愛的玩家，謝謝您。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_12.mp3",
+      "text": "現在，請先專注在遊戲上。\n想看的話…… \n晚一點可以盡情看個夠。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_13.mp3",
+      "text": "……是正面。代表親愛的玩家馬上就要來了。\n我們再等一下。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_14.mp3",
+      "text": "……這件衣服\n需要注意的地方太多了。\n應、應該沒有哪裡走光了吧……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_15.mp3",
+      "text": "……我好像中了魔咒，\n見不到您就會感到不安。\n所以，請快點回來。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_16.mp3",
+      "text": "……您好像很忙的樣子。\n那我就安靜地待在旁邊\n幫您補充一點好運吧。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_17",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_17.mp3",
+      "text": "這個地方好像沒什麼好玩的。\n無聊的時候，請來金幣之戰。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_18.mp3",
+      "text": "穿成這樣出來宣傳，到底對不對呢……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_19.mp3",
+      "text": "這是個好地方。\n要不要在這裡也建一個遊戲中心？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_20.mp3",
+      "text": "啊，親愛的玩家。\n太好了，我一個人的話真的有點不安。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_21.mp3",
+      "text": "親愛的玩家，您想跟我玩一把嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_22.mp3",
+      "text": "金、金幣之戰的活動……請大家熱情參與……\n唉……換件衣服再來吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_23",
+      "category": "初次見面",
+      "audio": "voices/voice_23.mp3",
+      "text": "我叫露姬，是遊戲荷官。\n想跟我玩一把嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "初次見面",
+      "audio": "voices/voice_24.mp3",
+      "text": "您好，親愛的玩家。今天也來玩遊戲——\n……別在意我的衣服。這只是幸運的服裝罷了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_25.mp3",
+      "text": "我覺得自己運氣變好了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_26.mp3",
+      "text": "呵呵，運氣會不會變得更好呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_27.mp3",
+      "text": "可以玩更有趣的遊戲了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_28.mp3",
+      "text": "這份幸運，我會獻給親愛的玩家。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_29.mp3",
+      "text": "今天沒人能在金幣之戰戰勝我。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_30.mp3",
+      "text": "我現在變得有多強……\n讓我們來玩一場測試看看，怎麼樣？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "禮物I",
+      "audio": "voices/voice_31.mp3",
+      "text": "親愛的玩家，非常感謝您。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "禮物I",
+      "audio": "voices/voice_32.mp3",
+      "text": "總是很感謝您呢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "禮物II",
+      "audio": "voices/voice_33.mp3",
+      "text": "難怪我今天運氣這麼好……\n親愛的玩家，我收下啦！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "禮物II",
+      "audio": "voices/voice_34.mp3",
+      "text": "親愛的玩家給的幸運，我已經好好收下了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "禮物III",
+      "audio": "voices/voice_35.mp3",
+      "text": "我會用更有趣的遊戲來報答您的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "禮物III",
+      "audio": "voices/voice_36.mp3",
+      "text": "我會回報您更大的幸運。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "好感度提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "祝您吉星高照，親愛的玩家。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_38",
+      "category": "好感度提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "您願意成為我的幸運吉祥物嗎？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_39",
+      "category": "好感度提升II",
+      "audio": "voices/voice_39.mp3",
+      "text": "我好像中了魔咒，\n一見到您就會感到幸福。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_40",
+      "category": "好感度提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "遇見親愛的玩家是我最大的幸運。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_41",
+      "category": "好感度提升III",
+      "audio": "voices/voice_41.mp3",
+      "text": "據說有只限兩人參與的遊戲……\n親愛的玩家，您有興趣嗎？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_42",
+      "category": "好感度提升III",
+      "audio": "voices/voice_42.mp3",
+      "text": "互相給予幸運的關係。\n……嗯，我非常開心我們能成為這樣的關係。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_43",
+      "category": "編隊",
+      "audio": "voices/voice_43.mp3",
+      "text": "我會成為您手上最好的牌。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "編隊",
+      "audio": "voices/voice_44.mp3",
+      "text": "敬請期待。\n親愛的玩家的幸運兔子將帶來活躍的表現。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_45.mp3",
+      "text": "遊戲準備好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_46.mp3",
+      "text": "必須多加小心才行，畢竟穿的是這身衣服……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_47.mp3",
+      "text": "我要先邁右腳。\n……這只是我的小小魔咒，\n請不要放在心上。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_48.mp3",
+      "text": "……我、我稍微走慢一點。\n如果不謹慎些……會「掉」下去……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_49.mp3",
+      "text": "到了擲硬幣的時間了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_50.mp3",
+      "text": "雖然有點難為情，\n但穿了這身衣服，幸運就會同行。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_51.mp3",
+      "text": "讓您見識一下最強技術。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_52.mp3",
+      "text": "幸運的兔子陪您一起戰鬥。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_53.mp3",
+      "text": "開始遊戲吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_54.mp3",
+      "text": "要多加注意，避免衣服破掉。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_55.mp3",
+      "text": "讓我們好好玩一把。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_56",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_56.mp3",
+      "text": "……可、可以請您稍微看向別的地方嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_57",
+      "category": "換彈I",
+      "audio": "voices/voice_57.mp3",
+      "text": "請帶給我好運……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_58",
+      "category": "換彈I",
+      "audio": "voices/voice_58.mp3",
+      "text": "！！貼、貼紙差點掉了……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_59",
+      "category": "換彈II",
+      "audio": "voices/voice_59.mp3",
+      "text": "我要換彈了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_60",
+      "category": "換彈II",
+      "audio": "voices/voice_60.mp3",
+      "text": "親愛的玩家應該沒有在看吧……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_61",
+      "category": "換彈III",
+      "audio": "voices/voice_61.mp3",
+      "text": "親愛的玩家，麻煩離我遠一點。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_62",
+      "category": "換彈III",
+      "audio": "voices/voice_62.mp3",
+      "text": "要稍微遮一下……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_63",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_63.mp3",
+      "text": "輪到我了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_64",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_64.mp3",
+      "text": "我準備好了，親愛的玩家。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "爆裂技能",
+      "audio": "voices/voice_65.mp3",
+      "text": "試試你的運氣吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "爆裂技能",
+      "audio": "voices/voice_66.mp3",
+      "text": "來測試看看我的運氣吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "全爆裂",
+      "audio": "voices/voice_67.mp3",
+      "text": "我要梭哈了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "全爆裂",
+      "audio": "voices/voice_68.mp3",
+      "text": "這套服裝，要不要也推薦給其他人試試看呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_69.mp3",
+      "text": "下一位對手是誰？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_70.mp3",
+      "text": "是兔子的勝利呢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_71.mp3",
+      "text": "運氣真好。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_72.mp3",
+      "text": "穿著這身衣服的我，就跟厄運無緣了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_73.mp3",
+      "text": "您運氣也太差了",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_74.mp3",
+      "text": "輕而易舉。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "被擊I",
+      "audio": "voices/voice_75.mp3",
+      "text": "呃……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "被擊I",
+      "audio": "voices/voice_76.mp3",
+      "text": "啊呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "被擊II",
+      "audio": "voices/voice_77.mp3",
+      "text": "啊啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "被擊II",
+      "audio": "voices/voice_78.mp3",
+      "text": "衣服……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "被擊III",
+      "audio": "voices/voice_79.mp3",
+      "text": "好痛……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "被擊III",
+      "audio": "voices/voice_80.mp3",
+      "text": "呀……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_81.mp3",
+      "text": "對不起，親愛的玩家……\n都怪我，運氣不好……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_82.mp3",
+      "text": "霉運……再次……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_83.mp3",
+      "text": "這一局我們好像贏了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_84.mp3",
+      "text": "運氣不錯呢。而且……\n……比想像中還要害羞。",
+      "animation": "idle"
+    }
+  ]
+}

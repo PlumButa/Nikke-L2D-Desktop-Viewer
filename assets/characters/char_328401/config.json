@@ -1,0 +1,306 @@
+{
+  "id": "328401",
+  "resourceId": 284,
+  "name": "櫻花：夏日綻放",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c284_00.skel",
+  "atlas": "c284_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "希望不會太過暴露。\n君覺得呢？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_02.mp3",
+      "text": "熱夏、大海，還有泳裝，\n這些對我來說都很陌生，\n一切拜託君了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_03.mp3",
+      "text": "配合著氣氛，\n換上這身打扮感覺也不壞。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_04.mp3",
+      "text": "陽光太刺眼了，要不要進來躲一下？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_05.mp3",
+      "text": "我已經說過了，\n我不想跟別人分享我的東西。\n我已在心中把君視為自己所有，\n那君之一切，都是屬於我的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_06.mp3",
+      "text": "只要閉上眼睛，腦海中就會浮現與君在一起時的點點滴滴。\n……這個夏天，君在何時最開心呢？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_07.mp3",
+      "text": "我都準備這種泳衣了，\n還看都不看一眼。\n……真沒意思。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "在海邊結的緣，將連結兩人走到哪一步？\n呵呵，真叫人期待。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_09",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_09.mp3",
+      "text": "君有看到牡丹嗎？\n自從看到海邊拍的照片，鬧了一場脾氣後就再也沒見到她了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_10.mp3",
+      "text": "不知日後何時能與君單獨相處……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_11.mp3",
+      "text": "君說過這裡有游泳池，對嗎？\n嗯～不知道能不能獨佔一天呢。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "初次見面",
+      "audio": "voices/voice_12.mp3",
+      "text": "在夏日來臨之際，我準備了一些夏裝。\n希望君能滿意。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_13.mp3",
+      "text": "大海上的回憶造就了我的堅強。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_14.mp3",
+      "text": "慢慢累積，總會有用的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_15.mp3",
+      "text": "我會繼續努力，直到得到君之全部。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "禮物I",
+      "audio": "voices/voice_16.mp3",
+      "text": "願君之溫柔獨屬我一人。呵呵，",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_17",
+      "category": "禮物II",
+      "audio": "voices/voice_17.mp3",
+      "text": "每至夏日，念念思君。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_18",
+      "category": "禮物III",
+      "audio": "voices/voice_18.mp3",
+      "text": "君總是如此善解我意。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_19",
+      "category": "好感度提升I",
+      "audio": "voices/voice_19.mp3",
+      "text": "這個夏天，與君之緣分竟變得如此深厚。\n想必連茶香都更為芬芳了。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_20",
+      "category": "好感度提升II",
+      "audio": "voices/voice_20.mp3",
+      "text": "君之所在總會讓我感到很安心。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_21",
+      "category": "好感度提升III",
+      "audio": "voices/voice_21.mp3",
+      "text": "願君留在原地，永遠不要變。\n……我櫻花會先上前一步的。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_22",
+      "category": "編隊",
+      "audio": "voices/voice_22.mp3",
+      "text": "我就知道，君一定會選擇我的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_23",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_23.mp3",
+      "text": "君，您喚我？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_24.mp3",
+      "text": "出去透透氣也不錯。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_25.mp3",
+      "text": "君，這次由我來保護君。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_26.mp3",
+      "text": "我會如君所願。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_27.mp3",
+      "text": "我櫻花一定會盡力而為。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_28.mp3",
+      "text": "讓您看看清明會的厲害。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "換彈I",
+      "audio": "voices/voice_29.mp3",
+      "text": "切勿急躁。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "換彈II",
+      "audio": "voices/voice_30.mp3",
+      "text": "身體熱起來了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "換彈III",
+      "audio": "voices/voice_31.mp3",
+      "text": "暫時把我的後背交給您。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_32.mp3",
+      "text": "謹遵君命。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "爆裂技能",
+      "audio": "voices/voice_33.mp3",
+      "text": "願此刻留下美好的夏日回憶。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "全爆裂",
+      "audio": "voices/voice_34.mp3",
+      "text": "好大的膽子，敢碰我的東西？！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_35.mp3",
+      "text": "這也沒什麼特別的嘛。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_36.mp3",
+      "text": "繼續囂張啊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_37.mp3",
+      "text": "……結束。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "被擊I",
+      "audio": "voices/voice_38.mp3",
+      "text": "唔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "被擊II",
+      "audio": "voices/voice_39.mp3",
+      "text": "……太大意了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "被擊III",
+      "audio": "voices/voice_40.mp3",
+      "text": "咳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_41.mp3",
+      "text": "難道這就是仲夏夜的回憶嗎……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_42.mp3",
+      "text": "現在終於可以與君共度清靜時光了。",
+      "animation": "idle"
+    }
+  ]
+}

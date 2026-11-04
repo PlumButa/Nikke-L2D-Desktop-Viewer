@@ -1,0 +1,306 @@
+{
+  "id": "150101",
+  "resourceId": 501,
+  "name": "特羅尼",
+  "skin": "甜蜜舞步",
+  "spineVersion": "4.0",
+  "skel": "c501_01_00.skel",
+  "atlas": "c501_01_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "今天天氣真好。\n在房間裡打電動好了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_02.mp3",
+      "text": "如果需要電子機器，我來幫你做。\n這、這方面我還算拿手……！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_03.mp3",
+      "text": "那個……指揮官……那個……沒、沒什麼啦……\n下次再說。下星期……不對，下個月再說……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_04.mp3",
+      "text": "伊萊格她，唔……所以說……\n嗯，非常喜歡玩《BOOM》。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_05.mp3",
+      "text": "最棒的遊戲？\n我覺得是《奇兵空戰》……\n那個……一定要對伊萊格保密……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_06.mp3",
+      "text": "電是透過燒開水驅動渦輪轉動的方式產生的……\n呃……很、很無趣吧。對不起……我會安靜地待在角落裡。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_07.mp3",
+      "text": "那個……指揮官……？出去了對吧？\n現在終於只剩下我一個人了。嘻嘻……真自在……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "那個……這裡沒有人吧？嘻嘻，我特羅尼，前來維護正義啦！\n覺悟吧，壞蛋！嘿嘿……是不是很像方舟遊俠裡的黑色遊俠？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_09",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_09.mp3",
+      "text": "聽說方舟遊俠的劇場版重新上映了。有、有時間一起……\n肯定不想和我一起去吧……我會自己一個人去……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_10.mp3",
+      "text": "有看到伊萊格嗎？\n剛才還和我在一起，\n居然自己走掉了……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_11.mp3",
+      "text": "那台電梯經常故障對吧？\n……我進去被關一會再回來。我想一個人靜一靜。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "初次見面",
+      "audio": "voices/voice_12.mp3",
+      "text": "我、我叫特羅尼。請多關照。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_13.mp3",
+      "text": "強化時要這樣進行電路調整，我要記下來。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_14.mp3",
+      "text": "嘻嘻，真的是很《BOOM》的感覺。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_15.mp3",
+      "text": "我比以前強了，雖然不太明顯……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "禮物I",
+      "audio": "voices/voice_16.mp3",
+      "text": "等、等一下。我要記在電腦的記事本裡。\n今天指揮官送了我禮物。嘻嘻……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_17",
+      "category": "禮物II",
+      "audio": "voices/voice_17.mp3",
+      "text": "呃呃……不、不要那樣看著我。\n我現在的表情很奇怪吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_18",
+      "category": "禮物III",
+      "audio": "voices/voice_18.mp3",
+      "text": "這是一份沒有其他意思的禮物，我要冷靜，冷靜……\n嘿嘿，嘿嘿嘿……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_19",
+      "category": "好感度提升I",
+      "audio": "voices/voice_19.mp3",
+      "text": "謝、謝謝你一直對我這麼好……\n嗚……心臟好像要爆炸了。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_20",
+      "category": "好感度提升II",
+      "audio": "voices/voice_20.mp3",
+      "text": "如果你想要方舟遊俠的周邊……\n作、作為報答……我會送你一個……不，送你兩個……",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_21",
+      "category": "好感度提升III",
+      "audio": "voices/voice_21.mp3",
+      "text": "和指揮官在一起很自在，我很喜歡。\n……以後也請多多關照。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_22",
+      "category": "編隊",
+      "audio": "voices/voice_22.mp3",
+      "text": "我、我嗎？比起我，和別的妮姬去比較好吧……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_23",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_23.mp3",
+      "text": "嗯，你找我嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_24.mp3",
+      "text": "馬上就來。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_25.mp3",
+      "text": "後援就交給我吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_26.mp3",
+      "text": "小心沒電。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_27.mp3",
+      "text": "請、請大家多多關照。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_28.mp3",
+      "text": "要把該做的事做好……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "換彈I",
+      "audio": "voices/voice_29.mp3",
+      "text": "電、電池沒電了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "換彈II",
+      "audio": "voices/voice_30.mp3",
+      "text": "修理完畢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "換彈III",
+      "audio": "voices/voice_31.mp3",
+      "text": "我稍微整備一下……不要丟下我離開。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_32.mp3",
+      "text": "施放準備完畢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "爆裂技能",
+      "audio": "voices/voice_33.mp3",
+      "text": "施放成功。我做到了！嘻嘻。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "全爆裂",
+      "audio": "voices/voice_34.mp3",
+      "text": "我要狠狠賞一拳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_35.mp3",
+      "text": "順利擊落。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_36.mp3",
+      "text": "趕快結束回家吧……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_37.mp3",
+      "text": "看、看到了吧？是我打倒的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "被擊I",
+      "audio": "voices/voice_38.mp3",
+      "text": "呃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "被擊II",
+      "audio": "voices/voice_39.mp3",
+      "text": "呃……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "被擊III",
+      "audio": "voices/voice_40.mp3",
+      "text": "我去角落裡安靜待著吧……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_41.mp3",
+      "text": "特羅尼，要在這裡倒下了。\n能和大家一起並肩作戰是我的榮幸……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_42.mp3",
+      "text": "我，好像有點帥……嘿嘿……",
+      "animation": "idle"
+    }
+  ]
+}

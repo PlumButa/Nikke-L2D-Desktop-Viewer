@@ -1,0 +1,306 @@
+{
+  "id": "218301",
+  "resourceId": 183,
+  "name": "梅登：冰玫瑰",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c183_00.skel",
+  "atlas": "c183_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "今天要做什麼任務呢？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_02.mp3",
+      "text": "口罩？在春之國裡不需要那種東西。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_03.mp3",
+      "text": "您問我衣服是不是太短了？\n您有所不知啊！要知道，\n穿得越少，防禦力就越高哦。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_04.mp3",
+      "text": "原來組隊玩遊戲比自己單機還棒呢。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_05.mp3",
+      "text": "能夠兼具坦克和輸出的法師，\n最棒了不是嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_06.mp3",
+      "text": "我舌頭上的法陣？\n嗯……\n要不要讓您嚐嚐這個魔法的味道？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_07.mp3",
+      "text": "竟然讓我這種高級人才\n坐冷板凳……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "時間就是金錢啊！指揮官！",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_09",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_09.mp3",
+      "text": "這裡……是可以PVP的區域嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_10.mp3",
+      "text": "嗯，我能砸開那個箱子嗎？\n感覺裡面有好東西。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_11.mp3",
+      "text": "我有異議！……對不起。\n我輸入了巨集指令，\n一看到「法院」就會自動跳出這句話。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "初次見面",
+      "audio": "voices/voice_12.mp3",
+      "text": "帶著冰冷氣息，\n冷酷卻又溫暖的「冰玫瑰」……\n不對，是梅登入隊了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_13",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_13.mp3",
+      "text": "我充滿力量了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_14",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_14.mp3",
+      "text": "呵呵，要測試一下我的戰鬥力嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_15",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_15.mp3",
+      "text": "能力值都點攻擊力吧！\n因為我是暴力法師！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_16",
+      "category": "禮物I",
+      "audio": "voices/voice_16.mp3",
+      "text": "真沒想到還有好感度提升的活動……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_17",
+      "category": "禮物II",
+      "audio": "voices/voice_17.mp3",
+      "text": "您怎麼會送我這個……？\n啊哈……原來今天是紀念日啊！\n我們的結婚紀念日。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_18",
+      "category": "禮物III",
+      "audio": "voices/voice_18.mp3",
+      "text": "恭喜您，您成功攻略了女主角！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_19",
+      "category": "好感度提升I",
+      "audio": "voices/voice_19.mp3",
+      "text": "向您劇透一下吧，\n指揮官的女主角是我。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_20",
+      "category": "好感度提升II",
+      "audio": "voices/voice_20.mp3",
+      "text": "指揮官，\n我們的婚房要選在哪裡好呢？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_21",
+      "category": "好感度提升III",
+      "audio": "voices/voice_21.mp3",
+      "text": "冒險就是要跟志同道合的同伴一起。\n指揮官，要不要跟我去冒險啊？\n只有我們兩個人。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_22",
+      "category": "編隊",
+      "audio": "voices/voice_22.mp3",
+      "text": "「你，成為我的同伴吧！」，\n您是這個意思吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_23",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_23.mp3",
+      "text": "是！請下令吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_24.mp3",
+      "text": "請指示最快路線！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_25.mp3",
+      "text": "準備開始攻略迷宮！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_26.mp3",
+      "text": "讓我們以最帥氣的姿態完成吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_27.mp3",
+      "text": "已經弄清楚行動模式了吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_28.mp3",
+      "text": "大家都準備好了嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "換彈I",
+      "audio": "voices/voice_29.mp3",
+      "text": "我補個魔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "換彈II",
+      "audio": "voices/voice_30.mp3",
+      "text": "有人需要藥水嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "換彈III",
+      "audio": "voices/voice_31.mp3",
+      "text": "拜託您吸引一下火力。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_32.mp3",
+      "text": "我要將它們全部冰封。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "爆裂技能",
+      "audio": "voices/voice_33.mp3",
+      "text": "讓敵人感受一下你的氣息吧！\n鑽石塵埃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "全爆裂",
+      "audio": "voices/voice_34.mp3",
+      "text": "讓傷害表爆掉吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_35.mp3",
+      "text": "最後一擊我絕不會讓給別人。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_36.mp3",
+      "text": "都給我冰封吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_37.mp3",
+      "text": "我的輸出肯定是第一吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "被擊I",
+      "audio": "voices/voice_38.mp3",
+      "text": "咳！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "被擊II",
+      "audio": "voices/voice_39.mp3",
+      "text": "啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "被擊III",
+      "audio": "voices/voice_40.mp3",
+      "text": "操作失誤……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_41.mp3",
+      "text": "很遺憾……\n我是我們小隊最弱的一個……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_42.mp3",
+      "text": "指揮官，我們的冒險由此開始！",
+      "animation": "idle"
+    }
+  ]
+}

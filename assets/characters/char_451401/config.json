@@ -1,0 +1,600 @@
+{
+  "id": "451401",
+  "resourceId": 514,
+  "name": "格拉維",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c514_00.skel",
+  "atlas": "c514_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "為什麼一直偷看我？\n我臉上……有什麼奇怪的東西嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "我看起來也像個平凡人嗎？\n若真是那樣就好了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_03.mp3",
+      "text": "之前的身體老化得太嚴重了，得改造一下才能使用。\n這樣……就可以繼續在一起了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "這種衣服有點不習慣，\n我應該不會常常穿。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_05.mp3",
+      "text": "我已經做好重寫故事的準備了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_06.mp3",
+      "text": "因為不是貼身的材質，感覺活動起來會很不方便。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_07.mp3",
+      "text": "雖然只戴一半面具看起來有點怪，\n但這樣很涼快，我很喜歡。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "灰姑娘說很漂亮，那就夠了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_09.mp3",
+      "text": "總是受你幫助和照顧，\n我以後一定會報答你的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_10.mp3",
+      "text": "無論穿什麼衣服，對於我的工作都不會有影響。\n我要在灰姑娘身邊，再次寫下故事。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_11.mp3",
+      "text": "我用我還記得的所有技術，把身體重新修整了一遍。\n雖然還不是很完美，但足以讓我們繼續並肩戰鬥了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_12.mp3",
+      "text": "為什麼要看著我？是想要這件衣服嗎？\n這件衣服是灰姑娘替我選的。\n就算是後人類也無法給你。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_13.mp3",
+      "text": "我很忙，有很多事情要做，別浪費時間了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_14.mp3",
+      "text": "要做什麼？如果沒什麼話要說，\n我要去找灰姑娘了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_15.mp3",
+      "text": "後人類，你看起來很忙。\n沒關係，你繼續忙你的，我可以等。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_16.mp3",
+      "text": "現在的我不害怕等待。\n因為我知道，總有一天你會回來的。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_17",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_17.mp3",
+      "text": "安定又平和， \n這種感覺……太神奇了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_18.mp3",
+      "text": "這是能與灰姑娘一起散步的好地方。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_19.mp3",
+      "text": "我渴望……\n和大家一起留在這裡。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_20.mp3",
+      "text": "真是充滿了活力啊。\n但是現在我們所在的地方也同樣充滿了活力。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_21.mp3",
+      "text": "希望有朝一日，我們的故事也能在這裡延續下去。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_22.mp3",
+      "text": "如果有機會，我想在這裡挑點其他衣服。\n啊，我是想幫灰姑娘挑的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_23",
+      "category": "初次見面",
+      "audio": "voices/voice_23.mp3",
+      "text": "古老的故事就應該有個美好的結局……\n你的故事也是如此。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "初次見面",
+      "audio": "voices/voice_24.mp3",
+      "text": "灰姑娘替我選的，很適合吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_25.mp3",
+      "text": "居然有這種技術！好神奇。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_26.mp3",
+      "text": "還不夠。要再變得更強。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_27.mp3",
+      "text": "謝謝你幫我收集強化所需的材料。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_28.mp3",
+      "text": "強大就是美麗。那我，美嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_29.mp3",
+      "text": "多虧了你的幫助，我的武裝比之前更強韌、更堅固了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_30.mp3",
+      "text": "無論是你或是灰姑娘，我都要守護。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "禮物I",
+      "audio": "voices/voice_31.mp3",
+      "text": "禮物……？可是我什麼都沒準備。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "禮物I",
+      "audio": "voices/voice_32.mp3",
+      "text": "現在穿的衣服很適合我，謝謝。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "禮物II",
+      "audio": "voices/voice_33.mp3",
+      "text": "這個……確實是我需要的東西，謝謝你。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "禮物II",
+      "audio": "voices/voice_34.mp3",
+      "text": "我會和灰姑娘一起用的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "禮物III",
+      "audio": "voices/voice_35.mp3",
+      "text": "後人類，我一直很感激你……你不需要送我這麼多東西。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "禮物III",
+      "audio": "voices/voice_36.mp3",
+      "text": "總有一天我會報答你的，後人類。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "好感度提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "你給了我信任和幫助，\n現在輪到我報答你了。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_38",
+      "category": "好感度提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "多虧你，我明白了信任為何物。謝謝。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_39",
+      "category": "好感度提升II",
+      "audio": "voices/voice_39.mp3",
+      "text": "在你的幫助下，我終於可以開始重寫故事了。\n真的很感謝你。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_40",
+      "category": "好感度提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "穿著平凡的衣服和灰姑娘一起出門。\n這是以前我連想都不敢想的事情。好幸福。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_41",
+      "category": "好感度提升III",
+      "audio": "voices/voice_41.mp3",
+      "text": "後人類，你不用改變什麼，做你自己就可以了。\n我真的很喜歡不像其他人類的你。",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_42",
+      "category": "好感度提升III",
+      "audio": "voices/voice_42.mp3",
+      "text": "後人類，我很好奇你的故事。\n若時候到了，你能說給我聽嗎？",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_43",
+      "category": "編隊",
+      "audio": "voices/voice_43.mp3",
+      "text": "如果你叫我去，我就去。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "編隊",
+      "audio": "voices/voice_44.mp3",
+      "text": "一起去吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_45.mp3",
+      "text": "我聽到了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_46.mp3",
+      "text": "叫我了嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_47.mp3",
+      "text": "向目標移動中。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_48.mp3",
+      "text": "要移動了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_49.mp3",
+      "text": "敵人來了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_50.mp3",
+      "text": "讓開，我來保護你。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_51.mp3",
+      "text": "我要把你們全部消滅。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_52.mp3",
+      "text": "絕不放過你們。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_53.mp3",
+      "text": "所有妄圖破壞美好結局的人，都不可原諒。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_54.mp3",
+      "text": "衣服不能起皺摺。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_55.mp3",
+      "text": "我發過誓，我會保護你的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_56",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_56.mp3",
+      "text": "要小心戰鬥。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_57",
+      "category": "換彈I",
+      "audio": "voices/voice_57.mp3",
+      "text": "還沒結束。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_58",
+      "category": "換彈I",
+      "audio": "voices/voice_58.mp3",
+      "text": "再次出擊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_59",
+      "category": "換彈II",
+      "audio": "voices/voice_59.mp3",
+      "text": "我需要時間。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_60",
+      "category": "換彈II",
+      "audio": "voices/voice_60.mp3",
+      "text": "衣服還完好無缺。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_61",
+      "category": "換彈III",
+      "audio": "voices/voice_61.mp3",
+      "text": "裝彈！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_62",
+      "category": "換彈III",
+      "audio": "voices/voice_62.mp3",
+      "text": "我還能戰鬥。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_63",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_63.mp3",
+      "text": "一定能辦到的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_64",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_64.mp3",
+      "text": "我準備好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "爆裂技能",
+      "audio": "voices/voice_65.mp3",
+      "text": "提升功率到最大值——前進！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "爆裂技能",
+      "audio": "voices/voice_66.mp3",
+      "text": "傾盡全力！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "全爆裂",
+      "audio": "voices/voice_67.mp3",
+      "text": "就是現在！結束這一切吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "全爆裂",
+      "audio": "voices/voice_68.mp3",
+      "text": "一起收拾它們吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_69.mp3",
+      "text": "下一個。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_70.mp3",
+      "text": "解決了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_71.mp3",
+      "text": "一切都結束了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_72.mp3",
+      "text": "好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_73.mp3",
+      "text": "還不錯。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_74.mp3",
+      "text": "下一個。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "被擊I",
+      "audio": "voices/voice_75.mp3",
+      "text": "呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "被擊I",
+      "audio": "voices/voice_76.mp3",
+      "text": "呃……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "被擊II",
+      "audio": "voices/voice_77.mp3",
+      "text": "咳……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "被擊II",
+      "audio": "voices/voice_78.mp3",
+      "text": "撐住……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "被擊III",
+      "audio": "voices/voice_79.mp3",
+      "text": "還沒……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "被擊III",
+      "audio": "voices/voice_80.mp3",
+      "text": "呃！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_81.mp3",
+      "text": "不能就這樣停下來……不能……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_82.mp3",
+      "text": "灰姑娘幫我選的衣服毀了……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_83.mp3",
+      "text": "不完成美好的結局，我是不會停下來的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_84.mp3",
+      "text": "灰姑娘還在等我。回去過日常生活吧。",
+      "animation": "idle"
+    }
+  ]
+}

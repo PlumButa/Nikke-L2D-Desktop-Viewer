@@ -1,0 +1,600 @@
+{
+  "id": "355001",
+  "resourceId": 550,
+  "name": "貝伊",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c550_00.skel",
+  "atlas": "c550_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "看什麼呢？\n沒見過啦啦隊嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "……看什麼看。\n沒見過兔、兔女郎嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_03.mp3",
+      "text": "教練，禁止盯著我的臉看5秒鐘以上。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "大家看我的眼神……\n跟平常不太一樣。\n……所以，陪在我身邊吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_05.mp3",
+      "text": "想要我為你加油嗎？\n那你就轉過身去。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_06.mp3",
+      "text": "挑了件跟啦啦隊服差不多的款式。\n……教練覺得怎麼樣？還可以嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_07.mp3",
+      "text": "特別給教練一個和我對視的機會。\n不過只有10秒鐘哦。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_08.mp3",
+      "text": "只、只准看著我的眼睛！\n其他地方……只、只能瞄一眼。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_09.mp3",
+      "text": "我還是不太習慣人們的視線。\n不過教練的視線……嗯，不討厭就是了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_10.mp3",
+      "text": "明明衣服的款式都差不多，\n但因為是兔女郎裝，\n大家的眼神就不一樣了……\n真的好奇怪哦。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_11.mp3",
+      "text": "只要教練在我身邊，我就什麼也不怕了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_12.mp3",
+      "text": "現在去應援當然也沒問題。\n我還為了這套衣服準備了\n特別的應援……想看嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_13.mp3",
+      "text": "教練，既然什麼都不做，那為什麼要叫我來呢？\n我可是從訓練中擠出時間過來的……\n要是我再次失誤，教練你會負責嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_14.mp3",
+      "text": "……叫你別看，\n你還真的就不看了啊？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_15.mp3",
+      "text": "教練，雖然我說過不要盯著我看……\n但你也太不在意我了吧？快來幫忙我訓練。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_16.mp3",
+      "text": "倒不是因為穿著兔女郎裝，\n……只是希望你的注意力\n能多放在我身上一點。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_17",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_17.mp3",
+      "text": "這裡沒有可以獨自訓練的地方嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_18.mp3",
+      "text": "哦，嗯，教練。要不要一起逛逛？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_19.mp3",
+      "text": "勝利！高呼勝利吧！\n……等一下，你是從什麼時候開始看的？\n別那樣盯著我看！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_20.mp3",
+      "text": "兔女郎和啦啦隊……嗯，好像也不錯。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_21.mp3",
+      "text": "那個，你認識的妮姬裡，有沒有可以當啦啦隊長的妮姬？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_22.mp3",
+      "text": "應援口號要選什麼才好……\n兔嘰兔嘰？嘣？\n……教、教練？！你在那裡多久了？！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_23",
+      "category": "初次見面",
+      "audio": "voices/voice_23.mp3",
+      "text": "有我的加油，才不可能輸掉呢。\n必須奪得勝利。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_24",
+      "category": "初次見面",
+      "audio": "voices/voice_24.mp3",
+      "text": "嗨，教練。\n……希、希望你不要那樣盯著我看。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_25",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_25.mp3",
+      "text": "我會用精彩的應援來報答你的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_26",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_26.mp3",
+      "text": "現在會不會比較不害羞了呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_27",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_27.mp3",
+      "text": "……這次我好像可以直視觀眾們的眼睛了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_28",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_28.mp3",
+      "text": "像是習慣了教練的視線一樣，其他人的視線我也能很快適應的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_29",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_29.mp3",
+      "text": "多虧了教練，我才能更大聲地應援。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_30",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_30.mp3",
+      "text": "感覺腦中會浮現適合這套衣服的全新應援方式。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_31",
+      "category": "禮物I",
+      "audio": "voices/voice_31.mp3",
+      "text": "看在教練的份上，我就收下吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_32",
+      "category": "禮物I",
+      "audio": "voices/voice_32.mp3",
+      "text": "能、能不能不要那樣看著我？\n……總之現在就是不要看啦。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_33",
+      "category": "禮物II",
+      "audio": "voices/voice_33.mp3",
+      "text": "……什麼嘛，看來你沒少送女孩子禮物吧？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_34",
+      "category": "禮物II",
+      "audio": "voices/voice_34.mp3",
+      "text": "是因為我穿這種衣服才關心我嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "禮物III",
+      "audio": "voices/voice_35.mp3",
+      "text": "感覺每次都是我單方面地收禮物……\n總之，謝謝你。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "禮物III",
+      "audio": "voices/voice_36.mp3",
+      "text": "……謝謝。我真的很開心。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "好感度提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "臉紅是因為我太努力應援了。\n不是因為教練，你不要誤會。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_38",
+      "category": "好感度提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "你……有沒有希望我為你做什麼？\n機會難得，說個穿這套衣服能做的事……",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_39",
+      "category": "好感度提升II",
+      "audio": "voices/voice_39.mp3",
+      "text": "……有點奇怪。\n和在舞台上感受到的緊張不太一樣。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_40",
+      "category": "好感度提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "你該不會喜歡兔女郎，而不是我吧？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_41",
+      "category": "好感度提升III",
+      "audio": "voices/voice_41.mp3",
+      "text": "……這樣下去，會不會有天得為我和教練的愛情應援呢？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_42",
+      "category": "好感度提升III",
+      "audio": "voices/voice_42.mp3",
+      "text": "……看著這種裝扮的我，\n教練也會心跳加速嗎？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_43",
+      "category": "編隊",
+      "audio": "voices/voice_43.mp3",
+      "text": "想要我的應援嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "編隊",
+      "audio": "voices/voice_44.mp3",
+      "text": "……教練，穿這樣出去好像還太早了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_45.mp3",
+      "text": "啦啦隊準備就緒。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_46.mp3",
+      "text": "這、這樣很害羞耶……讓其他人看見。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_47.mp3",
+      "text": "去那邊看看吧！\n那裡好像需要我。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_48.mp3",
+      "text": "真是的……教練是大變態。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_49.mp3",
+      "text": "我為你加油！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_50.mp3",
+      "text": "……知道了，我會加油的。\n這樣其他人才會跟著振奮起來。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_51.mp3",
+      "text": "Go! Go! Victory!",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_52.mp3",
+      "text": "Bunny Go！Bunny Go！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_53.mp3",
+      "text": "有我在，不必擔心應援！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_54.mp3",
+      "text": "以兔子的氣息——\n……感覺這樣不對。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_55.mp3",
+      "text": "為了勝利，加油！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_56",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_56.mp3",
+      "text": "……即便如此，你也不能一直盯著看啦。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_57",
+      "category": "換彈I",
+      "audio": "voices/voice_57.mp3",
+      "text": "我的應援不會停止。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_58",
+      "category": "換彈I",
+      "audio": "voices/voice_58.mp3",
+      "text": "衣、衣角……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_59",
+      "category": "換彈II",
+      "audio": "voices/voice_59.mp3",
+      "text": "時間還很多。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_60",
+      "category": "換彈II",
+      "audio": "voices/voice_60.mp3",
+      "text": "感、感覺到了教練的視線。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_61",
+      "category": "換彈III",
+      "audio": "voices/voice_61.mp3",
+      "text": "應援裝彈。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_62",
+      "category": "換彈III",
+      "audio": "voices/voice_62.mp3",
+      "text": "現、現在不行。不准看。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_63",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_63.mp3",
+      "text": "輪到我上場了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_64",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_64.mp3",
+      "text": "就、就算害羞，該做的事還是要做。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "爆裂技能",
+      "audio": "voices/voice_65.mp3",
+      "text": "我會讓你們發光發亮的！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "爆裂技能",
+      "audio": "voices/voice_66.mp3",
+      "text": "大家，讓我們一起閃閃發光吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "全爆裂",
+      "audio": "voices/voice_67.mp3",
+      "text": "跳起來！嗨起來！笑起來——！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "全爆裂",
+      "audio": "voices/voice_68.mp3",
+      "text": "鼓起幹勁，拼到最後吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_69.mp3",
+      "text": "接下來的應援也交給我吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_70.mp3",
+      "text": "什、什麼時候才會結束？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_71.mp3",
+      "text": "我們一起走到最後！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_72.mp3",
+      "text": "居然還沒結束……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_73.mp3",
+      "text": "我的應援順利傳達到了！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_74.mp3",
+      "text": "大家，盡、盡快結束吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "被擊I",
+      "audio": "voices/voice_75.mp3",
+      "text": "啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "被擊I",
+      "audio": "voices/voice_76.mp3",
+      "text": "呀啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "被擊II",
+      "audio": "voices/voice_77.mp3",
+      "text": "啊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "被擊II",
+      "audio": "voices/voice_78.mp3",
+      "text": "呃……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "被擊III",
+      "audio": "voices/voice_79.mp3",
+      "text": "呃……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "被擊III",
+      "audio": "voices/voice_80.mp3",
+      "text": "好痛……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_81.mp3",
+      "text": "……看來我的應援還不夠。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_82.mp3",
+      "text": "我應該再加把勁的……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_83.mp3",
+      "text": "這一次，我的應援非常完美！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_84.mp3",
+      "text": "……全部結束以後，突然害羞了起來。\n你覺得怎麼樣……？",
+      "animation": "idle"
+    }
+  ]
+}

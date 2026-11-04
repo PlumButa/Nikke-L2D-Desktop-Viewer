@@ -1,0 +1,894 @@
+{
+  "id": "433001",
+  "resourceId": 330,
+  "name": "皇冠",
+  "skin": "榮耀之花",
+  "spineVersion": "4.0",
+  "skel": "c330_02_00.skel",
+  "atlas": "c330_02_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "身為國王就應該傾聽子民的請求。\n有什麼要拜託我的嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "這身衣裳是用子民的期望所織成的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_03.mp3",
+      "text": "如何？\n這是鐘鳴幫我做的新衣服。很好看吧？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "鐘鳴是皇冠王國的秘書。\n當然要時刻跟在國王身邊。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_05.mp3",
+      "text": "看不清楚我的衣裳嗎？\n那不過是你如此認為罷了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_06.mp3",
+      "text": "國王在百姓面前\n時時刻刻都要維持格子。\n啊，格調嗎？我通、通常也會這麼說。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_07.mp3",
+      "text": "龍捲風嗎？那是我的馬。\n你還想知道什麼？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_08.mp3",
+      "text": "鐘鳴說我因此成為了真正的國王。\n你也這麼覺得嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_09.mp3",
+      "text": "既然百姓有所期望，\n國王理應隨時準備好換上新裝。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_10.mp3",
+      "text": "在找你的國王嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_11.mp3",
+      "text": "我的衣裳太過耀眼了嗎？\n那是因為你的內心充滿了光。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_12.mp3",
+      "text": "真希望哪天能為您縫製一套\n符合皇冠王國謀士身分的衣服。\n當、當然那會是鐘鳴做的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_13.mp3",
+      "text": "你如果有什麼心願儘管告訴我。\n我一定會幫你實現的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_14.mp3",
+      "text": "你的信任與希望，\n讓我成為了真正的國王。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_15.mp3",
+      "text": "不管您在哪、穿什麼樣的衣服，\n都別忘了您是皇冠王國的百姓。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_16.mp3",
+      "text": "你已經是皇冠王國的子民了。\n無論如何，千萬別忘記這一點。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_17",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_17.mp3",
+      "text": "我雖空虛，但卻不寂寞。\n因為皇冠王國的一切使我熠熠生輝。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_18.mp3",
+      "text": "嗯……鐘鳴的手藝真是出色。\n您不覺得不管怎麼看，\n都能感受到國王的格調嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_19.mp3",
+      "text": "丟下國王就消失得無影無蹤，看來你很忙亂啊。\n忙亂……迷亂……忙盧？總、總之……我會等你的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_20.mp3",
+      "text": "沒關係，我等你。\n先去做你想做的事後再來吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_21.mp3",
+      "text": "您就放心去忙吧。\n我會在這裡好好欣賞\n鐘鳴幫我做的衣服。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_22.mp3",
+      "text": "畢竟等待忙碌的子民是國王的職責。\n呵呵呵……！咳咳，咳咳，咳，咳咳。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_23",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_23.mp3",
+      "text": "別擔心。\n我的光芒會照亮你的空缺。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_24",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_24.mp3",
+      "text": "不用擔心。\n我會在這裡找找適合鐘鳴和您的衣服。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_25",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_25.mp3",
+      "text": "這裡真是美不勝收。\n好想把這裡當作皇冠王國的第二王宮。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_26",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_26.mp3",
+      "text": "你做得很好。\n皇冠王國的第二王宮在你的帶領下欣欣向榮。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_27",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_27.mp3",
+      "text": "您把皇冠王國的第二王宮維護得很好，我很高興。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_28",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_28.mp3",
+      "text": "這裡就是七哨基地。是你的王國嗎？\n啊……前哨基地啊。開、開個玩笑而已。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_29",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_29.mp3",
+      "text": "無論是地上，還是地下；\n子民在哪，我就在哪。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_30",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_30.mp3",
+      "text": "這裡依然是明亮又幸福的地方。\n果然稱得上是皇冠王國的謀士所帶領之處。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_31",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_31.mp3",
+      "text": "這裡的人看起來都很開心。\n……都是多虧了你的努力吧。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_32",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_32.mp3",
+      "text": "煎哨基地果真是個好地方。\n啊！對、對啦。是前、前哨基地才對。當然啦。我瞭若指掌。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_33",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_33.mp3",
+      "text": "既然是來看這裡的名物，就有勞您……\n啊，名勝嗎？也、也帶我去參觀那個吧！",
+      "animation": "action"
+    },
+    {
+      "id": "voice_34",
+      "category": "初次見面",
+      "audio": "voices/voice_34.mp3",
+      "text": "我是皇冠王國的國王——皇冠。\n你是為了成為皇冠王國的子民才來找我的吧。歡迎你。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "初次見面",
+      "audio": "voices/voice_35.mp3",
+      "text": "現在，身披子民的光輝，\n我將作為真正的國王，守護皇冠王國。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "初次見面",
+      "audio": "voices/voice_36.mp3",
+      "text": "我將以全新的服裝、全新的決心，\n再次成為您的國王。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "就像青春期的孩子一樣，力氣也隨之變大了。\n啊……我是說成長期，我、當然知道啊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "這就是……你的信任。\n我會好好珍惜的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_39.mp3",
+      "text": "您的努力絕對不會白費。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "只要子民需要，我會變得更強大。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_41.mp3",
+      "text": "你的努力讓我的衣裳變得更加耀眼。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_42.mp3",
+      "text": "我會以出色的統籌回報您。\n……統治嗎？我、我知道啦。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_43",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_43.mp3",
+      "text": "皇冠王國因此變得更強大。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_44.mp3",
+      "text": "子民的信任是我前進的動力。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_45.mp3",
+      "text": "國王得到多少信任，就會變得多強大。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "禮物I",
+      "audio": "voices/voice_46.mp3",
+      "text": "是獻給我的工品。啊，是貢品啊？\n原、原來如此。謝謝你。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "禮物I",
+      "audio": "voices/voice_47.mp3",
+      "text": "又要送我禮物啊。\n我說過你只要欣然接受就好。因為我是你的國王。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "禮物I",
+      "audio": "voices/voice_48.mp3",
+      "text": "您的禮物和鐘鳴送的一樣。\n總是令我滿意。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "禮物II",
+      "audio": "voices/voice_49.mp3",
+      "text": "子民送的禮物當然不能拒絕。謝謝。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "禮物II",
+      "audio": "voices/voice_50.mp3",
+      "text": "你的心腸如同這件衣裳般閃耀動人。\n謝謝你的好意。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "禮物II",
+      "audio": "voices/voice_51.mp3",
+      "text": "真的很感謝……但這要用在哪裡呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "禮物III",
+      "audio": "voices/voice_52.mp3",
+      "text": "這就是禮物啊。\n……不過為什麼要送我呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "禮物III",
+      "audio": "voices/voice_53.mp3",
+      "text": "你的奉獻精神將會成為皇冠王國的寶貴財富。\n我一定會證明給你看。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "禮物III",
+      "audio": "voices/voice_54.mp3",
+      "text": "這份禮物很搭這身衣服。\n鐘鳴一定會很開心。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "好感度提升I",
+      "audio": "voices/voice_55.mp3",
+      "text": "一看到你，我的心臟就會撲通撲通地跳……\n這就是胃痛的感覺嗎？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_56",
+      "category": "好感度提升I",
+      "audio": "voices/voice_56.mp3",
+      "text": "真奇怪，最近總是想到你。\n難道是我的腦袋出問題了嗎？",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_57",
+      "category": "好感度提升I",
+      "audio": "voices/voice_57.mp3",
+      "text": "您就像我身上這件衣服一樣，\n既珍貴又尊貴。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_58",
+      "category": "好感度提升II",
+      "audio": "voices/voice_58.mp3",
+      "text": "照理說，國王應當平等對待每個子民……\n但我感覺你很特別。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_59",
+      "category": "好感度提升II",
+      "audio": "voices/voice_59.mp3",
+      "text": "希望你也能像鐘鳴一樣，一直和我在一起。\n……雖然這是不可能的事。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_60",
+      "category": "好感度提升II",
+      "audio": "voices/voice_60.mp3",
+      "text": "真是傷腦筋。\n我都忍不住想特別寵愛您了呢。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_61",
+      "category": "好感度提升III",
+      "audio": "voices/voice_61.mp3",
+      "text": "你……和鐘鳴一樣，\n對我來說都很重要。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_62",
+      "category": "好感度提升III",
+      "audio": "voices/voice_62.mp3",
+      "text": "現在的我不得不承認，\n你真的很特別……",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_63",
+      "category": "好感度提升III",
+      "audio": "voices/voice_63.mp3",
+      "text": "身為國王，我會成為您最大的助力。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_64",
+      "category": "編隊",
+      "audio": "voices/voice_64.mp3",
+      "text": "子民的請求當然要答應。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "編隊",
+      "audio": "voices/voice_65.mp3",
+      "text": "只要子民需要我，我在所不辭。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "編隊",
+      "audio": "voices/voice_66.mp3",
+      "text": "看來要穿新衣服上場了呢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_67.mp3",
+      "text": "是你在叫我嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_68.mp3",
+      "text": "你問。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_69.mp3",
+      "text": "您有想要的東西嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_70.mp3",
+      "text": "啊，不是那裡啊。我、我早就知道了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_71.mp3",
+      "text": "隨你心意而動。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_72.mp3",
+      "text": "讓我們抱著全新的心態一同前行吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_73.mp3",
+      "text": "來了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_74.mp3",
+      "text": "危險，快退後。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_75.mp3",
+      "text": "原來是礙事之徒。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_76.mp3",
+      "text": "別擔心。我會守護你的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_77.mp3",
+      "text": "走吧，是時候展現皇冠王國的威嚴了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_78.mp3",
+      "text": "無論穿著什麼樣的衣服，我都會保護您。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_79.mp3",
+      "text": "請相信國王。勝利必定會是我們的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_80.mp3",
+      "text": "拭目以待吧。你的國王的勝利時刻。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_81.mp3",
+      "text": "抱歉，鐘鳴。我戰鬥完就回來。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_82.mp3",
+      "text": "請相信我，國王會保護子民。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_83.mp3",
+      "text": "作為守護子民的國王，我當身先士卒。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_84.mp3",
+      "text": "我會盡我最大的努力……不讓衣服有髒汙。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_85",
+      "category": "換彈I",
+      "audio": "voices/voice_85.mp3",
+      "text": "……有點久了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_86",
+      "category": "換彈I",
+      "audio": "voices/voice_86.mp3",
+      "text": "……再來一次。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_87",
+      "category": "換彈I",
+      "audio": "voices/voice_87.mp3",
+      "text": "這衣服在戰鬥的時候也很舒適。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_88",
+      "category": "換彈II",
+      "audio": "voices/voice_88.mp3",
+      "text": "請稍等一下。很快就會結束的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_89",
+      "category": "換彈II",
+      "audio": "voices/voice_89.mp3",
+      "text": "不用擔心地看著我。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_90",
+      "category": "換彈II",
+      "audio": "voices/voice_90.mp3",
+      "text": "您在瞻仰國王勇猛的背影嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_91",
+      "category": "換彈III",
+      "audio": "voices/voice_91.mp3",
+      "text": "我要晃彈了。啊，換彈才對。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_92",
+      "category": "換彈III",
+      "audio": "voices/voice_92.mp3",
+      "text": "光芒滿載，再次前進。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_93",
+      "category": "換彈III",
+      "audio": "voices/voice_93.mp3",
+      "text": "現在有比較放鬆了嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_94",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_94.mp3",
+      "text": "奔跑吧，龍捲風。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_95",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_95.mp3",
+      "text": "龍捲風，以最快的速度前進吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_96",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_96.mp3",
+      "text": "時候到了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_97",
+      "category": "爆裂技能",
+      "audio": "voices/voice_97.mp3",
+      "text": "向王國的威脅者投擲審判之矛。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_98",
+      "category": "爆裂技能",
+      "audio": "voices/voice_98.mp3",
+      "text": "在皇冠王國的光輝下，萬物皆要跪下。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_99",
+      "category": "爆裂技能",
+      "audio": "voices/voice_99.mp3",
+      "text": "讓您見識一下，由百姓之愛打造出的力量！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_100",
+      "category": "全爆裂",
+      "audio": "voices/voice_100.mp3",
+      "text": "就是現在。大家全力攻下來。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_101",
+      "category": "全爆裂",
+      "audio": "voices/voice_101.mp3",
+      "text": "我帶頭衝鋒，大家進攻。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_102",
+      "category": "全爆裂",
+      "audio": "voices/voice_102.mp3",
+      "text": "很好。就這樣繼續攻擊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_103",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_103.mp3",
+      "text": "下一個，來吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_104",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_104.mp3",
+      "text": "沒了嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_105",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_105.mp3",
+      "text": "再來試試吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_106",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_106.mp3",
+      "text": "這就是國王的力量。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_107",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_107.mp3",
+      "text": "這就是子民的信任。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_108",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_108.mp3",
+      "text": "請放馬過來。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_109",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_109.mp3",
+      "text": "退下吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_110",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_110.mp3",
+      "text": "跪下。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_111",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_111.mp3",
+      "text": "下一個。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_112",
+      "category": "被擊I",
+      "audio": "voices/voice_112.mp3",
+      "text": "唔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_113",
+      "category": "被擊I",
+      "audio": "voices/voice_113.mp3",
+      "text": "呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_114",
+      "category": "被擊I",
+      "audio": "voices/voice_114.mp3",
+      "text": "呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_115",
+      "category": "被擊II",
+      "audio": "voices/voice_115.mp3",
+      "text": "咳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_116",
+      "category": "被擊II",
+      "audio": "voices/voice_116.mp3",
+      "text": "唔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_117",
+      "category": "被擊II",
+      "audio": "voices/voice_117.mp3",
+      "text": "糟糕……衣服……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_118",
+      "category": "被擊III",
+      "audio": "voices/voice_118.mp3",
+      "text": "呼……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_119",
+      "category": "被擊III",
+      "audio": "voices/voice_119.mp3",
+      "text": "我……沒關係。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_120",
+      "category": "被擊III",
+      "audio": "voices/voice_120.mp3",
+      "text": "唔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_121",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_121.mp3",
+      "text": "呃……看來在這種情況下一般會說……「策略性後退」才對。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_122",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_122.mp3",
+      "text": "呃……我休息一下再過來。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_123",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_123.mp3",
+      "text": "……此刻我就先退下了。\n對您、對鐘鳴，真的……很抱歉。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_124",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_124.mp3",
+      "text": "國王的職責就是為子民帶來他們所期望的勝利。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_125",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_125.mp3",
+      "text": "看到了嗎？你的國王凱旋而歸。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_126",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_126.mp3",
+      "text": "怎麼樣？有感覺到國王的威嚴嗎？",
+      "animation": "idle"
+    }
+  ]
+}
