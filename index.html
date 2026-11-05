@@ -49,7 +49,7 @@
 
       <div class="control-group">
         <label><span>角色縮放大小</span><span id="scale-label">100%</span></label>
-        <input type="range" id="scale-slider" min="25" max="250" step="5" value="100" />
+        <input type="range" id="scale-slider" min="10" max="250" step="1" value="100" />
       </div>
 
       <div class="control-group">
@@ -88,20 +88,57 @@
       </div>
 
       <div class="control-group">
-        <label>背景顏色 (點選自動清除背景圖)</label>
+        <label>背景底色</label>
         <input type="color" id="bg-color" value="#141720" style="width:100%; height:30px; border:none; border-radius:6px; cursor:pointer;" />
       </div>
 
       <div class="btn-row">
-        <button class="btn" id="load-bg-btn">🖼️ 載入背景</button>
+        <button class="btn" id="bg-settings-btn">🖼️ 背景設置</button>
         <button class="btn" id="screenshot-btn">📸 截取畫面</button>
       </div>
 
       <button class="btn btn-pet" id="enter-pet-btn">🐾 開啟浮動桌寵</button>
     </div>
 
+    <!-- 「背景設置」懸浮視窗 -->
+    <div class="bg-popover" id="bg-settings-popover">
+      <div class="bg-popover-title">🖼️ 背景圖片設置</div>
+
+      <div class="btn-row">
+        <button class="btn btn-primary" id="bg-upload-btn">📂 背景載入</button>
+        <button class="btn" id="bg-clear-btn">🗑️ 取消背景</button>
+      </div>
+
+      <div class="control-group">
+        <label><span>背景水平移動 (X)</span><span id="bg-x-label">0px</span></label>
+        <input type="range" id="bg-x-slider" min="-1000" max="1000" step="5" value="0" />
+      </div>
+
+      <div class="control-group">
+        <label><span>背景垂直移動 (Y)</span><span id="bg-y-label">0px</span></label>
+        <input type="range" id="bg-y-slider" min="-1000" max="1000" step="5" value="0" />
+      </div>
+
+      <div class="control-group">
+        <label><span>背景縮放</span><span id="bg-scale-label">100%</span></label>
+        <input type="range" id="bg-scale-slider" min="10" max="300" step="5" value="100" />
+      </div>
+
+      <div class="control-group">
+        <label><span>背景旋轉</span><span id="bg-rot-label">0°</span></label>
+        <input type="range" id="bg-rot-slider" min="0" max="360" step="1" value="0" />
+      </div>
+
+      <button class="btn btn-confirm" id="bg-close-btn">✅ 確認並關閉</button>
+    </div>
+
     <!-- 中央 Spine 畫布 -->
     <div class="center-stage" id="stage-container">
+      <!-- 獨立背景圖片渲染層 (支援移動、縮放與 360° 旋轉) -->
+      <div class="bg-layer" id="bg-layer">
+        <img id="bg-image-el" alt="" />
+      </div>
+
       <!-- 左上角快捷工具列 -->
       <div class="canvas-toolbar">
         <button class="tool-icon" onclick="zoomBy(0.85)" title="放大">＋</button>
@@ -119,6 +156,11 @@
         <button class="pose-btn" id="pose-aim-btn" data-pose="aim">🎯 Aim</button>
       </div>
 
+      <!-- 左下角額外物品顯示開關 -->
+      <div class="extra-items-switcher" id="extra-items-switcher">
+        <button class="pose-btn" id="toggle-extra-btn" disabled>🎡 無額外物品</button>
+      </div>
+
       <!-- 對話氣泡 -->
       <div id="speech-bubble">
         <div class="char-tag" id="bubble-name">拉毗</div>
@@ -127,9 +169,17 @@
 
       <canvas id="spine-canvas"></canvas>
 
+      <!-- 桌寵模式專屬右鍵選單 -->
+      <div class="pet-context-menu" id="pet-context-menu">
+        <div class="pet-menu-header">姿態模式切換</div>
+        <button class="pet-menu-item active" data-pose="standing">🧜‍♀️ 全身 (Full)</button>
+        <button class="pet-menu-item" data-pose="cover">🛡️ 防守 (Cover)</button>
+        <button class="pet-menu-item" data-pose="aim">🎯 攻擊 (Aim)</button>
+      </div>
+
       <!-- 桌寵模式懸浮控制條 (滑鼠靠近立繪顯示 4 秒) -->
       <div id="pet-Floating-Bar">
-        <span class="pet-hint">💡 直接按住角色即可全螢幕拖曳</span>
+        <span class="pet-hint">💡 左鍵拖曳｜右鍵開啟姿態選單</span>
         <button class="btn" style="padding:5px 12px; font-size:12px; background:#4f46e5;" id="exit-pet-btn">返回主控台</button>
       </div>
     </div>

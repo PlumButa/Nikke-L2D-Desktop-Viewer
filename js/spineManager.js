@@ -39,6 +39,11 @@ class SpineManager {
     this.aimXCenterPose = null;
     this.aimYCenterPose = null;
 
+    // 額外背景物品 (如 acc / bg 皮膚) 狀態控制
+    this.hasExtraItems = false;
+    this.showExtraItems = false;
+    this.combinedExtraSkin = null;
+
     this.timeScale = 1.0;
     this.aimShakeScale = 1.0;
     this.rotationDeg = 0;    // 0 ~ 360 度旋轉
@@ -53,6 +58,11 @@ class SpineManager {
     this.defaultCamY = 0;
     this.camZoom = 1.0;
     this.baseZoom = 1.0;
+
+    // 角色相對於畫布正中央的「螢幕像素偏移量」
+    this.screenOffsetX = 0;
+    this.screenOffsetY = 0;
+
     this.charBounds = { minX: 0, minY: 0, maxX: 0, maxY: 0, centerX: 0, width: 0, height: 0 };
 
     this.defaultAnimName = 'idle';
@@ -97,7 +107,6 @@ class SpineManager {
     return blockedSet.has('*') || blockedSet.has(activeAnimName);
   }
 
-  // 判斷是否為需要更換手部/身體部件的大動作 (如 action / special)
   isFullBodyActionAnim(animName) {
     if (!animName) return false;
     return animName === 'action' || animName === 'special' || animName.startsWith('to_');
@@ -142,7 +151,6 @@ class SpineManager {
     }
   }
 
-  // 設定左右鏡射
   setMirror(mirrored) {
     this.isMirrored = !!mirrored;
     if (this.skeleton) {
@@ -151,9 +159,57 @@ class SpineManager {
     }
   }
 
-  // 設定旋轉角度 (0 ~ 360)
   setRotation(deg) {
     this.rotationDeg = ((deg % 360) + 360) % 360;
+    this.updateCameraFromScreenOffset();
+  }
+
+  updateCameraFromScreenOffset() {
+    if (!this.skeleton) return;
+
+    const w = this.canvas.clientWidth || 1280;
+    const h = this.canvas.clientHeight || 800;
+
+    const marginX = Math.min(100, w * 0.2);
+    const marginY = Math.min(100, h * 0.2);
+    const maxOffsetX = Math.max(0, (w / 2) - marginX);
+    const maxOffsetY = Math.max(0, (h / 2) - marginY);
+
+    this.screenOffsetX = Math.min(maxOffsetX, Math.max(-maxOffsetX, this.screenOffsetX));
+    this.screenOffsetY = Math.min(maxOffsetY, Math.max(-maxOffsetY, this.screenOffsetY));
+
+    const rad = (this.rotationDeg * Math.PI) / 180;
+    const rotX = this.screenOffsetX * this.camZoom;
+    const rotY = -this.screenOffsetY * this.camZoom;
+
+    const relX = rotX * Math.cos(rad) - rotY * Math.sin(rad);
+    const relY = rotX * Math.sin(rad) + rotY * Math.cos(rad);
+
+    this.camX = this.defaultCamX - relX;
+    this.camY = this.defaultCamY - relY;
+  }
+
+  setExtraItemsVisible(visible) {
+    if (!this.skeleton || !this.hasExtraItems) {
+      this.showExtraItems = false;
+      return false;
+    }
+
+    this.showExtraItems = !!visible;
+    if (this.showExtraItems && this.combinedExtraSkin) {
+      this.skeleton.setSkin(this.combinedExtraSkin);
+    } else {
+      this.skeleton.setSkin(null);
+    }
+
+    this.skeleton.setToSetupPose();
+    this.setMirror(this.isMirrored);
+
+    if (this.animationState) {
+      this.animationState.apply(this.skeleton);
+    }
+    this.skeleton.updateWorldTransform();
+    return this.showExtraItems;
   }
 
   detectSpineVersion(skelFilePath, cfg) {
@@ -261,6 +317,9 @@ class SpineManager {
     this.aimXCenterPose = null;
     this.aimYCenterPose = null;
     this.aimFireSubAnimations = [];
+    this.hasExtraItems = false;
+    this.showExtraItems = false;
+    this.combinedExtraSkin = null;
 
     if (this.assetManager) {
       try {
@@ -302,7 +361,7 @@ class SpineManager {
         }
         this.setupSkeleton(cfg, savedSettings, skelFile, atlasFile);
         if (onReadyCallback && this.skeleton) {
-          onReadyCallback(this.skeleton.data.animations, this.defaultAnimName);
+          onReadyCallback(this.skeleton.data.animations, this.defaultAnimName, this.hasExtraItems);
         }
       }
     }, 40);
@@ -357,6 +416,26 @@ class SpineManager {
     const skeletonBinary = new spine.SkeletonBinary(atlasLoader);
     const skeletonData = skeletonBinary.readSkeletonData(this.assetManager.require(finalSkel));
 
+    const extraSkins = (skeletonData.skins || []).filter(s => {
+      if (s.name === 'default') return false;
+      const hasAtt = s.getAttachments && s.getAttachments().length > 0;
+      const hasBones = s.bones && s.bones.length > 0;
+      const hasCon = s.constraints && s.constraints.length > 0;
+      return hasAtt || hasBones || hasCon;
+    });
+
+    this.hasExtraItems = extraSkins.length > 0;
+    this.showExtraItems = false;
+    this.combinedExtraSkin = null;
+
+    if (this.hasExtraItems) {
+      this.combinedExtraSkin = new spine.Skin('combined_extra');
+      if (skeletonData.defaultSkin) {
+        this.combinedExtraSkin.addSkin(skeletonData.defaultSkin);
+      }
+      extraSkins.forEach(s => this.combinedExtraSkin.addSkin(s));
+    }
+
     this.skeleton = new spine.Skeleton(skeletonData);
     this.skeleton.setToSetupPose();
     this.skeleton.updateWorldTransform();
@@ -381,34 +460,27 @@ class SpineManager {
 
     const scalePct = savedSettings?.scale || 100;
     this.camZoom = this.baseZoom * (100 / scalePct);
-    this.camX = this.defaultCamX + (savedSettings?.camOffsetX || 0);
-    this.camY = this.defaultCamY + (savedSettings?.camOffsetY || 0);
 
-    // 套用記憶的鏡射與旋轉設定
+    this.screenOffsetX = savedSettings?.camOffsetX || 0;
+    this.screenOffsetY = savedSettings?.camOffsetY || 0;
     this.setMirror(savedSettings?.mirrored || false);
-    this.setRotation(savedSettings?.rotation || 0);
+    this.rotationDeg = ((savedSettings?.rotation || 0) % 360 + 360) % 360;
+    this.updateCameraFromScreenOffset();
 
     const stateData = new spine.AnimationStateData(skeletonData);
     stateData.defaultMix = 0;
 
     this.animationState = new spine.AnimationState(stateData);
 
-    // 紀錄前一個 Track 0 動作名稱，用於判斷是否剛從 action 切換出來
-    this.lastTrack0AnimName = '';
-
+    // 【關鍵修正】所有 Track 0 動作啟動時（包含點擊與桌寵自動觸發），統一執行斷鏈與 SetupPose 重置，100% 消除任何殘影
     this.animationState.addListener({
       start: (entry) => {
         if (entry.trackIndex === 0 && entry.animation && this.skeleton) {
           const newName = entry.animation.name;
-          const prevName = this.lastTrack0AnimName;
-          this.lastTrack0AnimName = newName;
 
-          // 只有當進入或離開 action/special 大動作時，才執行強制斷鏈與 SetupPose 重置以消除手臂殘影
-          if (this.isFullBodyActionAnim(newName) || this.isFullBodyActionAnim(prevName)) {
-            this.clearEntryMixingChain(entry);
-            this.skeleton.setToSetupPose();
-            this.setMirror(this.isMirrored);
-          }
+          this.clearEntryMixingChain(entry);
+          this.skeleton.setToSetupPose();
+          this.setMirror(this.isMirrored);
 
           if (this.isLipSyncBlockedForCurrentAnim(newName)) {
             this.animationState.clearTrack(1);
@@ -470,7 +542,7 @@ class SpineManager {
     }
   }
 
-  // 【智慧動作切換】消除 shy / delight / expression 切換時的呼吸斷差，同時保留 action 無殘影效果
+  // 【智慧無殘影切換】全面保持 0 秒無殘影切換，並對共享呼吸週期的表情動作自動繼承 trackTime 消除斷差
   setTrack0AnimationSmart(animName, loop = true) {
     if (!this.skeleton || !this.animationState) return null;
     const targetAnim = this.skeleton.data.findAnimation(animName);
@@ -489,22 +561,21 @@ class SpineManager {
       this.isFullBodyActionAnim(animName) ||
       (prevAnim && this.isFullBodyActionAnim(prevAnim.name));
 
-    // 若是從表情/待機切換到另一個表情/待機 (如 idle <-> shy / delight / expression_0)
     if (!isActionTransition && prevAnim && this.currentPose === 'standing') {
       const sameBreathingCycle =
         targetAnim.duration > 0.5 &&
         Math.abs(prevAnim.duration - targetAnim.duration) < 0.08;
 
-      // 若兩者共享相同的呼吸週期長度，直接繼承當前呼吸秒數 (trackTime) 並柔和過渡
       if (sameBreathingCycle) {
         const entry = this.animationState.setAnimation(0, animName, true);
-        entry.mixDuration = 0.22;
-        entry.attachmentThreshold = 1.0;
+        this.clearEntryMixingChain(entry);
         entry.trackTime = prevTrackTime % targetAnim.duration;
         entry.animationLast = entry.trackTime;
         entry.nextAnimationLast = entry.trackTime;
 
-        // 若呼叫端要求只播放 1 次 (如點擊立繪或桌寵隨機表情)，則在 1 個週期後無縫同步接回 defaultAnimName
+        this.animationState.apply(this.skeleton);
+        this.skeleton.updateWorldTransform();
+
         if (!loop && animName !== this.defaultAnimName) {
           this.emotionReturnTimer = setTimeout(() => {
             this.emotionReturnTimer = null;
@@ -514,22 +585,23 @@ class SpineManager {
         return entry;
       }
 
-      // 若是短秒數或純臉部關鍵幀的 expression 動畫，使用柔和過渡不重置 SetupPose
       const entry = this.animationState.setAnimation(0, animName, loop);
-      entry.mixDuration = 0.2;
-      entry.attachmentThreshold = 1.0;
+      this.clearEntryMixingChain(entry);
       if (!loop && animName !== this.defaultAnimName) {
         const holdTime = targetAnim.duration < 1.0 ? 2.5 : 0;
         const backEntry = this.animationState.addAnimation(0, this.defaultAnimName, true, holdTime);
-        backEntry.mixDuration = 0.2;
+        backEntry.mixDuration = 0;
       }
+      this.animationState.apply(this.skeleton);
+      this.skeleton.updateWorldTransform();
       return entry;
     }
 
-    // 針對 action / special 等換手部圖層的大動作：0 秒切換 + SetupPose 重置，100% 杜絕殘影
     const entry = this.animationState.setAnimation(0, animName, loop);
+    this.clearEntryMixingChain(entry);
     if (!loop && animName !== this.defaultAnimName) {
-      this.animationState.addAnimation(0, this.defaultAnimName, true, 0);
+      const backEntry = this.animationState.addAnimation(0, this.defaultAnimName, true, 0);
+      backEntry.mixDuration = 0;
     }
     this.animationState.apply(this.skeleton);
     this.skeleton.updateWorldTransform();
@@ -542,17 +614,21 @@ class SpineManager {
 
     const current = this.animationState.getCurrent(0);
     if (!current || current.animation.name !== 'aim_fire' || !current.loop || current.next) {
-      this.animationState.setAnimation(0, 'aim_fire', true);
+      const entry = this.animationState.setAnimation(0, 'aim_fire', true);
+      this.clearEntryMixingChain(entry);
     }
 
     this.aimFireSubAnimations.forEach((subAnimName, idx) => {
       const trackIdx = 2 + idx;
       const subCurrent = this.animationState.getCurrent(trackIdx);
       if (!subCurrent || !subCurrent.animation || subCurrent.animation.name !== subAnimName || !subCurrent.loop) {
-        this.animationState.setAnimation(trackIdx, subAnimName, true);
+        const subEntry = this.animationState.setAnimation(trackIdx, subAnimName, true);
+        this.clearEntryMixingChain(subEntry);
       }
     });
 
+    this.animationState.apply(this.skeleton);
+    this.skeleton.updateWorldTransform();
     return true;
   }
 
@@ -575,9 +651,17 @@ class SpineManager {
     const reloadAnim = this.skeleton.data.findAnimation('cover_reload');
     if (!reloadAnim) return false;
 
-    this.animationState.setAnimation(0, 'cover_reload', false);
-    this.animationState.addAnimation(0, 'cover_reload', false, 0);
-    this.animationState.addAnimation(0, this.defaultAnimName, true, 0);
+    const e1 = this.animationState.setAnimation(0, 'cover_reload', false);
+    this.clearEntryMixingChain(e1);
+    const e2 = this.animationState.addAnimation(0, 'cover_reload', false, 0);
+    e2.mixDuration = 0;
+    const e3 = this.animationState.addAnimation(0, 'cover_reload', false, 0);
+    e3.mixDuration = 0;
+    const e4 = this.animationState.addAnimation(0, this.defaultAnimName, true, 0);
+    e4.mixDuration = 0;
+
+    this.animationState.apply(this.skeleton);
+    this.skeleton.updateWorldTransform();
     return true;
   }
 
@@ -635,7 +719,6 @@ class SpineManager {
       return;
     }
 
-    // 站姿 (standing)：使用智慧切換，兼顧 action 無殘影與 shy/delight 無斷差
     const targetName = standingConfigAnim || this.defaultAnimName;
     if (this.skeleton.data.findAnimation(targetName)) {
       this.setTrack0AnimationSmart(targetName, false);
@@ -870,7 +953,6 @@ class SpineManager {
     }
   }
 
-  // 將世界座標轉換為考慮旋轉角度後的螢幕座標
   worldToScreen(wx, wy) {
     const rad = (this.rotationDeg * Math.PI) / 180;
     const relX = wx - this.camX;
@@ -912,6 +994,7 @@ class SpineManager {
       if (this.canvas.width !== this.canvas.clientWidth || this.canvas.height !== this.canvas.clientHeight) {
         this.canvas.width = this.canvas.clientWidth;
         this.canvas.height = this.canvas.clientHeight;
+        this.updateCameraFromScreenOffset();
       }
 
       this.gl.viewport(0, 0, this.canvas.width, this.canvas.height);
@@ -923,7 +1006,6 @@ class SpineManager {
           this.restoreSkeletonSnapshot(this.aimIdleBase);
         }
 
-        // 確保鏡射狀態持續生效
         this.skeleton.scaleX = this.isMirrored ? -1 : 1;
         this.skeleton.x = this.isMirrored ? (this.charBounds.centerX * 2) : 0;
 
@@ -942,7 +1024,6 @@ class SpineManager {
       camera.viewportWidth = this.canvas.width * this.camZoom;
       camera.viewportHeight = this.canvas.height * this.camZoom;
 
-      // 套用 0 ~ 360 度順時針相機旋轉向量
       const rad = (this.rotationDeg * Math.PI) / 180;
       camera.up.set(-Math.sin(rad), Math.cos(rad), 0);
       camera.update();

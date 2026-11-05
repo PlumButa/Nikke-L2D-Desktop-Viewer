@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain, screen, dialog } = require('electron');
 const fs = require('fs');
+const path = require('path');
 
 app.commandLine.appendSwitch('enable-transparent-visuals');
 
@@ -81,11 +82,15 @@ ipcMain.on('set-ignore-mouse', (event, ignore) => {
   }
 });
 
-// 開啟「載入背景圖片」檔案選擇視窗
+// 開啟「載入背景圖片」檔案選擇視窗 (自動定位至專案內的 assets/background 資料夾)
 ipcMain.handle('select-bg-image', async () => {
   if (!mainWindow) return null;
+  const bgDir = path.join(__dirname, 'assets', 'background');
+  const defaultPath = fs.existsSync(bgDir) ? bgDir : __dirname;
+
   const result = await dialog.showOpenDialog(mainWindow, {
     title: '選擇背景圖片',
+    defaultPath: defaultPath,
     properties: ['openFile'],
     filters: [
       { name: '圖片檔案', extensions: ['png', 'jpg', 'jpeg', 'webp', 'bmp', 'gif'] }

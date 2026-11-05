@@ -17,6 +17,10 @@ class SettingsManager {
       bubbleFontSize: 19,
       bgColor: '#141720',
       bgImage: '',       // 自訂背景圖片路徑
+      bgOffsetX: 0,      // 背景水平移動 (X)
+      bgOffsetY: 0,      // 背景垂直移動 (Y)
+      bgScale: 100,      // 背景縮放比例 (%)
+      bgRotation: 0,     // 背景旋轉角度 (0 ~ 360)
       camOffsetX: 0,
       camOffsetY: 0,
       favorites: []      // 我的最愛角色資料夾清單
