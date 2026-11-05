@@ -60,5 +60,12 @@
   "c390_00.skel": ["action"],
   "c283_00.skel": ["action"],
   "c330_00.skel": ["action"],
-  "c330_02_00.skel": ["action"]
+  "c330_02_00.skel": ["action"],
+  "c820_00.skel": ["action"],
+  "c820_01_00.skel": ["action"],
+  "c821_00.skel": ["action"],
+  "c821_02_00.skel": ["action"],
+  "c043_00.skel": ["action"],
+  "c281_02_00.skel": ["action"],
+  "c225_01_00.skel": ["action"]
 }
