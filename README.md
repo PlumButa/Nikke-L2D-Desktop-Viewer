@@ -97,7 +97,9 @@
 
 ```text
 NikkeDesktopViewer/
-├── assets/characters/          # 存放預設背景圖片(.png)、各妮姬 Spine 立繪 (.skel/.atlas/.png)、語音與 config.json
+├── assets/          
+│   ├── background/             # 存放預設背景圖片(.png)
+│   └── characters/             # 各妮姬 Spine 立繪 (.skel/.atlas/.png)、語音與 config.json
 ├── css/style.css               # 介面與桌寵模式樣式表
 ├── js/
 │   ├── app.js                  # UI 控制

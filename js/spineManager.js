@@ -655,10 +655,8 @@ class SpineManager {
     this.clearEntryMixingChain(e1);
     const e2 = this.animationState.addAnimation(0, 'cover_reload', false, 0);
     e2.mixDuration = 0;
-    const e3 = this.animationState.addAnimation(0, 'cover_reload', false, 0);
+    const e3 = this.animationState.addAnimation(0, this.defaultAnimName, true, 0);
     e3.mixDuration = 0;
-    const e4 = this.animationState.addAnimation(0, this.defaultAnimName, true, 0);
-    e4.mixDuration = 0;
 
     this.animationState.apply(this.skeleton);
     this.skeleton.updateWorldTransform();
