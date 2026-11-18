@@ -1,0 +1,894 @@
+{
+  "id": "451301",
+  "resourceId": 513,
+  "name": "小美人魚",
+  "skin": "預設",
+  "spineVersion": "4.0",
+  "skel": "c513_00.skel",
+  "atlas": "c513_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "「今天要用泡沫做什麼呢……」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "「感覺好像與泡沫融為一體。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_03.mp3",
+      "text": "「你看海，好漂亮喔。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "「啊，我需要繼續說話才行。\n不然可能會忘記怎麼說話。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_05.mp3",
+      "text": "「屬於我的空間，屬於我的場所。\n若某天能展示給大家看就好了。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_06.mp3",
+      "text": "「這是莫莉幫我挑的泳裝，\n如何？」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_07.mp3",
+      "text": "「啊啊……啊，忘記可以正常說話了。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_08.mp3",
+      "text": "「總有一天，在這泡沫之外，\n是否也能自由地游泳呢？」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_09.mp3",
+      "text": "「海浪的聲音……好涼爽……」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_10.mp3",
+      "text": "「我珍貴的朋友們……\n現在可以做得一模一樣了，嘿嘿。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_11.mp3",
+      "text": "「如果灰姑娘看到這副模樣，應該會說很美吧？」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_12.mp3",
+      "text": "「王子殿下，\n我們要不要再多聊一下下……？」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_13.mp3",
+      "text": "「艾比給我的力量，\n我會以善良和珍惜的心去使用的。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_14.mp3",
+      "text": "「啦啦啦～啦啦啦啦～♬」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_15.mp3",
+      "text": "「王、王子殿下，你在看哪裡……\n嗚啊……好害羞。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_16.mp3",
+      "text": "「一定要和大家一起\n迎接故事的結尾。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_17",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_17.mp3",
+      "text": "「裡面真是溫暖。\n就好像大家擁抱著我的感覺。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_18.mp3",
+      "text": "「能和王子殿下一起來海邊真好。\n要是能一直待在一起就好了……\n嘿嘿。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_19.mp3",
+      "text": "「……一個人真的有點寂寞呢。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_20.mp3",
+      "text": "「……雖然穿得很漂亮，\n但是沒有能展示的對象。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_21.mp3",
+      "text": "「……我早就習慣一個人了，所以沒關係。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_22.mp3",
+      "text": "「沒關係，我可以等。\n我們一定可以再次見面的。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_23",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_23.mp3",
+      "text": "「如果穿著這種衣服等待，\n感覺王子殿下會來找我，嘿嘿。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_24",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_24.mp3",
+      "text": "「王子殿下，你慢慢來也沒關係。\n我和蒂亞、娜嘉一起玩就好。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_25",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_25.mp3",
+      "text": "「真是個好地方。\n要是大家能一起住在這裡，\n會如何呢？」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_26",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_26.mp3",
+      "text": "「在這裡，孤獨的感覺好像消失了。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_27",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_27.mp3",
+      "text": "「聽說這裡有個叫游泳池的地方，\n我也可以去看看嗎？」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_28",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_28.mp3",
+      "text": "「這棟建築，如果用泡沫裝飾應該會很漂亮。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_29",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_29.mp3",
+      "text": "「什麼時候才能和在這裡的大家成為朋友呢？」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_30",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_30.mp3",
+      "text": "「原來這裡沒有蒂亞和娜嘉上的那種學校啊，\n好可惜。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_31",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_31.mp3",
+      "text": "「真是充滿活力呢。希望這裡的大家都能幸福。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_32",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_32.mp3",
+      "text": "「大家看起來都好自由。好棒，真讓人羨慕。」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_33",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_33.mp3",
+      "text": "「這裡有好多新奇的東西，真的好有趣。\n要是漢塞爾和葛麗特也來這裡，一定會很開心……」",
+      "animation": "action"
+    },
+    {
+      "id": "voice_34",
+      "category": "初次見面",
+      "audio": "voices/voice_34.mp3",
+      "text": "「為了守護與大家的誓言，\n我絕對不會倒下……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "初次見面",
+      "audio": "voices/voice_35.mp3",
+      "text": "「感覺自己像魚一樣，無論何處都能來去自如。\n你要一起來嗎？」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "初次見面",
+      "audio": "voices/voice_36.mp3",
+      "text": "「這是我第一次穿泳裝，所以有點害羞。\n如果王子殿下喜歡的話，我會很開心。嘿嘿。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "「好像可以製造出更多泡沫了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "「泡沫變得更堅固了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_39.mp3",
+      "text": "「泡沫變得更強了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "「現在能守護大家了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_41.mp3",
+      "text": "「好像充滿了力量。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_42.mp3",
+      "text": "「不管再怎麼猛烈的漩渦襲來，我都能控制住。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_43",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_43.mp3",
+      "text": "「艾比若看到我現在的模樣，\n一定會稱讚我的，嘿嘿。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_44.mp3",
+      "text": "「隨著時間流逝，大家都會變強。\n我也不能落後大家，嘿嘿。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_45.mp3",
+      "text": "「感覺力量正不斷湧上來。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "禮物I",
+      "audio": "voices/voice_46.mp3",
+      "text": "「正好是需要的東西呢，真是太好了。嘿嘿。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "禮物I",
+      "audio": "voices/voice_47.mp3",
+      "text": "「哇……！現在這件衣服真適合我。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "禮物I",
+      "audio": "voices/voice_48.mp3",
+      "text": "「收到禮物當然很開心……但更讓我感動的，\n是王子殿下特地為我準備的心意。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "禮物II",
+      "audio": "voices/voice_49.mp3",
+      "text": "「如果是漢塞爾和葛麗特收到這個，\n應該會更開心吧。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "禮物II",
+      "audio": "voices/voice_50.mp3",
+      "text": "「我要把它放進泡沫裡收著，嘿嘿。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "禮物II",
+      "audio": "voices/voice_51.mp3",
+      "text": "「哇啊……！\n雖然不知道自己能不能收下這麼棒的東西……\n但既然是王子殿下送的，我會好好珍惜。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "禮物III",
+      "audio": "voices/voice_52.mp3",
+      "text": "「先把這個收起來，\n等下次見到大家時再好好炫耀，嘿嘿。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "禮物III",
+      "audio": "voices/voice_53.mp3",
+      "text": "「可以分給魚兒們嗎？」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "禮物III",
+      "audio": "voices/voice_54.mp3",
+      "text": "「這是要給我的嗎？好漂亮喔～\n我會一直收藏在泡沫裡的。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "好感度提升I",
+      "audio": "voices/voice_55.mp3",
+      "text": "「心情像泡沫一樣軟綿綿的。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_56",
+      "category": "好感度提升I",
+      "audio": "voices/voice_56.mp3",
+      "text": "「好喜歡你，真的真的好喜歡。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_57",
+      "category": "好感度提升I",
+      "audio": "voices/voice_57.mp3",
+      "text": "「我、我臉紅不是因為害羞，\n是因為夏天太熱了。喔、喔嗚。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_58",
+      "category": "好感度提升II",
+      "audio": "voices/voice_58.mp3",
+      "text": "「曾經孤單的心情，似乎被幸福填滿了。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_59",
+      "category": "好感度提升II",
+      "audio": "voices/voice_59.mp3",
+      "text": "「像泡沫一樣溫暖、柔軟又甜蜜的感覺。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_60",
+      "category": "好感度提升II",
+      "audio": "voices/voice_60.mp3",
+      "text": "「好柔軟、好甜……\n感覺整個人都泡進泡沫裡一樣。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_61",
+      "category": "好感度提升III",
+      "audio": "voices/voice_61.mp3",
+      "text": "「啊……好溫暖。感覺就像沉浸在泡沫之中。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_62",
+      "category": "好感度提升III",
+      "audio": "voices/voice_62.mp3",
+      "text": "「就像在漆黑深海中的一線曙光。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_63",
+      "category": "好感度提升III",
+      "audio": "voices/voice_63.mp3",
+      "text": "「有王子殿下陪在身邊，我已經不再孤單了。」",
+      "animation": "delight"
+    },
+    {
+      "id": "voice_64",
+      "category": "編隊",
+      "audio": "voices/voice_64.mp3",
+      "text": "「走吧，去找大家。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "編隊",
+      "audio": "voices/voice_65.mp3",
+      "text": "「要不要游泳過去？」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "編隊",
+      "audio": "voices/voice_66.mp3",
+      "text": "「我準備好了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_67.mp3",
+      "text": "「叫我嗎？」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_68.mp3",
+      "text": "「嗯，我在這裡。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_69.mp3",
+      "text": "「嗯，我在聽。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_70.mp3",
+      "text": "「泡沫會指引前進的方向。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_71.mp3",
+      "text": "「噗通噗通～」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_72.mp3",
+      "text": "「嗚……好熱。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_73.mp3",
+      "text": "「我會讓一切全都化為泡影。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_74.mp3",
+      "text": "「要不要趕走那些糟糕的魚呢？」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_75.mp3",
+      "text": "「快點結束，一起去玩水吧。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_76.mp3",
+      "text": "「我的聲音準備好了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_77.mp3",
+      "text": "「泡沫準備好了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_78.mp3",
+      "text": "「嘿嘿，要上了嗎？」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_79.mp3",
+      "text": "「上吧，各位。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_80.mp3",
+      "text": "「各位，萬事拜託了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_81.mp3",
+      "text": "「我準備好了，走吧。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_82.mp3",
+      "text": "「我不是一個人。大家都在一起。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_83.mp3",
+      "text": "「快樂地游泳吧。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_84.mp3",
+      "text": "「只要在一起，一定能做到。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_85",
+      "category": "換彈I",
+      "audio": "voices/voice_85.mp3",
+      "text": "「清清嗓子……」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_86",
+      "category": "換彈I",
+      "audio": "voices/voice_86.mp3",
+      "text": "「咕嘟咕嘟～」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_87",
+      "category": "換彈I",
+      "audio": "voices/voice_87.mp3",
+      "text": "「圓滾滾～」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_88",
+      "category": "換彈II",
+      "audio": "voices/voice_88.mp3",
+      "text": "「集合後再出發吧。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_89",
+      "category": "換彈II",
+      "audio": "voices/voice_89.mp3",
+      "text": "「啊啊。嗯，聲音沒有問題。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_90",
+      "category": "換彈II",
+      "audio": "voices/voice_90.mp3",
+      "text": "「繼續努力吧。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_91",
+      "category": "換彈III",
+      "audio": "voices/voice_91.mp3",
+      "text": "「我會努力的，也請幫我加油打氣。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_92",
+      "category": "換彈III",
+      "audio": "voices/voice_92.mp3",
+      "text": "「下次，要再快一點。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_93",
+      "category": "換彈III",
+      "audio": "voices/voice_93.mp3",
+      "text": "「讓你見識一下洶湧的泡沫。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_94",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_94.mp3",
+      "text": "「泡沫……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_95",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_95.mp3",
+      "text": "「各位，快憋氣。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_96",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_96.mp3",
+      "text": "「泡沫準備好了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_97",
+      "category": "爆裂技能",
+      "audio": "voices/voice_97.mp3",
+      "text": "「向我訴說勝利的故事吧。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_98",
+      "category": "爆裂技能",
+      "audio": "voices/voice_98.mp3",
+      "text": "「朝著光，奮力游去……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_99",
+      "category": "爆裂技能",
+      "audio": "voices/voice_99.mp3",
+      "text": "「王子殿下也一起去玩水吧。啊、啊嗚嗚……」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_100",
+      "category": "全爆裂",
+      "audio": "voices/voice_100.mp3",
+      "text": "「傾洩而出！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_101",
+      "category": "全爆裂",
+      "audio": "voices/voice_101.mp3",
+      "text": "「快速追擊！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_102",
+      "category": "全爆裂",
+      "audio": "voices/voice_102.mp3",
+      "text": "「進擊！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_103",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_103.mp3",
+      "text": "「做得好。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_104",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_104.mp3",
+      "text": "「做得好，各位。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_105",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_105.mp3",
+      "text": "「很好。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_106",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_106.mp3",
+      "text": "「再加把勁！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_107",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_107.mp3",
+      "text": "「下一個。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_108",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_108.mp3",
+      "text": "「還沒有結束呢。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_109",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_109.mp3",
+      "text": "「嗯，很好。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_110",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_110.mp3",
+      "text": "「成功趕走了！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_111",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_111.mp3",
+      "text": "「搞定了。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_112",
+      "category": "被擊I",
+      "audio": "voices/voice_112.mp3",
+      "text": "「啊……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_113",
+      "category": "被擊I",
+      "audio": "voices/voice_113.mp3",
+      "text": "「啊呃……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_114",
+      "category": "被擊I",
+      "audio": "voices/voice_114.mp3",
+      "text": "「啊呃……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_115",
+      "category": "被擊II",
+      "audio": "voices/voice_115.mp3",
+      "text": "「呃呵！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_116",
+      "category": "被擊II",
+      "audio": "voices/voice_116.mp3",
+      "text": "「呃！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_117",
+      "category": "被擊II",
+      "audio": "voices/voice_117.mp3",
+      "text": "「啊啊！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_118",
+      "category": "被擊III",
+      "audio": "voices/voice_118.mp3",
+      "text": "「好痛……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_119",
+      "category": "被擊III",
+      "audio": "voices/voice_119.mp3",
+      "text": "「嗚嗚……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_120",
+      "category": "被擊III",
+      "audio": "voices/voice_120.mp3",
+      "text": "「好痛……！」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_121",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_121.mp3",
+      "text": "「這樣不行……不要放棄，再試一次吧……」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_122",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_122.mp3",
+      "text": "「再這樣下去，就無法自在地游泳了……」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_123",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_123.mp3",
+      "text": "「不要放棄……再……再試一次吧。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_124",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_124.mp3",
+      "text": "「故事將被重新書寫，變得幸福且美麗。」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_125",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_125.mp3",
+      "text": "「波浪平息了。現在，\n要不要向著下一個故事游去呢？」",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_126",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_126.mp3",
+      "text": "「既然贏了，要不要多玩一下再回去？嘿嘿。」",
+      "animation": "idle"
+    }
+  ]
+}
