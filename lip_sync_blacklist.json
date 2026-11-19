@@ -93,5 +93,18 @@
   "c041_01_00.skel": ["action"],
   "c581_00.skel": ["action"],
   "c590_00.skel": ["action"],
-  "c513_01_00.skel": ["action"]
+  "c513_01_00.skel": ["action"],
+  "c521_00.skel": ["action"],
+  "c521_01_00.skel": ["action"],
+  "c520_00.skel": ["action"],
+  "c520_01_00.skel": ["action"],
+  "c412_00.skel": ["action"],
+  "c412_01_00.skel": ["action"],
+  "c834_00.skel": ["action"],
+  "c834_01_00.skel": ["action"],
+  "c834_02_00.skel": ["action"],
+  "c836_00.skel": ["action"],
+  "c355_00.skel": ["action"],
+  "c354_00.skel": ["action"],
+  "c290_01_00.skel": ["action"]
 }

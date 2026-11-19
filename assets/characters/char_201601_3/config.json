@@ -1,0 +1,894 @@
+{
+  "id": "201601",
+  "resourceId": 16,
+  "name": "拉毗：小紅帽",
+  "skin": "摯愛之紅",
+  "spineVersion": "4.0",
+  "skel": "c016_02_00.skel",
+  "atlas": "c016_02_00.atlas",
+  "defaultAnimation": "idle",
+  "interactions": [
+    {
+      "id": "voice_01",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_01.mp3",
+      "text": "指揮官，\n我想對下次作戰行動提出一點意見。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_02",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_02.mp3",
+      "text": "您的視線好像無法從泳衣上移開呢，\n幸好您很喜歡。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_03",
+      "category": "在大廳點擊時I",
+      "audio": "voices/voice_03.mp3",
+      "text": "人家有點累。\n先借指揮官的床休息一下下。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_04",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_04.mp3",
+      "text": "狀態全綠燈，沒有比這更好的事了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_05",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_05.mp3",
+      "text": "指揮官，要一起去游泳嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_06",
+      "category": "在大廳點擊時II",
+      "audio": "voices/voice_06.mp3",
+      "text": "……指揮官。\n這顆枕頭的設計，是不是還不錯？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_07",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_07.mp3",
+      "text": "我在指揮官眼中是什麼樣的人？\n我想知道您的個人看法。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_08",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_08.mp3",
+      "text": "水溫和涼風都恰到好處。\n大概是和指揮官在一起的緣故，感覺真完美。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_09",
+      "category": "在大廳點擊時III",
+      "audio": "voices/voice_09.mp3",
+      "text": "我聽說指揮官喜歡這種衣服。\n您可以盡情地看。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_10",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_10.mp3",
+      "text": "很期待我們將來能一起做點什麼。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_11",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_11.mp3",
+      "text": "雖然現在做別的事情還太早了，\n但您想要的話，可以牽我的手。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_12",
+      "category": "在大廳點擊時（好感度10）I",
+      "audio": "voices/voice_12.mp3",
+      "text": "指揮官，您不累嗎？\n您儘管休息，我會陪在您身邊的。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_13",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_13.mp3",
+      "text": "我絕對不會死，也不會精神崩潰。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_14",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_14.mp3",
+      "text": "我來親自幫您塗防曬乳吧。\n……我一直很想試試看。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_15",
+      "category": "在大廳點擊時（好感度10）II",
+      "audio": "voices/voice_15.mp3",
+      "text": "指揮官，無論您要求我做什麼，\n我的答案永遠都是「好」。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_16",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_16.mp3",
+      "text": "我要揹負起我所傳承的東西，繼續走下去。\n還請您拭目以待。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_17",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_17.mp3",
+      "text": "夏天是個非常危險的季節，\n但我一定會保護好指揮官，請別擔心。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_18",
+      "category": "在大廳點擊時（好感度10）III",
+      "audio": "voices/voice_18.mp3",
+      "text": "看到指揮官這反應，\n就覺得我的努力真的沒白費呢。\n……所以，可以給人家一點獎勵嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_19",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_19.mp3",
+      "text": "我可以在等待的時候做一點自己的事嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_20",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_20.mp3",
+      "text": "可能是因為天氣炎熱的關係，\n總覺得今天的等待特別漫長。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_21",
+      "category": "在大廳閒置時",
+      "audio": "voices/voice_21.mp3",
+      "text": "像這樣……？\n不對，要再稍微有點害羞的感覺……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_22",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_22.mp3",
+      "text": "我在尋找自己喜歡的音樂，\n希望這次能如願。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_23",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_23.mp3",
+      "text": "您無需感到不安。\n我會一如既往地在這裡等著指揮官。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_24",
+      "category": "在大廳閒置時（好感度10）I",
+      "audio": "voices/voice_24.mp3",
+      "text": "指揮官，今天跟我……原來您在忙啊。\n……那我現在就先靜靜地陪在您身邊吧。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_25",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_25.mp3",
+      "text": "仔細想想，我在這裡已經待了很久了。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_26",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_26.mp3",
+      "text": "好不容易穿一次泳裝，不去泳池太可惜了。\n走吧，指揮官。就我們兩個人。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_27",
+      "category": "在前哨基地點擊I",
+      "audio": "voices/voice_27.mp3",
+      "text": "啊，指揮官，我正好要回房間休息，\n您要不要一起去？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_28",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_28.mp3",
+      "text": "可能是因為發生了很多事，\n所以逐漸覺得這個地方……有點像我的故鄉。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_29",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_29.mp3",
+      "text": "希望下次尼恩和阿妮斯也可以一起來。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_30",
+      "category": "在前哨基地點擊II",
+      "audio": "voices/voice_30.mp3",
+      "text": "該怎麼做才能和指揮官在同一張床上迎接早晨……",
+      "animation": "action"
+    },
+    {
+      "id": "voice_31",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_31.mp3",
+      "text": "雖然這只是我個人的看法，\n但我覺得指揮官室需要有一個祕密空間。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_32",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_32.mp3",
+      "text": "指揮官，您在看哪裡呀？\n不過……您可以一直看沒關係。",
+      "animation": "action"
+    },
+    {
+      "id": "voice_33",
+      "category": "在前哨基地點擊III",
+      "audio": "voices/voice_33.mp3",
+      "text": "咦？我並不怎麼害羞……\n……果然表現出害羞的樣子很有效嗎？",
+      "animation": "action"
+    },
+    {
+      "id": "voice_34",
+      "category": "初次見面",
+      "audio": "voices/voice_34.mp3",
+      "text": "再次請您多多指教，指揮官。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_35",
+      "category": "初次見面",
+      "audio": "voices/voice_35.mp3",
+      "text": "這是我根據指揮官的品味精心挑選的泳裝。\n您喜歡嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_36",
+      "category": "初次見面",
+      "audio": "voices/voice_36.mp3",
+      "text": "您好，指揮官。\n您看起來很累，一起去休息吧。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_37",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_37.mp3",
+      "text": "功率上限提升。\n涵蓋的功能更多了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_38",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_38.mp3",
+      "text": "嗯，這樣就足夠了。\n我還可以變得更強。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_39",
+      "category": "戰鬥力提升I",
+      "audio": "voices/voice_39.mp3",
+      "text": "為了我們的未來，\n我會變得更強。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_40",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_40.mp3",
+      "text": "確認軀體等級提升。\n不知道最高能提升到什麼程度？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_41",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_41.mp3",
+      "text": "很好。\n我還能更進一步。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_42",
+      "category": "戰鬥力提升II",
+      "audio": "voices/voice_42.mp3",
+      "text": "只要是為了指揮官，\n要我變得多強都沒問題。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_43",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_43.mp3",
+      "text": "戰鬥數據更新完畢。\n真是太神奇了。居然能用這種方法變強。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_44",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_44.mp3",
+      "text": "我突然好想知道，\n如果一直追隨指揮官的話，\n我能進步到什麼程度呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_45",
+      "category": "戰鬥力提升III",
+      "audio": "voices/voice_45.mp3",
+      "text": "沒錯。如果想承受住指揮官，不強健一點是不行的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_46",
+      "category": "禮物I",
+      "audio": "voices/voice_46.mp3",
+      "text": "指揮官不需要什麼嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_47",
+      "category": "禮物I",
+      "audio": "voices/voice_47.mp3",
+      "text": "您現在是在撩我嗎？\n當然，指揮官想怎麼撩都可以。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_48",
+      "category": "禮物I",
+      "audio": "voices/voice_48.mp3",
+      "text": "……指揮官，我會表現出害羞的樣子給您看，\n能不能告訴我您喜不喜歡呢？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_49",
+      "category": "禮物II",
+      "audio": "voices/voice_49.mp3",
+      "text": "您給太多了。\n……您的資金狀況沒問題嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_50",
+      "category": "禮物II",
+      "audio": "voices/voice_50.mp3",
+      "text": "我能感受到指揮官的品味呢。謝謝您的禮物。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_51",
+      "category": "禮物II",
+      "audio": "voices/voice_51.mp3",
+      "text": "指揮官，回禮已經準備好了。\n晚上請到我的房間來。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_52",
+      "category": "禮物III",
+      "audio": "voices/voice_52.mp3",
+      "text": "……這正是我想要的。\n您果然比我自己還瞭解我。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_53",
+      "category": "禮物III",
+      "audio": "voices/voice_53.mp3",
+      "text": "指揮官果然比我還瞭解我自己。\n……您居然看出了我喜歡這個。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_54",
+      "category": "禮物III",
+      "audio": "voices/voice_54.mp3",
+      "text": "謝謝您，指揮官。\n作為報答，我會將自己獻給您。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_55",
+      "category": "好感度提升I",
+      "audio": "voices/voice_55.mp3",
+      "text": "指揮官，也許……\n算了，就當我什麼都沒說吧。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_56",
+      "category": "好感度提升I",
+      "audio": "voices/voice_56.mp3",
+      "text": "我覺得很溫馨。\n這都是多虧了指揮官。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_57",
+      "category": "好感度提升I",
+      "audio": "voices/voice_57.mp3",
+      "text": "指揮官，我……\n……沒事，當我什麼都沒說吧。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_58",
+      "category": "好感度提升II",
+      "audio": "voices/voice_58.mp3",
+      "text": "您有時間嗎？\n我有問題想諮詢您。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_59",
+      "category": "好感度提升II",
+      "audio": "voices/voice_59.mp3",
+      "text": "心跳加快的原因……應該不只是因為天氣炎熱。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_60",
+      "category": "好感度提升II",
+      "audio": "voices/voice_60.mp3",
+      "text": "有時候，只要待在指揮官身邊……\n我就會覺得其他的事好像都無所謂了。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_61",
+      "category": "好感度提升III",
+      "audio": "voices/voice_61.mp3",
+      "text": "我不會辜負您的期待的。\n沒錯，一定不會。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_62",
+      "category": "好感度提升III",
+      "audio": "voices/voice_62.mp3",
+      "text": "我對指揮官的真心永遠不會變的。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_63",
+      "category": "好感度提升III",
+      "audio": "voices/voice_63.mp3",
+      "text": "我也會努力用更好的方式，\n向指揮官表達自己的心意。",
+      "animation": "shy"
+    },
+    {
+      "id": "voice_64",
+      "category": "編隊",
+      "audio": "voices/voice_64.mp3",
+      "text": "收到，參與作戰。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_65",
+      "category": "編隊",
+      "audio": "voices/voice_65.mp3",
+      "text": "我們出發吧，指揮官。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_66",
+      "category": "編隊",
+      "audio": "voices/voice_66.mp3",
+      "text": "您比較喜歡在外面嗎？\n我開玩笑的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_67",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_67.mp3",
+      "text": "正在等待指令。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_68",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_68.mp3",
+      "text": "是，請下令。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_69",
+      "category": "在野外點擊部隊",
+      "audio": "voices/voice_69.mp3",
+      "text": "是，指揮官。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_70",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_70.mp3",
+      "text": "前往目標地點。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_71",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_71.mp3",
+      "text": "前往該地點。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_72",
+      "category": "在野外移動部隊",
+      "audio": "voices/voice_72.mp3",
+      "text": "動作快。還有事情等著我們回去做。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_73",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_73.mp3",
+      "text": "遇敵。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_74",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_74.mp3",
+      "text": "遇敵。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_75",
+      "category": "進入戰鬥",
+      "audio": "voices/voice_75.mp3",
+      "text": "遇敵。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_76",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_76.mp3",
+      "text": "交戰開始。\n指揮官，到我身後去。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_77",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_77.mp3",
+      "text": "確認目標！開始戰鬥。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_78",
+      "category": "開始戰鬥I",
+      "audio": "voices/voice_78.mp3",
+      "text": "我會速戰速決。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_79",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_79.mp3",
+      "text": "發現敵機。開始攻擊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_80",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_80.mp3",
+      "text": "迅速消滅敵人。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_81",
+      "category": "開始戰鬥II",
+      "audio": "voices/voice_81.mp3",
+      "text": "要快點和指揮官兩個人……沒什麼。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_82",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_82.mp3",
+      "text": "……請好好看著我喔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_83",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_83.mp3",
+      "text": "我來保護指揮官。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_84",
+      "category": "開始戰鬥III",
+      "audio": "voices/voice_84.mp3",
+      "text": "指揮官，請稍等我一下。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_85",
+      "category": "換彈I",
+      "audio": "voices/voice_85.mp3",
+      "text": "裝彈。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_86",
+      "category": "換彈I",
+      "audio": "voices/voice_86.mp3",
+      "text": "準備換彈。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_87",
+      "category": "換彈I",
+      "audio": "voices/voice_87.mp3",
+      "text": "我並沒有心急。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_88",
+      "category": "換彈II",
+      "audio": "voices/voice_88.mp3",
+      "text": "看來我駕馭得很好。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_89",
+      "category": "換彈II",
+      "audio": "voices/voice_89.mp3",
+      "text": "您的視線有點太過炙熱了呢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_90",
+      "category": "換彈II",
+      "audio": "voices/voice_90.mp3",
+      "text": "我現在非常冷靜。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_91",
+      "category": "換彈III",
+      "audio": "voices/voice_91.mp3",
+      "text": "好重……你是怎麼把這東西……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_92",
+      "category": "換彈III",
+      "audio": "voices/voice_92.mp3",
+      "text": "我會立刻結束這一切的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_93",
+      "category": "換彈III",
+      "audio": "voices/voice_93.mp3",
+      "text": "換彈。迅速完成。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_94",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_94.mp3",
+      "text": "七個小矮人零……！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_95",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_95.mp3",
+      "text": "準備好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_96",
+      "category": "可使用爆裂技能",
+      "audio": "voices/voice_96.mp3",
+      "text": "指揮官，我準備好了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_97",
+      "category": "爆裂技能",
+      "audio": "voices/voice_97.mp3",
+      "text": "全面出擊！擊穿吧！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_98",
+      "category": "爆裂技能",
+      "audio": "voices/voice_98.mp3",
+      "text": "看這裡，指揮官。沒什麼好猶豫的。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_99",
+      "category": "爆裂技能",
+      "audio": "voices/voice_99.mp3",
+      "text": "期待與您一起迎接的早晨。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_100",
+      "category": "全爆裂",
+      "audio": "voices/voice_100.mp3",
+      "text": "目標！前方！同時射擊！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_101",
+      "category": "全爆裂",
+      "audio": "voices/voice_101.mp3",
+      "text": "目標前方，開火！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_102",
+      "category": "全爆裂",
+      "audio": "voices/voice_102.mp3",
+      "text": "開始射擊！迅速消滅敵人！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_103",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_103.mp3",
+      "text": "確認擊落！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_104",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_104.mp3",
+      "text": "清除完畢。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_105",
+      "category": "消滅敵人I",
+      "audio": "voices/voice_105.mp3",
+      "text": "目標已失去反應，確認下一個目標。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_106",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_106.mp3",
+      "text": "確認清除目標。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_107",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_107.mp3",
+      "text": "目標已清除！",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_108",
+      "category": "消滅敵人II",
+      "audio": "voices/voice_108.mp3",
+      "text": "敵機已失去動力。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_109",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_109.mp3",
+      "text": "敵機墜落。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_110",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_110.mp3",
+      "text": "確認擊落敵機。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_111",
+      "category": "消滅敵人III",
+      "audio": "voices/voice_111.mp3",
+      "text": "敵人所剩無幾了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_112",
+      "category": "被擊I",
+      "audio": "voices/voice_112.mp3",
+      "text": "咳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_113",
+      "category": "被擊I",
+      "audio": "voices/voice_113.mp3",
+      "text": "呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_114",
+      "category": "被擊I",
+      "audio": "voices/voice_114.mp3",
+      "text": "呃呃。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_115",
+      "category": "被擊II",
+      "audio": "voices/voice_115.mp3",
+      "text": "哼。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_116",
+      "category": "被擊II",
+      "audio": "voices/voice_116.mp3",
+      "text": "咳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_117",
+      "category": "被擊II",
+      "audio": "voices/voice_117.mp3",
+      "text": "……咳。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_118",
+      "category": "被擊III",
+      "audio": "voices/voice_118.mp3",
+      "text": "唔。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_119",
+      "category": "被擊III",
+      "audio": "voices/voice_119.mp3",
+      "text": "啊。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_120",
+      "category": "被擊III",
+      "audio": "voices/voice_120.mp3",
+      "text": "啊……",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_121",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_121.mp3",
+      "text": "我先暫時撤退。後面的事就交給您了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_122",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_122.mp3",
+      "text": "這種兩人獨處的機會可是非常難得的，\n真的好可惜。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_123",
+      "category": "無法戰鬥",
+      "audio": "voices/voice_123.mp3",
+      "text": "對不起，我要先休息了。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_124",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_124.mp3",
+      "text": "只要和您在一起，我就絕對不會輸。",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_125",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_125.mp3",
+      "text": "指揮官，電燈泡已經全數清除完畢了。\n現在可以繼續約會了嗎？",
+      "animation": "idle"
+    },
+    {
+      "id": "voice_126",
+      "category": "戰鬥勝利",
+      "audio": "voices/voice_126.mp3",
+      "text": "結束了呢。現在一起去休息吧，指揮官。",
+      "animation": "idle"
+    }
+  ]
+}
