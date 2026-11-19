@@ -39,10 +39,10 @@ class SpineManager {
     this.aimXCenterPose = null;
     this.aimYCenterPose = null;
 
-    // 額外背景物品 (如 acc / bg 皮膚) 狀態控制
+    // 額外背景物品 / 多組皮膚 (Skin) 狀態控制
     this.hasExtraItems = false;
-    this.showExtraItems = false;
-    this.combinedExtraSkin = null;
+    this.extraSkins = [];         // 獨立保存每一組非 default 的 Skin
+    this.extraSkinModeIndex = -1; // -1: 關閉(僅default), 0~N-1: 單獨啟用該組Skin, N: 全部疊加(僅 N>=2 時)
 
     this.timeScale = 1.0;
     this.aimShakeScale = 1.0;
@@ -189,16 +189,48 @@ class SpineManager {
     this.camY = this.defaultCamY - relY;
   }
 
-  setExtraItemsVisible(visible) {
-    if (!this.skeleton || !this.hasExtraItems) {
-      this.showExtraItems = false;
-      return false;
+  // 取得目前額外物品按鈕的顯示狀態與文字
+  getExtraItemsState() {
+    const count = this.extraSkins.length;
+    if (!this.hasExtraItems || count === 0) {
+      return { hasExtra: false, active: false, label: '🎡 無額外物品' };
     }
 
-    this.showExtraItems = !!visible;
-    if (this.showExtraItems && this.combinedExtraSkin) {
-      this.skeleton.setSkin(this.combinedExtraSkin);
+    // 只有 1 組額外物品時：維持單純的 顯示 / 隱藏 開關
+    if (count === 1) {
+      const isShowing = this.extraSkinModeIndex === 0;
+      return {
+        hasExtra: true,
+        active: isShowing,
+        label: isShowing ? '🎡 隱藏額外物品' : '🎡 顯示額外物品'
+      };
+    }
+
+    // 有 2 組以上額外物品時：僅在 關閉 <-> 各獨立 Skin 間切換，不進行全部疊加
+    if (this.extraSkinModeIndex === -1) {
+      return { hasExtra: true, active: false, label: `🎡 顯示額外物品 (共 ${count} 組)` };
+    }
+    const skinName = this.extraSkins[this.extraSkinModeIndex].name;
+    return {
+      hasExtra: true,
+      active: true,
+      label: `🎡 物品 [${this.extraSkinModeIndex + 1}/${count}]: ${skinName}`
+    };
+  }
+
+  // 套用指定索引的皮膚模式 (-1 為關閉，0 ~ N-1 為對應獨立 Skin)
+  setExtraSkinMode(modeIndex) {
+    if (!this.skeleton || !this.hasExtraItems) {
+      this.extraSkinModeIndex = -1;
+      return this.getExtraItemsState();
+    }
+
+    const count = this.extraSkins.length;
+    if (modeIndex >= 0 && modeIndex < count) {
+      this.extraSkinModeIndex = modeIndex;
+      this.skeleton.setSkin(this.extraSkins[modeIndex]);
     } else {
+      this.extraSkinModeIndex = -1;
       this.skeleton.setSkin(null);
     }
 
@@ -209,7 +241,16 @@ class SpineManager {
       this.animationState.apply(this.skeleton);
     }
     this.skeleton.updateWorldTransform();
-    return this.showExtraItems;
+    return this.getExtraItemsState();
+  }
+
+  // 循環切換下一個額外物品皮膚模式 (-1 -> 0 -> 1 -> ... -> N-1 -> -1)
+  cycleExtraItems() {
+    const count = this.extraSkins.length;
+    if (!this.hasExtraItems || count === 0) return this.getExtraItemsState();
+
+    const nextIndex = this.extraSkinModeIndex >= count - 1 ? -1 : this.extraSkinModeIndex + 1;
+    return this.setExtraSkinMode(nextIndex);
   }
 
   detectSpineVersion(skelFilePath, cfg) {
@@ -318,8 +359,8 @@ class SpineManager {
     this.aimYCenterPose = null;
     this.aimFireSubAnimations = [];
     this.hasExtraItems = false;
-    this.showExtraItems = false;
-    this.combinedExtraSkin = null;
+    this.extraSkins = [];
+    this.extraSkinModeIndex = -1;
 
     if (this.assetManager) {
       try {
@@ -424,16 +465,12 @@ class SpineManager {
       return hasAtt || hasBones || hasCon;
     });
 
+    this.extraSkins = extraSkins;
     this.hasExtraItems = extraSkins.length > 0;
-    this.showExtraItems = false;
-    this.combinedExtraSkin = null;
+    this.extraSkinModeIndex = -1;
 
     if (this.hasExtraItems) {
-      this.combinedExtraSkin = new spine.Skin('combined_extra');
-      if (skeletonData.defaultSkin) {
-        this.combinedExtraSkin.addSkin(skeletonData.defaultSkin);
-      }
-      extraSkins.forEach(s => this.combinedExtraSkin.addSkin(s));
+      console.log(`🎡 [${cfg.name} - ${this.currentPose}] 偵測到 ${extraSkins.length} 組額外 Skin:`, extraSkins.map(s => s.name));
     }
 
     this.skeleton = new spine.Skeleton(skeletonData);

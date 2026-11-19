@@ -37,7 +37,8 @@ const rightClickMgr = new RightClickManager(canvas, spineMgr, {
   getCurrentPose: () => currentPose,
   getCurrentFolder: () => currentFolder,
   getCurrentConfig: () => currentConfig,
-  onSwitchPose: (nextPose) => switchPose(nextPose)
+  onSwitchPose: (nextPose) => switchPose(nextPose),
+  onExtraItemsChange: () => updateExtraItemsButtonUI()
 });
 
 // 初始化角色清單與最愛模組
@@ -79,15 +80,10 @@ function updateExtraItemsButtonUI() {
   const extraBtn = document.getElementById('toggle-extra-btn');
   if (!extraBtn) return;
 
-  if (!spineMgr.hasExtraItems) {
-    extraBtn.disabled = true;
-    extraBtn.classList.remove('active');
-    extraBtn.textContent = '🎡 無額外物品';
-  } else {
-    extraBtn.disabled = false;
-    extraBtn.classList.toggle('active', spineMgr.showExtraItems);
-    extraBtn.textContent = spineMgr.showExtraItems ? '🎡 隱藏額外物品' : '🎡 顯示額外物品';
-  }
+  const state = spineMgr.getExtraItemsState();
+  extraBtn.disabled = !state.hasExtra;
+  extraBtn.classList.toggle('active', state.active);
+  extraBtn.textContent = state.label;
 }
 
 function applySavedSettingsToUI() {
@@ -200,10 +196,10 @@ function selectCharacter(folder, cfg) {
   });
 }
 
-// 綁定左下角「🎡 顯示額外物品」開關按鈕
+// 綁定左下角「🎡 顯示額外物品」開關 / 輪切按鈕
 document.getElementById('toggle-extra-btn').onclick = () => {
   if (!spineMgr.hasExtraItems) return;
-  spineMgr.setExtraItemsVisible(!spineMgr.showExtraItems);
+  spineMgr.cycleExtraItems();
   updateExtraItemsButtonUI();
 };
 

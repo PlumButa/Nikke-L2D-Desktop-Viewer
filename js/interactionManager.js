@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 class InteractionManager {
   constructor(spineMgr, lipSyncMgr, settingsMgr, canvas) {
     this.spineMgr = spineMgr;
@@ -55,6 +58,38 @@ class InteractionManager {
     document.getElementById('bubble-text').style.fontSize = `${s.bubbleFontSize}px`;
   }
 
+  // 解析實際的語音根目錄：支援時裝資料夾共用主角色的 voices 資料夾
+  resolveVoiceFolder(currentFolder, currentConfig, audioRelPath) {
+    if (!currentFolder || !audioRelPath) return currentFolder;
+
+    // 1. 優先檢查當前資料夾內是否有該語音檔（主角色本身，或保留了專屬語音的特殊時裝）
+    if (fs.existsSync(path.join(currentFolder, audioRelPath))) {
+      return currentFolder;
+    }
+
+    const parentDir = path.dirname(currentFolder);
+    const folderName = path.basename(currentFolder);
+
+    // 2. 移除 _2、_3、_4 等時裝後綴（例如 char_207201_2 -> char_207201），改從主角色資料夾讀取
+    const match = folderName.match(/^(char_\d+)_.+$/);
+    if (match) {
+      const baseFolder = path.join(parentDir, match[1]);
+      if (fs.existsSync(path.join(baseFolder, audioRelPath))) {
+        return baseFolder;
+      }
+    }
+
+    // 3. 備援：若命名不規則，嘗試使用 config.json 中的 id 拼接 char_<id>
+    if (currentConfig?.id) {
+      const idBaseFolder = path.join(parentDir, `char_${currentConfig.id}`);
+      if (idBaseFolder !== currentFolder && fs.existsSync(path.join(idBaseFolder, audioRelPath))) {
+        return idBaseFolder;
+      }
+    }
+
+    return currentFolder;
+  }
+
   // 根據當前姿勢自動切換「點擊觸發語音範圍」
   syncVoiceFilterWithPose(poseType) {
     const voiceFilterEl = document.getElementById('voice-filter');
@@ -104,7 +139,8 @@ class InteractionManager {
 
     if (this.bubbleTimer) clearTimeout(this.bubbleTimer);
 
-    this.lipSyncMgr.playVoice(currentFolder, item.audio, () => {
+    const voiceFolder = this.resolveVoiceFolder(currentFolder, currentConfig, item.audio);
+    this.lipSyncMgr.playVoice(voiceFolder, item.audio, () => {
       this.bubbleTimer = setTimeout(() => bubble.classList.remove('show'), 1500);
     });
   }

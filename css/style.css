@@ -411,3 +411,14 @@ body.pet-mode .bg-popover {
   opacity: 0.35;
   cursor: not-allowed;
 }
+
+.pet-menu-divider {
+  height: 1px;
+  background: #2e3546;
+  margin: 4px 2px;
+}
+.pet-menu-extra-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
