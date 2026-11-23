@@ -9,6 +9,7 @@ class CharacterListManager {
     this.currentTab = 'all'; // 'all' | 'fav'
     this.currentFolderKey = '';
     this.hasInitialized = false;
+    this.allCharacters = [];
 
     this.initEvents();
   }
@@ -55,33 +56,78 @@ class CharacterListManager {
     favBtn.textContent = isFav ? '⭐ 已在我的最愛' : '☆ 加入我的最愛';
   }
 
+  // 載入並快取所有角色資料，供清單、隨機抽選與總覽視窗共用
+  loadAllCharacters() {
+    if (!fs.existsSync(this.charsDir)) {
+      this.allCharacters = [];
+      return this.allCharacters;
+    }
+
+    const folders = fs.readdirSync(this.charsDir);
+    const list = [];
+
+    folders.forEach((folder) => {
+      const configPath = path.join(this.charsDir, folder, 'config.json');
+      if (!fs.existsSync(configPath)) return;
+      try {
+        const cfg = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+        const iconPath = path.join(this.charsDir, folder, 'icon.png').replace(/\\/g, '/');
+        list.push({ folder, cfg, iconPath });
+      } catch (err) {
+        console.error(`讀取 ${folder}/config.json 失敗:`, err);
+      }
+    });
+
+    this.allCharacters = list;
+    return this.allCharacters;
+  }
+
+  getAllCharacters() {
+    if (this.allCharacters.length === 0) {
+      this.loadAllCharacters();
+    }
+    return this.allCharacters;
+  }
+
+  // 供「抽一個!」與「妮姬總覽」外部觸發角色切換並同步右側清單狀態
+  selectByFolder(folder) {
+    const target = this.getAllCharacters().find(c => c.folder === folder);
+    if (!target) return false;
+
+    this.currentFolderKey = target.folder;
+    this.updateFavoriteButtonUI();
+
+    document.querySelectorAll('.char-card').forEach(c => c.classList.remove('active'));
+    const activeCard = document.querySelector(`.char-card[data-folder="${target.folder}"]`);
+    if (activeCard) {
+      activeCard.classList.add('active');
+      activeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    this.onSelectCharacter(target.folder, target.cfg);
+    return true;
+  }
+
   scanCharacters(filterText = '') {
     const listEl = document.getElementById('char-list');
     listEl.innerHTML = '';
 
-    if (!fs.existsSync(this.charsDir)) return;
-    const folders = fs.readdirSync(this.charsDir);
-
+    const allChars = this.hasInitialized ? this.getAllCharacters() : this.loadAllCharacters();
     const s = this.settingsMgr.get();
     const savedFolder = s.lastCharacterFolder;
     const favList = s.favorites || [];
     let targetToSelect = null;
 
-    folders.forEach((folder) => {
+    allChars.forEach(({ folder, cfg, iconPath }) => {
       if (this.currentTab === 'fav' && !favList.includes(folder)) {
         return;
       }
-
-      const configPath = path.join(this.charsDir, folder, 'config.json');
-      if (!fs.existsSync(configPath)) return;
-      const cfg = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
 
       if (filterText && !cfg.name.includes(filterText) && !(cfg.skin || '').includes(filterText)) {
         return;
       }
 
       const isFav = favList.includes(folder);
-      const iconPath = path.join(this.charsDir, folder, 'icon.png').replace(/\\/g, '/');
       const card = document.createElement('div');
       card.className = 'char-card';
       card.dataset.folder = folder;

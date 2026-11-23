@@ -132,6 +132,21 @@
       <button class="btn btn-confirm" id="bg-close-btn">✅ 確認並關閉</button>
     </div>
 
+    <!-- 「妮姬總覽」15 欄頭像表格懸浮視窗 -->
+    <div class="overview-backdrop" id="nikke-overview-modal">
+      <div class="overview-panel">
+        <div class="overview-header">
+          <div class="overview-title">📋 妮姬總覽 <span id="overview-count"></span></div>
+          <button class="overview-close-x" id="overview-close-x" title="關閉">✕</button>
+        </div>
+        <div class="overview-grid" id="overview-grid"></div>
+        <button class="btn btn-confirm overview-close-btn" id="overview-close-btn">✅ 關閉總覽</button>
+      </div>
+    </div>
+
+    <!-- 妮姬總覽頭像懸浮名稱提示 -->
+    <div class="overview-tooltip" id="overview-tooltip"></div>
+
     <!-- 中央 Spine 畫布 -->
     <div class="center-stage" id="stage-container">
       <!-- 獨立背景圖片渲染層 (支援移動、縮放與 360° 旋轉) -->
@@ -159,6 +174,12 @@
       <!-- 左下角額外物品顯示開關 -->
       <div class="extra-items-switcher" id="extra-items-switcher">
         <button class="pose-btn" id="toggle-extra-btn" disabled>🎡 無額外物品</button>
+      </div>
+
+      <!-- 隨機抽選系統提示氣泡 (畫面中間偏上方) -->
+      <div id="gacha-toast">
+        <div class="toast-tag">✨ 隨機抽選</div>
+        <div id="gacha-toast-text">抽到了「拉毗」 !!!</div>
       </div>
 
       <!-- 對話氣泡 -->
@@ -193,6 +214,10 @@
       <div class="tab-bar">
         <button class="tab-btn active" id="tab-all-btn">所有妮姬</button>
         <button class="tab-btn" id="tab-fav-btn">⭐ 我的最愛</button>
+      </div>
+      <div class="roster-tools-bar">
+        <button class="roster-tool-btn draw-btn" id="random-draw-btn">🎲 抽一個!</button>
+        <button class="roster-tool-btn overview-btn" id="nikke-overview-btn">📋 妮姬總覽</button>
       </div>
       <input type="text" id="search-input" placeholder="搜尋角色、時裝..." />
       <div class="char-list" id="char-list"></div>

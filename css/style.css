@@ -422,3 +422,214 @@ body.pet-mode .bg-popover {
   flex-direction: column;
   gap: 4px;
 }
+
+/* 桌寵模式下隱藏總覽視窗與隨機提示氣泡 */
+body.pet-mode #gacha-toast,
+body.pet-mode .overview-backdrop,
+body.pet-mode .overview-tooltip {
+  display: none !important;
+}
+
+/* 右側頂部「抽一個! / 妮姬總覽」功能按鈕列 */
+.roster-tools-bar {
+  display: flex;
+  gap: 6px;
+}
+.roster-tool-btn {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #3b4254;
+  background: #282e3d;
+  color: #e2e8f0;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.roster-tool-btn:hover {
+  background: #363e52;
+  border-color: #fb923c;
+  color: #ffffff;
+}
+.roster-tool-btn.draw-btn {
+  background: rgba(234, 88, 12, 0.22);
+  border-color: rgba(251, 146, 60, 0.65);
+  color: #fed7aa;
+}
+.roster-tool-btn.draw-btn:hover {
+  background: linear-gradient(135deg, #ea580c, #f97316);
+  border-color: #fb923c;
+  color: #ffffff;
+}
+
+/* 隨機抽選系統提示氣泡 (仿照對話氣泡樣式與淡入淡出動畫) */
+#gacha-toast {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 240px;
+  max-width: 480px;
+  background: rgba(15, 18, 28, 0.94);
+  border: 1.5px solid #fb923c;
+  border-radius: 14px;
+  padding: 10px 22px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 40;
+}
+#gacha-toast.show {
+  opacity: 1;
+}
+#gacha-toast .toast-tag {
+  font-size: 11px;
+  color: #fb923c;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+/* 「妮姬總覽」彈出視窗 (同背景設置風格) */
+.overview-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 10, 16, 0.65);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+.overview-backdrop.show {
+  display: flex;
+}
+.overview-panel {
+  background: rgba(15, 18, 28, 0.97);
+  border: 1.5px solid #fb923c;
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 94vw;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.8);
+}
+.overview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #2e3546;
+  padding-bottom: 8px;
+}
+.overview-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fb923c;
+}
+.overview-title span {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 600;
+  margin-left: 6px;
+}
+.overview-close-x {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+.overview-close-x:hover {
+  background: #2e3546;
+  color: #ffffff;
+}
+
+/* 每列 15 名妮姬圓形頭像，最多顯示約 7 列，其餘捲動 */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(15, 50px);
+  gap: 8px;
+  max-height: 416px;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 6px 8px 6px 4px;
+}
+.overview-avatar-btn {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #333b4d;
+  background: #262b3a;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.14s ease, border-color 0.14s ease, box-shadow 0.14s ease;
+}
+.overview-avatar-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+.overview-avatar-btn:hover {
+  transform: scale(1.12);
+  border-color: #fb923c;
+  box-shadow: 0 0 10px rgba(251, 146, 60, 0.55);
+  z-index: 2;
+}
+.overview-avatar-btn.active {
+  border-color: #818cf8;
+  box-shadow: 0 0 12px rgba(129, 140, 248, 0.85);
+}
+.overview-avatar-btn.is-fav::after {
+  content: "★";
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  font-size: 11px;
+  color: #fbbf24;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+}
+.overview-close-btn {
+  width: 160px;
+  align-self: center;
+}
+
+/* 頭像懸浮提示框 (名稱 + 時裝) */
+.overview-tooltip {
+  position: fixed;
+  background: rgba(12, 15, 24, 0.96);
+  border: 1px solid #fb923c;
+  border-radius: 8px;
+  padding: 6px 10px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  z-index: 1200;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.65);
+  white-space: nowrap;
+}
+.overview-tooltip.show {
+  opacity: 1;
+}
+.overview-tooltip .tooltip-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.overview-tooltip .tooltip-skin {
+  font-size: 11px;
+  color: #fb923c;
+  margin-top: 2px;
+}

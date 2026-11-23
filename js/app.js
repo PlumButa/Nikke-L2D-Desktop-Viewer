@@ -7,6 +7,7 @@ const BackgroundManager = require('./js/backgroundManager');
 const RightClickManager = require('./js/rightClickManager');
 const InteractionManager = require('./js/interactionManager');
 const CharacterListManager = require('./js/characterListManager');
+const RosterToolsManager = require('./js/rosterToolsManager');
 
 const canvas = document.getElementById('spine-canvas');
 const stageContainer = document.getElementById('stage-container');
@@ -46,6 +47,8 @@ const charsDir = path.join(__dirname, 'assets', 'characters');
 const charListMgr = new CharacterListManager(charsDir, settingsMgr, (folder, cfg) => {
   selectCharacter(folder, cfg);
 });
+
+const rosterToolsMgr = new RosterToolsManager(charListMgr, settingsMgr);
 
 function syncTransformUI(rotation, mirrored) {
   const rotDeg = ((Math.round(rotation) % 360) + 360) % 360;
@@ -446,6 +449,7 @@ document.getElementById('screenshot-btn').onclick = async () => {
 document.getElementById('enter-pet-btn').onclick = () => {
   isPetMode = true;
   document.getElementById('bg-settings-popover').classList.remove('show');
+  rosterToolsMgr.closeOverview();
   rightClickMgr.hideMenu();
   document.body.classList.add('pet-mode');
   ipcRenderer.send('toggle-pet-mode', true);
