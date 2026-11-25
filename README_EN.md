@@ -42,19 +42,23 @@ Switch seamlessly between Standing, Cover, and Aim postures for each character. 
 * **Smart Click-Through**: Pin your favorite Nikke directly onto your Windows desktop! Transparent areas automatically pass mouse clicks through to your desktop icons and windows, while hovering over the character allows dragging and interaction.
 * **Auto Idle Expressions**: Automatically plays random `expression_X` animations or reload/fire actions every 15–20 seconds in Desktop Pet mode.
 * **Global Cursor Aim Tracking**: In Aim + Desktop Pet mode, the character dynamically tracks your mouse cursor across the screen (`aim_x` / `aim_y`), turning her body to aim wherever your cursor moves!
-* **Desktop Pet Right-Click Context Menu**: Right-click directly on the character in Desktop Pet mode to open a pose-switching menu, allowing seamless transitions between Full Body (Standing), Cover, and Aim modes without returning to the main console, complete with automatic scale compensation and screen-boundary clamping.
+* **Desktop Pet Right-Click Context Menu**: Right-click directly on the character in Desktop Pet mode to open a menu, allowing seamless transitions between Full Body (Standing), Cover, and Aim modes without returning to the main console；"Extra Items", supporting disabled states, single-item toggles, and direct selection for multi-skin models.
 
 ![Desktop Pet Demo](./docs/demo_desktop_pet.gif)
 ![Desktop Pet Demo 2](./docs/demo_desktop_pet2.gif)
 ![Desktop Pet Demo 3](./docs/demo_desktop_pet3.gif)
-![Desktop Pet Right-Click Demo](./docs/right-click_menu.gif)
+![Desktop Pet Right-Click Demo](./docs/right-click_menu2.gif)
 
 ### 5. Canvas Tools & Favorites System
 * **Transform Controls**: Zoom (25%–250%), 360° Rotation, Horizontal Mirroring, and Animation Speed control (0.1x–2.0x).
 * **Custom Background & PNG Screenshot**: Includes 40 built-in background presets and a dedicated "🖼️ Background Settings" popover panel (supporting load/clear background, real-time X/Y offset sliders, zoom, and 360° rotation preview), solid background color picker, and one-click high-resolution PNG screenshot export.
 * **Favorites & Auto-Save**: Bookmark your favorite Nikkes and costumes under the "⭐ Favorites" tab. All slider settings and camera positions are saved automatically.
+* **"🎲 Random Draw" Feature**: Added a random character draw button below the roster tabs that switches to a random Nikke.
+* **"📋 Nikke Overview" Avatar Grid**: Added a scrollable overview modal displaying all Nikkes.
 
 ![Custom Background Demo](./docs/custom_background.gif)
+![Random Draw Demo](./docs/demo_random_draw.gif)
+![Overview Demo](./docs/demo_overview.gif)
 
 ---
 
@@ -80,12 +84,14 @@ You **do NOT need to manually install Node.js** or run any terminal commands!
 ### 💃 Character Roster Log
 * **`2026/11/01`**: Added all released Nikkes (including costumes) **up to 2023**.
 * **`2026/11/05`**: Added all released Nikkes (including costumes) **up to 2024**.
+* **`2026/11/25`**: Added all released Nikkes (including costumes) **up to 2025**.
 
 ### 🛠️ Project Version History
 * **`Ver 1.0.0` (2026/11/01) — Initial Release**
 * **`Ver 1.1.0` (2026/11/05) — Feature Expansion & UX Improvements**
-  * **Rotation Dragging & Pose Transition Fix**: Fixed the cursor-dragging direction offset bug when the character is rotated (0°–360°), and added automatic scale compensation and screen-boundary clamping when switching poses.
-  * **Advanced Background Settings Panel & Built-in Backgrounds**: Added a dedicated "🖼️ Background Settings" popover panel (supporting load/clear background, X/Y offset sliders, zoom, and 360° rotation with real-time preview) along with 40 built-in background presets.
-  * **"🎡 Show/Hide Extra Items" Toggle**: Added a toggle button at the bottom-left of the stage to display or hide character-specific background props/objects (e.g., Quency's jewelry case, Viper's vending machine).
-  * **Desktop Pet Right-Click Context Menu**: Right-clicking on the character in Desktop Pet mode now opens a context menu to switch directly between Full Body (Standing), Cover, and Aim modes without returning to the main console.
-  * **Animation Transition Polish**: Fixed part ghosting/afterimage artifacts during periodic auto-triggered animations in Desktop Pet mode.
+* **`Ver 1.2.0` (2026/11/25) — Multi-Skin Support, Storage Optimization & Quick Roster Tools**
+  * **Independent Multi-Skin Switching**: Fixed visual glitches on models with multiple mutually exclusive skins (e.g., Nayuta: Wuwei Cover) by replacing full skin stacking with independent per-skin cycling.
+  * **Expanded Desktop Pet Context Menu**: Added an "Extra Items" section below "Aim" in the Desktop Pet right-click menu, supporting disabled states, single-item toggles, and direct selection for multi-skin models.
+  * **Shared Voice Assets Across Costumes**: Refactored voice path resolution so costume folders automatically fall back to the base character's `voices` directory (while preserving unique voice lines for special costumes), significantly reducing overall project size.
+  * **"🎲 Random Draw" Feature**: Added a random character draw button below the roster tabs that switches to a random Nikke and displays a speech-bubble-style toast notification at the top center.
+  * **"📋 Nikke Overview" Avatar Grid**: Added a scrollable overview modal displaying all Nikkes in a 15-column circular avatar grid with hover tooltips showing character names and costumes for quick visual browsing.
