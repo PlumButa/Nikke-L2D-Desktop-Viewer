@@ -106,5 +106,11 @@
   "c836_00.skel": ["action"],
   "c355_00.skel": ["action"],
   "c354_00.skel": ["action"],
-  "c290_01_00.skel": ["action"]
+  "c290_01_00.skel": ["action"],
+  "c019_01_00.skel": ["action"],
+  "c063_00.skel": ["action"],
+  "c871_00.skel": ["action"],
+  "c871_01_00.skel": ["action"],
+  "c871_02_00.skel": ["action"],
+  "c872_00.skel": ["action"]
 }
